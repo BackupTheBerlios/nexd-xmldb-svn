@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.0">
+	<view uin="V574ng9e2fxi4nup6vjl7">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="design:view:::V574ng9e2k3phn4iexgoq">
+			<property name="bounds" value="137,167,106,78"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.ConfigurationException">
+			<property name="bounds" value="242,78,161,78"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9e2hv6jld-suqcta">
+			<property name="bounds" value="132,2,96,112"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9e2gcjnnu-jb92gd">
+			<property name="bounds" value="2,152,117,78"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9e2fxxcxa-8xieyc">
+			<property name="bounds" value="10,10,112,129"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.Test">
+			<property name="bounds" value="130,150,141,197"/>
+		</reference>
+	</view>
+</nodeSet>

@@ -1,0 +1,393 @@
+<node:definition id="content" path="binarycloud/form/Form.php" 
+    form:elemrole="form"
+    xmlns="http://www.binarycloud.com/ns/node"
+    xmlns:form="http://www.binarycloud.com/ns/form"
+    xmlns:node="http://www.binarycloud.com/ns/node">
+  <template path="app/formdemo/tpl/InputListForm.tpl" />
+
+  <contains>
+    <!-- {{{ ButtonFormInput -->
+    <node:definition id="button" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">Button Form Input</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/ButtonFormInput.php">
+            <param name="value">ButtonFormInput</param>
+        </node:definition>
+        <!--
+        <node:definition id="button_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ CalendarFormInput -->
+    <node:definition id="calendar" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">CalendarFormInput</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/CalendarFormInput.php">
+            <param name="calendar">This is a CalendarFormInput</param>
+        </node:definition>
+        <!--
+        <node:definition id="caption_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ CaptionFormInput -->
+    <node:definition id="caption" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">Caption Form Input</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/CaptionFormInput.php">
+            <param name="caption">This is a CaptionFormInput</param>
+        </node:definition>
+        <!--
+        <node:definition id="caption_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ CheckBoxFormInput -->
+    <node:definition id="checkbox" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">Checkbox Form Input</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/CheckBoxFormInput.php">
+            <param name="text">This is a CheckBoxFormInput</param>
+        </node:definition>
+        <!--
+        <node:definition id="checkbox_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ ColorPickerFormInput -->
+    <node:definition id="colorpicker" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">ColorPickerFormInput</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/ColorPickerFormInput.php" />
+        <!--
+        <node:definition id="colorpicker_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ ErrorNode -->
+    <node:definition id="error" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">ErrorNode</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/ErrorNode.php">
+            <section name="errors">
+                <param>First error text</param>
+                <param>Second error text</param>
+            </section>
+        </node:definition>
+        <!--
+        <node:definition id="error_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ FileUploadFormInput -->
+    <node:definition id="fileupload" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">FileUploadFormInput</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/FileUploadFormInput.php" />
+        <!--
+        <node:definition id="fileupload_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ HiddenFormInput -->
+    <node:definition id="hidden" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">HiddenFormInput</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/HiddenFormInput.php">
+            <param name="value">This is a hidden value</param>
+        </node:definition>
+        <!--
+        <node:definition id="hidden_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ HintNode -->
+    <node:definition id="hint" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">HintNode</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/HintNode.php">
+            <param name="hint">This is a hint text</param>
+        </node:definition>
+        <!--
+        <node:definition id="hint_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ ImageFormInput -->
+    <node:definition id="image" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">ImageFormInput</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/ImageFormInput.php">
+            <param name="src">/resources/app/top/images/binarycloud.gif</param>
+        </node:definition>
+        <!--
+        <node:definition id="hint_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ LabelFormInput -->
+    <node:definition id="label" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">LabelFormInput</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/LabelFormInput.php">
+            <param name="label">This is a LabelFormInput</param>
+        </node:definition>
+        <!--
+        <node:definition id="hint_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ PasswordFormInput -->
+    <node:definition id="password" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">PasswordFormInput</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/PasswordFormInput.php" />
+        <!--
+        <node:definition id="hint_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ OptionListFormInput -->
+    <node:definition id="optionlist" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">OptionListFormInput</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/OptionListFormInput.php">
+            <section name="items">
+                <param name="one">Entry #1</param>
+                <param name="two">Entry #2</param>
+                <param name="three">Entry #3</param>
+            </section>
+            <param name="multiple">false</param>
+            <param name="value">one</param>
+        </node:definition>
+        <!--
+        <node:definition id="hint_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ ResetFormInput -->
+    <node:definition id="reset" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">ResetFormInput</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/ResetFormInput.php">
+            <param name="value">ResetFormInput</param>
+        </node:definition>
+        <!--
+        <node:definition id="hint_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ SelectFormInput -->
+    <node:definition id="select" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">SelectFormInput</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/SelectFormInput.php">
+            <section name="items">
+                <param>Select Entry #1</param>
+                <param>Select Entry #2</param>
+                <param>Select Entry #3</param>
+            </section>
+            <param name="size">1</param>
+        </node:definition>
+        <!--
+        <node:definition id="hint_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <node:definition id="multiselect" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">MultiSelectFormInput</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/MultiSelectFormInput.php">
+            <section name="items">
+                <param name="one">Select Entry #1</param>
+                <param name="two">Select Entry #2</param>
+                <param name="three">Select Entry #3</param>
+            </section>
+        </node:definition>
+        <!--
+        <node:definition id="multiselect_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ SubmitFormInput -->
+    <node:definition id="submit" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">SubmitFormInput</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/SubmitFormInput.php">
+            <param name="value">SubmitFormInput</param>
+        </node:definition>
+        <!--
+        <node:definition id="hint_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ TextAreaFormInput -->
+    <node:definition id="textarea" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">TextAreaFormInput</param>
+      </template>
+
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/TextAreaFormInput.php">
+            <param name="cols">40</param>
+            <param name="rows">5</param>
+            <param name="value"><![CDATA[This is a TextAreaInput
+            
+with multiple lines.]]></param>
+        </node:definition>
+
+        <!--
+        <node:definition id="hint_hint" path="binarycloud/form/nodes/HintNode.php">
+          <param name="hint">HINT</param>
+        </node:definition>
+        -->
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    <!-- {{{ TextFormInput -->
+    <node:definition id="text" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/FormComponent.tpl">
+        <param name="label">TextFormInput</param>
+      </template>
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/TextFormInput.php">
+            <param name="value">This is a TextFormInput</param>
+        </node:definition>
+        <node:definition id="error" path="binarycloud/form/nodes/ErrorNode.php" />
+      </contains>
+    </node:definition>
+    <!-- }}} -->
+    
+    <!-- {{{ FormComponent: actions -->
+    <node:definition id="actions" path="binarycloud/form/FormComponent.php">
+      <template path="binarycloud/form/tpl/ActionButtonFormComponent.tpl" />
+      <contains>
+        <node:definition id="input" path="binarycloud/form/nodes/ActionButtonsFormInput.php">
+          <section name="actions">
+            <param name="_reset">Reset</param>
+            <param name="submit">Submit Form</param>
+          </section>
+        </node:definition>
+      </contains>
+    </node:definition>
+    <!-- }}} --> 
+  </contains>
+</node:definition>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.0">
+	<view uin="Vd7rsvfe2fxk651m40u65">
+		<property name="$metaclass" value="Class Diagram"/>
+		<property name="#invoke_inplace" value="com.tssap.selena.model.ui.navigator.view"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageI">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="10,110,100,78"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageFactory">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="10,10,198,95"/>
+		</reference>
+	</view>
+</nodeSet>

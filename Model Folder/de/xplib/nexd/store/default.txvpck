@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.0">
+	<view uin="V574ng9e2fxxcxa-8xieyc">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageI">
+			<property name="bounds" value="10,150,100,78"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageFactory">
+			<property name="bounds" value="10,10,200,112"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9e2fxz7cyg2neib">
+			<property name="bounds" value="228,10,137,95"/>
+		</reference>
+	</view>
+</nodeSet>

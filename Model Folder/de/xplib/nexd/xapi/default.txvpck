@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.0">
+	<view uin="V574ng9e2pqgdn8sljfv4">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.next.api.CollectionImpl">
+			<property name="bounds" value="10,10,200,537"/>
+		</reference>
+	</view>
+</nodeSet>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.0">
+	<view uin="Vd7rsvfe2fxjqpf7glpw5">
+		<property name="$metaclass" value="Class Diagram"/>
+		<property name="#invoke_inplace" value="com.tssap.selena.model.ui.navigator.view"/>
+		<reference referencedUin="design:view:::V574ng9e2fxxcxa-8xieyc">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="10,10,112,129"/>
+		</reference>
+	</view>
+</nodeSet>

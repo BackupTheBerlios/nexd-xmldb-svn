@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.0">
+	<view uin="V574ng9e2fxz7cyg2neib">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.jdbc.StorageFactoryImpl">
+			<property name="bounds" value="180,52,153,95"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.jdbc.StorageImpl">
+			<property name="bounds" value="10,10,100,95"/>
+		</reference>
+	</view>
+</nodeSet>

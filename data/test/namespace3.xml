@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+
+<entity:definition version="1.0"
+    id="person"
+    classfile="app/newstorage/ent/person.php"
+
+    datasource="bc_storage"
+
+    xmlns:entity="http://www.binarycloud.com/ns/storage/entity"
+    xmlns="http://www.binarycloud.com/ns/storage/entity">
+
+  <id name="id" type="BIGINT">
+    <generator class="hilo"> 
+      <param name="sequence">person_id_seq</param> 
+    </generator>
+  </id>
+  <property name="firstname" type="text" not-null="true" />
+  <property name="lastname" type="text" not-null="true" />
+  <property name="birthdate" type="date" not-null="true" />
+
+  <!-- Array with all roles played by this person. -->
+  <array name="roles" cascade="all" lazy="false">
+    <key column="person" />
+    <one-to-many class="character" />
+  </array>
+  <!-- Array with all works written by this person. -->
+  <array name="works" cascade="all">
+    <key column="author" />
+    <one-to-many class="work" />
+  </array>
+</entity:definition>
