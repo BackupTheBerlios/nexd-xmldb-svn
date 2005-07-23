@@ -1,0 +1,175 @@
+<?xml version="1.0"?> 
+<spheon-jsoap>
+
+	<env soap="1.1" uri="http://schemas.xmlsoap.org/soap/envelope/" />	
+	<env soap="1.2" uri="http://www.w3.org/2001/12/soap-envelope" />
+
+	<enc soap="1.1" uri="http://schemas.xmlsoap.org/soap/encoding/" />	
+	<enc soap="1.2" uri="http://www.w3.org/2001/12/soap-encoding" />	
+
+	<xsi soap="1.1" uri="http://www.w3.org/1999/XMLSchema-instance" />
+	<xsi soap="1.1" uri="http://www.w3.org/2000/10/XMLSchema-instance" />
+	<xsi soap="1.1" uri="http://www.w3.org/2001/XMLSchema-instance" />
+
+	<xsd soap="1.1" uri="http://www.w3.org/1999/XMLSchema">
+		<soap type="[">de.fmui.spheon.jsoap.encoding.xsdArray</soap>
+		<soap type="string">de.fmui.spheon.jsoap.encoding.xsdString</soap>
+		<soap type="int">de.fmui.spheon.jsoap.encoding.xsdInt</soap>
+		<soap type="integer">de.fmui.spheon.jsoap.encoding.xsdInt</soap>
+		<soap type="decimal">de.fmui.spheon.jsoap.encoding.xsdDecimal</soap>
+		<soap type="long">de.fmui.spheon.jsoap.encoding.xsdLong</soap>
+		<soap type="short">de.fmui.spheon.jsoap.encoding.xsdShort</soap>
+		<soap type="byte">de.fmui.spheon.jsoap.encoding.xsdByte</soap>
+		<soap type="float">de.fmui.spheon.jsoap.encoding.xsdFloat</soap>
+		<soap type="double">de.fmui.spheon.jsoap.encoding.xsdDouble</soap>
+		<soap type="boolean">de.fmui.spheon.jsoap.encoding.xsdBoolean</soap>
+		<soap type="timeInstant">de.fmui.spheon.jsoap.encoding.xsdDateTime</soap>
+		<soap type="dateTime">de.fmui.spheon.jsoap.encoding.xsdDateTime</soap>
+		<soap type="date">de.fmui.spheon.jsoap.encoding.xsdDate</soap>
+		<soap type="anyType">de.fmui.spheon.jsoap.encoding.xsdObject</soap>
+		<soap type="base64">de.fmui.spheon.jsoap.encoding.xsdBase64</soap>
+		<soap type="base64Binary">de.fmui.spheon.jsoap.encoding.xsdBase64</soap>
+		<soap type="hexBinary">de.fmui.spheon.jsoap.encoding.xsdHex</soap>
+
+		<java type="[">de.fmui.spheon.jsoap.encoding.xsdArray</java>
+		<java type="de.fmui.spheon.jsoap.SoapArray">de.fmui.spheon.jsoap.encoding.xsdArray</java>
+		<java type="java.lang.Object">de.fmui.spheon.jsoap.encoding.xsdObject</java>
+		<java type="java.lang.String">de.fmui.spheon.jsoap.encoding.xsdString</java>
+		<java type="java.lang.Integer">de.fmui.spheon.jsoap.encoding.xsdInt</java>
+		<java type="int">de.fmui.spheon.jsoap.encoding.xsdInt</java>
+		<java type="java.math.BigDecimal">de.fmui.spheon.jsoap.encoding.xsdDecimal</java>
+		<java type="java.lang.Long">de.fmui.spheon.jsoap.encoding.xsdLong</java>
+		<java type="long">de.fmui.spheon.jsoap.encoding.xsdLong</java>
+		<java type="java.lang.Short">de.fmui.spheon.jsoap.encoding.xsdShort</java>
+		<java type="short">de.fmui.spheon.jsoap.encoding.xsdShort</java>
+		<java type="java.lang.Byte">de.fmui.spheon.jsoap.encoding.xsdByte</java>
+		<java type="byte">de.fmui.spheon.jsoap.encoding.xsdByte</java>
+		<java type="java.lang.Float">de.fmui.spheon.jsoap.encoding.xsdFloat</java>
+		<java type="float">de.fmui.spheon.jsoap.encoding.xsdFloat</java>
+		<java type="java.lang.Double">de.fmui.spheon.jsoap.encoding.xsdDouble</java>
+		<java type="double">de.fmui.spheon.jsoap.encoding.xsdDouble</java>
+		<java type="java.lang.Boolean">de.fmui.spheon.jsoap.encoding.xsdBoolean</java>
+		<java type="boolean">de.fmui.spheon.jsoap.encoding.xsdBoolean</java>
+		<java type="java.util.Date">de.fmui.spheon.jsoap.encoding.xsdDateTime</java>
+		<java type="java.util.GregorianCalendar">de.fmui.spheon.jsoap.encoding.xsdDate</java>
+		<java type="[Ljava.lang.Byte;">de.fmui.spheon.jsoap.encoding.xsdHex</java>
+		<java type="[B">de.fmui.spheon.jsoap.encoding.xsdBase64</java>
+		<java type="de.fmui.spheon.jsoap.transport.Attachment">de.fmui.spheon.jsoap.encoding.xsdAttachment</java>
+	</xsd>
+
+	<xsd soap="1.1" uri="http://www.w3.org/2000/10/XMLSchema">
+		<soap type="[">de.fmui.spheon.jsoap.encoding.xsdArray</soap>
+		<soap type="string">de.fmui.spheon.jsoap.encoding.xsdString</soap>
+		<soap type="int">de.fmui.spheon.jsoap.encoding.xsdInt</soap>
+		<soap type="integer">de.fmui.spheon.jsoap.encoding.xsdInt</soap>
+		<soap type="decimal">de.fmui.spheon.jsoap.encoding.xsdDecimal</soap>
+		<soap type="long">de.fmui.spheon.jsoap.encoding.xsdLong</soap>
+		<soap type="short">de.fmui.spheon.jsoap.encoding.xsdShort</soap>
+		<soap type="byte">de.fmui.spheon.jsoap.encoding.xsdByte</soap>
+		<soap type="float">de.fmui.spheon.jsoap.encoding.xsdFloat</soap>
+		<soap type="double">de.fmui.spheon.jsoap.encoding.xsdDouble</soap>
+		<soap type="boolean">de.fmui.spheon.jsoap.encoding.xsdBoolean</soap>
+		<soap type="timeInstant">de.fmui.spheon.jsoap.encoding.xsdDateTime</soap>
+		<soap type="dateTime">de.fmui.spheon.jsoap.encoding.xsdDateTime</soap>
+		<soap type="date">de.fmui.spheon.jsoap.encoding.xsdDate</soap>
+		<soap type="anyType">de.fmui.spheon.jsoap.encoding.xsdObject</soap>
+		<soap type="base64">de.fmui.spheon.jsoap.encoding.xsdBase64</soap>
+		<soap type="base64Binary">de.fmui.spheon.jsoap.encoding.xsdBase64</soap>
+		<soap type="hexBinary">de.fmui.spheon.jsoap.encoding.xsdHex</soap>
+
+		<java type="[">de.fmui.spheon.jsoap.encoding.xsdArray</java>
+		<java type="de.fmui.spheon.jsoap.SoapArray">de.fmui.spheon.jsoap.encoding.xsdArray</java>
+		<java type="java.lang.Object">de.fmui.spheon.jsoap.encoding.xsdObject</java>
+		<java type="java.lang.String">de.fmui.spheon.jsoap.encoding.xsdString</java>
+		<java type="java.lang.Integer">de.fmui.spheon.jsoap.encoding.xsdInt</java>
+		<java type="int">de.fmui.spheon.jsoap.encoding.xsdInt</java>
+		<java type="java.math.BigDecimal">de.fmui.spheon.jsoap.encoding.xsdDecimal</java>
+		<java type="java.lang.Long">de.fmui.spheon.jsoap.encoding.xsdLong</java>
+		<java type="long">de.fmui.spheon.jsoap.encoding.xsdLong</java>
+		<java type="java.lang.Short">de.fmui.spheon.jsoap.encoding.xsdShort</java>
+		<java type="short">de.fmui.spheon.jsoap.encoding.xsdShort</java>
+		<java type="java.lang.Byte">de.fmui.spheon.jsoap.encoding.xsdByte</java>
+		<java type="byte">de.fmui.spheon.jsoap.encoding.xsdByte</java>
+		<java type="java.lang.Float">de.fmui.spheon.jsoap.encoding.xsdFloat</java>
+		<java type="float">de.fmui.spheon.jsoap.encoding.xsdFloat</java>
+		<java type="java.lang.Double">de.fmui.spheon.jsoap.encoding.xsdDouble</java>
+		<java type="double">de.fmui.spheon.jsoap.encoding.xsdDouble</java>
+		<java type="java.lang.Boolean">de.fmui.spheon.jsoap.encoding.xsdBoolean</java>
+		<java type="boolean">de.fmui.spheon.jsoap.encoding.xsdBoolean</java>
+		<java type="java.util.Date">de.fmui.spheon.jsoap.encoding.xsdDateTime</java>
+		<java type="java.util.GregorianCalendar">de.fmui.spheon.jsoap.encoding.xsdDate</java>
+		<java type="[Ljava.lang.Byte;">de.fmui.spheon.jsoap.encoding.xsdHex</java>
+		<java type="[B">de.fmui.spheon.jsoap.encoding.xsdBase64</java>
+		<java type="de.fmui.spheon.jsoap.transport.Attachment">de.fmui.spheon.jsoap.encoding.xsdAttachment</java>
+	</xsd>
+
+	<xsd soap="1.1" uri="http://www.w3.org/2001/XMLSchema">
+		<soap type="[">de.fmui.spheon.jsoap.encoding.xsdArray</soap>	
+		<soap type="string">de.fmui.spheon.jsoap.encoding.xsdString</soap>
+		<soap type="int">de.fmui.spheon.jsoap.encoding.xsdInt</soap>
+		<soap type="integer">de.fmui.spheon.jsoap.encoding.xsdInt</soap>
+		<soap type="decimal">de.fmui.spheon.jsoap.encoding.xsdDecimal</soap>
+		<soap type="long">de.fmui.spheon.jsoap.encoding.xsdLong</soap>
+		<soap type="short">de.fmui.spheon.jsoap.encoding.xsdShort</soap>
+		<soap type="byte">de.fmui.spheon.jsoap.encoding.xsdByte</soap>
+		<soap type="float">de.fmui.spheon.jsoap.encoding.xsdFloat</soap>
+		<soap type="double">de.fmui.spheon.jsoap.encoding.xsdDouble</soap>
+		<soap type="boolean">de.fmui.spheon.jsoap.encoding.xsdBoolean</soap>
+		<soap type="timeInstant">de.fmui.spheon.jsoap.encoding.xsdDateTime</soap>
+		<soap type="dateTime">de.fmui.spheon.jsoap.encoding.xsdDateTime</soap>
+		<soap type="date">de.fmui.spheon.jsoap.encoding.xsdDate</soap>
+		<soap type="anyType">de.fmui.spheon.jsoap.encoding.xsdObject</soap>
+		<soap type="base64">de.fmui.spheon.jsoap.encoding.xsdBase64</soap>
+		<soap type="base64Binary">de.fmui.spheon.jsoap.encoding.xsdBase64</soap>
+		<soap type="hexBinary">de.fmui.spheon.jsoap.encoding.xsdHex</soap>
+
+		<java type="[">de.fmui.spheon.jsoap.encoding.xsdArray</java>
+		<java type="de.fmui.spheon.jsoap.SoapArray">de.fmui.spheon.jsoap.encoding.xsdArray</java>
+		<java type="java.lang.Object">de.fmui.spheon.jsoap.encoding.xsdObject</java>
+		<java type="java.lang.String">de.fmui.spheon.jsoap.encoding.xsdString</java>
+		<java type="java.lang.Integer">de.fmui.spheon.jsoap.encoding.xsdInt</java>
+		<java type="int">de.fmui.spheon.jsoap.encoding.xsdInt</java>
+		<java type="java.math.BigDecimal">de.fmui.spheon.jsoap.encoding.xsdDecimal</java>
+		<java type="java.lang.Long">de.fmui.spheon.jsoap.encoding.xsdLong</java>
+		<java type="long">de.fmui.spheon.jsoap.encoding.xsdLong</java>
+		<java type="java.lang.Short">de.fmui.spheon.jsoap.encoding.xsdShort</java>
+		<java type="short">de.fmui.spheon.jsoap.encoding.xsdShort</java>
+		<java type="java.lang.Byte">de.fmui.spheon.jsoap.encoding.xsdByte</java>
+		<java type="byte">de.fmui.spheon.jsoap.encoding.xsdByte</java>
+		<java type="java.lang.Float">de.fmui.spheon.jsoap.encoding.xsdFloat</java>
+		<java type="float">de.fmui.spheon.jsoap.encoding.xsdFloat</java>
+		<java type="java.lang.Double">de.fmui.spheon.jsoap.encoding.xsdDouble</java>
+		<java type="double">de.fmui.spheon.jsoap.encoding.xsdDouble</java>
+		<java type="java.lang.Boolean">de.fmui.spheon.jsoap.encoding.xsdBoolean</java>
+		<java type="boolean">de.fmui.spheon.jsoap.encoding.xsdBoolean</java>
+		<java type="java.util.Date">de.fmui.spheon.jsoap.encoding.xsdDateTime</java>
+		<java type="java.util.GregorianCalendar">de.fmui.spheon.jsoap.encoding.xsdDate</java>
+		<java type="[Ljava.lang.Byte;">de.fmui.spheon.jsoap.encoding.xsdHex</java>
+		<java type="[B">de.fmui.spheon.jsoap.encoding.xsdBase64</java>
+		<java type="de.fmui.spheon.jsoap.transport.Attachment">de.fmui.spheon.jsoap.encoding.xsdAttachment</java>
+	</xsd>
+
+	<xsd uri="http://schemas.xmlsoap.org/soap/encoding/">
+		<soap type="base64">de.fmui.spheon.jsoap.encoding.xsdBase64</soap>
+		<soap type="base64Binary">de.fmui.spheon.jsoap.encoding.xsdBase64</soap>
+		<java type="[B">de.fmui.spheon.jsoap.encoding.xsdBase64</java>
+	</xsd>
+
+	<xsd uri="http://xml.apache.org/xml-soap">
+		<soap type="Map">de.fmui.spheon.jsoap.encoding.xsdMap</soap>	
+		<java type="java.util.Hashtable">de.fmui.spheon.jsoap.encoding.xsdMap</java>
+		<soap type="Vector">de.fmui.spheon.jsoap.encoding.xsdVecEnum</soap>
+		<java type="java.util.Vector">de.fmui.spheon.jsoap.encoding.xsdVecEnum</java>
+		<java type="java.util.Enumeration">de.fmui.spheon.jsoap.encoding.xsdVecEnum</java>
+	</xsd>
+
+	<attachments default="application/octet-stream" domain="spheon-jsoap.fmui.de">
+		<mime type="text/plain">de.fmui.spheon.jsoap.transport.AttachmentText</mime>
+		<mime type="text/html">de.fmui.spheon.jsoap.transport.AttachmentText</mime>
+		<mime type="text/xml">de.fmui.spheon.jsoap.transport.AttachmentText</mime>
+		<mime type="image/gif">de.fmui.spheon.jsoap.transport.AttachmentBinary</mime>
+		<mime type="image/jpeg">de.fmui.spheon.jsoap.transport.AttachmentBinary</mime>
+		<mime type="application/octet-stream">de.fmui.spheon.jsoap.transport.AttachmentBinary</mime>
+	</attachments>
+
+</spheon-jsoap>
