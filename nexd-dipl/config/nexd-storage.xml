@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nexd-config>
+  
+	<storage max-connections="5">
+    
+	  <factory type="de.xplib.nexd.store.jdbc.StorageFactoryImpl">
+      <params jdbc-url="foo" username="bar" password="foobar" />
+    </factory>
+    
+  </storage>
+  
+</nexd-config>

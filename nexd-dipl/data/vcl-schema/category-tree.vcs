@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE vcl:schema SYSTEM "vcl-schema.dtd" [
+  <!ELEMENT node (title | vcl:collection)>
+  <!ATTLIST node 
+    vcl:id CDATA #REQUIRED
+  >
+  <!ELEMENT title (vcl:value-of)>
+]>
+<vcl:schema xmlns:vcl="http://nexd.xplib.de/vcl/version/1.0">
+  <vcl:collection match="/db/vcl-data/category" select="/category[@id='0']">
+    <vcl:variable name="root_id" select="/category/@id" />
+    <node vcl:id='$root_id'>
+      <vcl:collection match="/db/vcl-data/category" select="/category[@pid='$root_id']">
+        <vcl:variable name="id_level_1" select="/category/@id" />
+        <node vcl:id="$id_level_1">
+          <title><vcl:value-of select="/category/title/text()" /></title>
+        </node>
+      </vcl:collection>
+    </node>
+  </vcl:collection>
+</vcl:schema>

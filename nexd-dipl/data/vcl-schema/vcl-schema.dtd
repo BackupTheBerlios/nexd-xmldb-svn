@@ -1,0 +1,24 @@
+<!ELEMENT vcl:schema (vcl:collection)>
+<!ATTLIST vcl:schema 
+  enumerate (false|true|1|0) #IMPLIED
+  name CDATA #IMPLIED
+  postfix CDATA #IMPLIED
+  prefix CDATA #IMPLIED
+  xmlns:vcl CDATA #FIXED "http://nexd.xplib.de/vcl/version/1.0"
+>
+<!ELEMENT vcl:collection ANY>
+<!ATTLIST vcl:collection
+  match CDATA #REQUIRED
+  select CDATA #IMPLIED
+>
+
+<!ELEMENT vcl:variable (#PCDATA)>
+<!ATTLIST vcl:variable
+  name NMTOKEN #REQUIRED
+  select CDATA #REQUIRED
+>
+
+<!ELEMENT vcl:value-of (#PCDATA)>
+<!ATTLIST vcl:value-of
+  select CDATA #REQUIRED
+>

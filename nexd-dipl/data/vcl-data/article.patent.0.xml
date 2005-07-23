@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<article category="stuff">
+  <articleinfo>
+    <authors>
+      <author id="1" />
+    </authors>
+    <date>16.02.2005</date>
+    <title>Mit Softwarepatenten arrangieren?</title>
+  </articleinfo>
+  <abstract>
+    Martin Fink von Hewlett-Packard hat eine andere Auffassung von 
+    Softwarepatenten als die kleinen und mittleren Unternehmen und freien 
+    Softwareentwickler.
+  </abstract>
+  <content>
+    <para>
+      »Am Ende des Tages werden Softwarepatente eine Art Lebensstil geworden sein«. 
+      Mit diesen Worten hat Martin Fink, Hewlett-Packards Leiter der Linux-Abteilung 
+      und derzeitiger Vorsitzender des Ausschusses für Fragen des geistigen Eigentums 
+      im Open Source Developement Lab (OSDL) auf der LinuxWorld Conference and Expo 
+      das heiße Eisen der Softwarepatente angefasst. Grundsätzlich sei es keineswegs 
+      verkehrt, gegen Softwarepatente zu sein, aber es wäre dumm, sie sich nicht 
+      zu eigen zu machen. Lehnt man Softwarepatente einfach nur ab, dann setzt man 
+      sich unnötigerweise (Patent-)Risiken aus. Für einige mögen erworbene Patente 
+      wie ein Ausverkauf erscheinen, aber letztlich könne man über die Art, wie man 
+      diese Patente einsetzt, das eigene Gewissen beruhigen. Die Tatsache für sich 
+      genommen, dass man nur Patente halte, sage rein gar nichts aus.
+    </para>
+    <para>
+      Damit setzt sich Fink deutlich in Widerspruch zu Aussagen anderer Akteure 
+      wie Richard Stallmann (FSF), Linus Torvalds (Linux-Kernel) und Brian Behlendorf 
+      (Apache), die Softwarepatente als ein gravierendes Problem bezeichnet haben 
+      bzw. ganz ablehnen.
+    </para>
+    <para>
+      Gänzlich verwundern kann Finks Statement nicht, da HP im letzten Jahr in den 
+      USA 1775 neue Patente erworben hat und damit in der Rangliste der Patenthalter 
+      auf Platz 4 gerutscht ist.
+    </para>
+  </content>
+</article>

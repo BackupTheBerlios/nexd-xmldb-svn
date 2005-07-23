@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+  "dtd/docbookx.dtd">
+
+<!-- Version: $Revision: 1.1 $ -->
+<article>
+  <title>Sicherheit in PHP</title>
+  <articleinfo>
+    <copyright>
+      <year>2001</year>
+      <year>2002</year>
+      <holder>Manuel Hesse</holder>
+    </copyright>
+  </articleinfo>
+  <abstract>
+    <para>
+      Dieser Artikel ist noch nicht vollständig ins Netz getstellt. Ich 
+      überarbeite zur Zeit noch einige Stellen.
+    </para>
+  </abstract>
+	
+	<toc />
+	
+  <section>
+    <title>Einleitung</title>
+    <para>
+		   Diese Arbeit beschäftigt sich mit der immer beliebter werdenden 
+			 Programmiersprache PHP und den Aspekten der Sicherheit. Durch die 
+			 wachsende Beliebtheit der Sprache, wächst auch die Anzahl der im Web 
+			 verfügbaren Anwendungen. Leider werden viele dieser Anwendungen von 
+			 Personen erstellt die sich nicht ausreichend Gedanken über die 
+			 Sicherheit ihrer Skripte machen. Solange solche Anwendungen von normalen
+			 Besuchern genutzt werden spielt dies keine Rolle, allerdings gibt es im 
+			 Internet genug Anwender die es sich zur Aufgabe gemacht haben anderen zu
+			 schaden. Aus diesem Grunde sollte die Sicherheit in jedem Projekt zu den 
+			 wichtigsten Themen gehören.
+		</para>
+		<para>
+		   Der Inhalt dieses Dokumentes basiert auf in Literatur, Zeitschriften und 
+			 dem Internet publizierten Texten. Diese wurden nur im Sinn übernommen 
+			 und um eigene Aspekte und Erfahrungen ergänzt. Selbes gilt auch für 
+			 Grafiken, die mit <emphasis>Mircosoft Visio</emphasis> neu erstellt 
+			 wurden.
+		</para>
+    
+		<section>
+		  <title>Gliederung der Arbeit</title>
+		  <para>
+			   Das folgende Kapitel 2 enthält eine kurze Einführung in PHP und einen 
+				 Überblick über die Entwicklungsgeschichte dieser Sprache. Kapitel 3 
+				 beschäftigt sich mit der Installation und der Konfiguration einer PHP 
+				 Umgebung. Darauf folgt Kapitel 4, das sich ausgiebig mit der 
+				 Entwicklung von sicheren Anwendungen auseinander setzt. Zusätzlich 
+				 werden in diesem Kapitel verfügbare Extensions und Schnittstellen zu 
+				 Bibliotheken angesprochen, die helfen können eine PHP Anwendung 
+				 sicherer zu machen.
+			</para>
+		</section>
+		
+		<section>
+		  <title>Konventionen</title>
+		  <para>
+			    Fachbegriffe, Produkt- und Technologie-Bezeichnungen werden beim ihrem 
+					ersten Auftreten <emphasis>kursiv</emphasis> gesetzt. Firmennamen und
+					aus dem Englischen übernommene Ausdrücke werden in dieser Arbeit 
+					durchgehend <emphasis>kursiv</emphasis> geschrieben. Funktionsnamen 
+					und im Text eingebundene Quellcode Fragmente werden in <filename>
+					Courier New</filename> gesetzt. Zudem werden Begriffe mit einer 
+					besonderen Bedeutung sowie Schüsselworte <emphasis role="bold">fett 
+					</emphasis>geschrieben.
+			</para>
+		</section>
+
+	</section>
+	
+	
+	<section>
+	  <title>Grundlagen</title>
+	  <para>
+		   Dieses Kapitel enthält einen Überblick über die geschichtliche 
+			 Entwicklung von PHP. Des weiteren wird der grundlegende Aufbau des PHP
+			 Interpreters und der eines in PHP geschriebenen Skriptes beschrieben.
+		</para>
+		
+		<section>
+			<title>Geschichte von PHP</title>
+			<para>
+				PHP entstand im Jahr 1994, damals entwickelte Rasmus Lerdorf einen 
+				einfachen, in <emphasis>Perl</emphasis> geschriebenen, Interpreter 
+				für in HTML Code eingebettete Anweisungen. PHP hatte damals den Namen 
+				<emphasis>Personal Homepage Tools</emphasis>. Aufgrund der schlechten 
+				Performance entstand eine C-Implementierung. In den nächsten zwei bis 
+				drei Jahren wurde PHP weiterentwickelt und um den <emphasis>Form 
+				Interpreter</emphasis> ergänzt. Der Form Interpreter diente zum 
+				parsen von <emphasis>SQL</emphasis> Anfragen und zur Erstellung von
+				Formularen und Tabellen auf Basis dieser Abfragen. Aus der 
+				Kombination dieser beiden Komponenten entstand eine neue Version mit
+				der Bezeichnung <emphasis>PHP/FI 2.0</emphasis>.
+			</para>
+			<para>
+				Im Jahr 1997 schrieben Zeev Suraski und Andi Gutmans einen neuen 
+				<emphasis>Parser</emphasis>, der dann mit PHP 3 eingeführt wurde. Zu
+				diesem Zeitpunkt bekam PHP seinen Namen, der für <emphasis>PHP: 
+				Hypertext Preprocessor</emphasis> steht, eine rekursive Abkürzung im 
+				Stile von <emphasis>GNU</emphasis>. Für den neuen Parser wurden die 
+				Syntax und Semantik formalisiert. Außerdem wurde PHP um Ansätze der 
+				Objektorientierung, die for Schleife und vieles mehr erweitert.
+			</para>
+			<para>
+				Mit PHP 4 wurde ein ganz neuer Kern, die sogenannte <emphasis>Zend 
+				Engine</emphasis> (nach Zeev und Andi benannt), eingeführt. Dieser 
+				Kern machte PHP nicht nur leistungsfähiger und schneller, sondern 
+				brachte auch die Unterstützung von multithreaded Webservern wie den 
+				<emphasis>Microsoft IIS</emphasis> und Anbindungen zu anderen 
+				Sprachen wie <emphasis>Java, XML</emphasis> und <emphasis>COM
+				</emphasis>. [ATK01]
+				Mit der voraussichtlich im zweiten Quartal 2003 erscheinenden fünften
+				Version und der darin enthaltenen Zend Engine 2 wird als wichtigste 
+				Neuerungen ein neues Objektmodel und ein Java ähnliches <emphasis>
+				Exception	Handling</emphasis> eingeführt.
+			</para>
+		</section>
+		
+		
+		<section>
+		  <title>Was ist PHP</title>
+			<para>
+			   Bei PHP handelt es sich um eine Skriptsprache. Dies bedeutet, die 
+				 Quelltexte werden nicht in ein Binärformat kompiliert, sondern die 
+				 Anweisungen werden zu Laufzeit interpretiert. Anders als <emphasis>
+				 JavaScript</emphasis> wird PHP auf dem Server ausgeführt, die Seite 
+				 wird also erst generiert und nur das Ergebnis an den Client gesendet.
+				 So hat der Besucher keine Möglichkeit auf den zugrunde liegenden 
+				 Quelltext zu schließen. PHP Anweisungen können direkt in HTML Code 
+				 eingebettet werden, so dass jede HTML-Seite auch ein PHP Programm sein
+				 kann. Der PHP Quellcode wird zwischen spezielle Anfangs- und Schluss- 
+				 Tags geschrieben, mit den der Interpreter in den PHP Modus und zurück 
+				 springt. Die Syntax von PHP ist der von C, Java oder JavaScript sehr 
+				 ähnlich, darum ist sie für Personen mit Kenntnis über eine dieser 
+				 Sprachen sehr leicht erlernbar. Durch die Unterstützung von 
+				 verschiedensten Datenbanksystemen und diverser Internet Protokolle ist
+				 PHP ideal zur Erstellung von dynamischen Webanwendungen.
+			</para>
+			<figure>
+			  <title>Interne Struktur von PHP [PHP02]</title>
+				<graphic fileref="http://xplib.de/web/pubs/secphp/ZendEngine.web.png" 
+				         srccredit="Interne Struktur von PHP"
+								 width="350"/>
+			</figure>
+			<para>
+			   Erweiterungen sind relativ einfach zu erstellen, da eine Vielzahl von 
+				 <emphasis>C-Makros</emphasis>  zur Verfügung stehen. Hierdurch wird der 
+				 Umgang mit der Zend Engine und anderen Erweiterungen erleichtert. 
+				 Zusätzliche Erleichterung bringt die flexible interne Struktur, die 
+				 sämtliche systemspezifischen Operationen in der Zend Engine kapselt 
+				 und dem Entwickler diese Aufgaben abnimmt. Aus diesem Grund existiert 
+				 eine so große Vielzahl an Erweiterungen zu anderen Sprachen und Standard 
+				 Bibliotheken. Diese Module machen PHP für viele Zwecke anwendbar.
+			</para>
+			<para>
+			   PHP ist für kommerzielle und nichtkommerzielle Zwecke frei als Quelltext 
+				 oder im Binärformat erhältlich, dies wird durch die <emphasis>Debian Free 
+				 Software Guidelines (DFSG)</emphasis> Lizenz bestimmt. Der Text findet 
+				 sich in jeder PHP Distribution in der Datei <emphasis>Lizense</emphasis>.
+			</para>
+			<para>
+			   Mittlerweile ist PHP für alle gängigen <emphasis>Unix-</emphasis> und 
+				 <emphasis>Windows-</emphasis> Versionen erhältlich. Durch die vorhandene 
+				 <emphasis>CGI</emphasis> Schnittstelle sind Kombinationen mit einem 
+				 beliebigen Webserver denkbar. Für einige Webserver existiert auch eine
+				 Modulversion, die dann eine bessere Performance bietet. [DCLP02]
+			</para>
+		</section>
+		
+	</section>
+	
+	
+	<section>
+	  <title>Installation und Einstellungen</title>
+		<para>
+		   Es gibt unterschiedliche Möglichkeiten PHP zu installieren. Zum einen 
+			 existiert eine CGI Version, die mit jedem Webserver zusammen arbeiten 
+			 sollte. Des weiteren gibt es Module für einige Webserver, wobei 
+			 <emphasis role="bold">mod_php</emphasis> für den <emphasis>Apache
+			 </emphasis> Server das bekannteste sein sollte. Außerdem existiert eine 
+			 Version, die als <emphasis>Servlet</emphasis> in den <emphasis>Servlet 
+			 Container Tomcat</emphasis> des <emphasis>Apache Jakarta</emphasis> 
+			 Projektes geladen werden kann. 
+		</para>
+		<para>
+			 Die Installation als CGI wird von vielen Massen-Webhostern eingesetzt, 
+			 denn diese Installationsform gefährdet nicht die Sicherheit einer Umgebung. 
+			 Außerdem erlaubt der Einsatz des CGI-Wrappers die Nutzung des Apache 
+			 <emphasis role="bold">suexec</emphasis>  Moduls und die Erstellung einer 
+			 <emphasis role="bold">chroot()</emphasis>-Umgebung [DCLP02]. chroot steht 
+			 für <emphasis>change root</emphasis> und verschiebt das Wurzelverzeichnis 
+			 des Dateisystems. Dies wird genutzt um jedem Nutzer eine definierte 
+			 Umgebung zuzuordnen. Mit <emphasis role="bold">suexec</emphasis> können 
+			 CGI- und <emphasis>SSI-</emphasis> Programme mit einer anderen <emphasis>
+			 User ID(UID)</emphasis> laufen als die UID unter der die Webserverumgebung 
+			 betrieben wird.
+		</para>
+		
+		<section>
+		  <title>CGI-Version</title>
+			<para>
+			   Beim Einsatz von PHP als CGI Version muss bei jedem Request ein neuer 
+				 Prozess mit einer Instanz des PHP Interpreters gestartet werden. Jede 
+				 neue Instanz des Interpreters verbraucht im System Ressourcen, die am 
+				 Ende wieder freigegeben werden [DCLP02]. Ist das installierte PHP ohne 
+				 den Schalter <filename>--enable-force-cgi-redirect</filename> kompiliert 
+				 worden, so besteht die Gefahr, dass auf beliebige Dateien zugegriffen 
+				 werden kann. Die URL <filename>
+				 http://example.com/cgi-bin/php/any/file/path/secret.dat</filename> wird 
+				 vom Webserver als Aufruf des PHP Binary unter <filename>
+				 http://example.com/cgi-bin/php</filename> mit der Pfadangabe <filename>
+				 /any/file/path/secret.dat</filename> zur zu parsenden PHP Datei 
+				 verstanden. So ist es möglich dem PHP Interpreter beliebige Pfadangaben 
+				 zu übergeben. 
+			</para>
+			<para>
+			  Um Skripte innerhalb eines bestimmten Verzeichnisses auszuführen, sollte 
+				in der <emphasis role="bold">php.ini</emphasis>  (siehe auch: Zentrale 
+				Konfiguration in der php.ini Zentrale Konfiguration in der php.ini) die 
+				Direktive <filename>doc_root</filename> gesetzt werden. Nun setzt die 
+				CGI Version von PHP den Pfad zur zu öffnenden Datei aus dem Wert von 
+				<filename>doc_root</filename> und dem Pfad des Requests zusammen. Eine 
+				weitere Möglichkeit Anfragen umzuleiten kann mit der Direktive <filename>
+				user_dir</filename> bewirkt werden. Diese hat allerdings nur Einfluss auf 
+				Benutzerverzeichnisse. Wenn user_dir den Wert <filename>user_scripts
+				</filename>hat und die Skript mit der URL <filename>
+				http://example.com/~user/execute.php</filename> aufgerufen wird, dann 
+				wird der Aufruf beispielsweise in das Verzeichnis <filename>
+				/home/user/user_scripts/execute.php</filename> umgeleitet. Allerdings 
+				bringen diese Einstellungen ohne die Option <filename>
+				--enable-force-cgi-redirect</filename> nur wenig, sie können einen 
+				Angreifer höchstens etwas länger irritieren [PHP02].
+			</para>
+		</section>
+		
+		
+		
+	</section>
+	
+	
+</article>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<vcl:schema xmlns:vcl="http://nexd.xplib.de/vcl/version/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="file:///usr/data/home/manuel/temp.xsd">
+	<vcl:collection match="/db/vcl-data/category" select="/category[@id=&apos;0&apos;]">
+		<vcl:variable name="root_id" select="/category/@id"/>
+		<node vcl:id="$root_id">
+			<vcl:collection match="/db/vcl-data/category" select="/category[@pid=&apos;$root_id&apos;]">
+				<vcl:variable name="id_level_1" select="/category/@id">x</vcl:variable>
+				<node vcl:id="$id_level_1">
+					<title>
+						<vcl:value-of select="/category/title/text()"/>
+					</title>
+				</node>
+			</vcl:collection>
+		</node>
+	</vcl:collection>
+</vcl:schema>

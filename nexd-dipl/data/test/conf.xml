@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+// {{{ Header
+-File         $Id: conf.xml,v 1.3 2005/05/11 17:31:40 nexd Exp $
+-License      LGPL (http://www.gnu.org/copyleft/lesser.html)
+-Copyright    2001, The Turing Studio, Inc.
+-Author       alex black, enigma@turingstudio.com 
+// }}}
+-->
+
+<conf:domain version="2.0" id="datasources" 
+  xmlns:conf="http://www.binarycloud.com/ns/conf"
+  xmlns="http://www.binarycloud.com/ns/conf">
+  <!-- Data source for the Storage bc_storage -->
+
+  <section name="bc_storage">
+    <property name="type">MySQL</property>
+
+    <section name="configuration">
+      <property name="phptype">mysql</property>
+      <property name="host">localhost</property>
+      <property name="username">root</property>
+      <property name="password">pw</property>
+      <property name="database">bc_storage</property>
+    </section>
+  </section>
+  
+  <section name="bc_test_ds" id="5">
+    <property name="type">mysql</property>
+    <?php print "A simple processing instruction test"; ?>
+    <property name="host">localhost</property>
+    <property name="user">bc_test_user</property>
+    <property name="password">bc_test_pw</property>
+    <property name="database">bc_test_db</property>
+
+    <property name="persistent" type="boolean">true</property>
+  </section>
+    
+    <section name="perm_ds">
+        <property name="database">bc_auth</property>
+        <property name="phptype">mysql</property>
+        <property name="hostspec">localhost</property>
+        <property name="username">bc_test_user</property>
+        <property name="password">bc_test_pw</property>
+    </section>
+    
+    <section name="lock_storage_ds">
+            <property name="Default" type="boolean">true</property>
+            <property name="Database">bc_test_db</property>
+            <property name="Type">mysql</property>
+      <property name="dsType">SQL</property>
+          <property name="dsDriver">metabase</property>
+            <property name="Host">localhost</property>
+            <property name="User">root</property>
+            <property name="Password"></property>
+            <property name="IncludePath" type="raw">BC_PATH. '/'. BC_LANG . '/binarycloud/metabase'</property>
+            <property name="Persistent" type="boolean">true</property>
+    </section>
+
+    <section name="creole_test">
+        <property name="database">creole_test</property>
+        <property name="phptype">mysql</property>
+        <property name="hostspec">localhost</property>
+        <property name="username">bc_test_user</property>
+        <property name="password">bc_test_pw</property>
+    </section>
+
+    <section name="bc_auth">
+        <property name="database">bc_auth</property>
+        <property name="phptype">mysql</property>
+        <property name="hostspec">localhost</property>
+        <property name="username">bc_test_user</property>
+        <property name="password">bc_test_pw</property>
+    </section>
+</conf:domain>

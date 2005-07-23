@@ -1,0 +1,491 @@
+<?xml version="1.0"?>
+<!DOCTYPE package PUBLIC "FOO" "file:///home/manuel/workspace/nexd/data/test/dtd/package.dtd" [<!--
+$Id: package2.xml,v 1.1 2005/02/04 13:16:41 nexd Exp $
+
+This is the PEAR package description, version 1.0.
+It should be used with the informal public identifier:
+
+"-//PHP Group//DTD PEAR Package 1.0//EN//XML"
+
+Copyright (c) 1997-2004 The PHP Group
+
+This source file is subject to version 3.0 of the PHP license,
+that is bundled with this package in the file LICENSE, and is
+available at through the world-wide-web at
+http://www.php.net/license/3_0.txt.
+If you did not receive a copy of the PHP license and are unable to
+obtain it through the world-wide-web, please send a note to
+license@php.net so we can mail you a copy immediately.
+
+Authors:
+Stig S. Bakken <ssb@php.net>
+
+-->
+<!ENTITY % NUMBER "CDATA">
+<!ELEMENT package (name|summary|description|license|maintainers|release|changelog)+>
+<!ATTLIST package type (source|binary|empty) "empty">
+<!ATTLIST package version CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT summary (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT license (#PCDATA)>
+<!ELEMENT maintainers (maintainer)+>
+<!ELEMENT maintainer (user|role|name|email)+>
+<!ELEMENT user (#PCDATA)>
+<!ELEMENT role (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT changelog (release)+>
+<!ELEMENT release (version|license|state|date|notes|filelist|deps|provides|script|configureoptions)+>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT notes (#PCDATA)>
+<!ELEMENT filelist (dir|file)+>
+<!ELEMENT dir (dir|file)+>
+<!ATTLIST dir name CDATA #REQUIRED>
+<!ATTLIST dir baseinstalldir CDATA #IMPLIED>
+<!ELEMENT file (replace*)>
+<!ATTLIST file role (php|ext|src|test|doc|data|script) "php">
+<!ATTLIST file debug (na|on|off) "na">
+<!ATTLIST file zts (na|on|off) "na">
+<!ATTLIST file phpapi CDATA #IMPLIED>
+<!ATTLIST file zendapi CDATA #IMPLIED>
+<!ATTLIST file format CDATA #IMPLIED>
+<!ATTLIST file baseinstalldir CDATA #IMPLIED>
+<!ATTLIST file platform CDATA #IMPLIED>
+<!ATTLIST file md5sum CDATA #IMPLIED>
+<!ATTLIST file name CDATA #REQUIRED>
+<!ATTLIST file install-as CDATA #IMPLIED>
+<!ELEMENT replace EMPTY>
+<!ATTLIST replace from CDATA #REQUIRED>
+<!ATTLIST replace to CDATA #REQUIRED>
+<!ATTLIST replace type CDATA #REQUIRED>
+<!ELEMENT deps (dep)+>
+<!ELEMENT dep (#PCDATA)>
+<!ATTLIST dep optional (yes|no) "no">
+<!ATTLIST dep type (pkg|ext|php|prog|ldlib|rtlib|os|websrv|sapi|zend) #REQUIRED>
+<!ATTLIST dep rel (has|eq|lt|le|gt|ge) "has">
+<!ATTLIST dep version CDATA #IMPLIED>
+<!ELEMENT provides (#PCDATA)>
+<!ATTLIST provides type (ext|prog|class|function|feature|api) #REQUIRED>
+<!ATTLIST provides name CDATA #REQUIRED>
+<!ATTLIST provides extends CDATA #IMPLIED>
+<!ELEMENT script (#PCDATA)>
+<!ATTLIST script phase (pre-install|post-install|pre-uninstall|post-uninstall|pre-build|post-build|pre-setup|post-setup) #REQUIRED>
+<!ELEMENT configureoptions (configureoption*)>
+<!ELEMENT configureoption EMPTY>
+<!ATTLIST configureoption name CDATA #REQUIRED>
+<!ATTLIST configureoption default CDATA #IMPLIED>
+<!ATTLIST configureoption prompt CDATA #REQUIRED>
+]>
+<package>
+  <name>XML_Transformer</name>
+  <summary>XML Transformations in PHP</summary>
+  <description>The XML Transformer allows the binding of PHP functionality to XML tags to transform an XML document without the need for and the limitations of XSLT.</description>
+  <maintainers>
+    <maintainer>
+      <user>sebastian</user>
+      <role>lead</role>
+      <name>Sebastian Bergmann</name>
+      <email>sb@sebastian-bergmann.de</email>
+    </maintainer>
+    <maintainer>
+      <user>kk</user>
+      <role>developer</role>
+      <name>Kristian Köhntopp</name>
+      <email>kris@koehntopp.de</email>
+    </maintainer>
+  </maintainers>
+  <license>PHP License</license>
+  <release>
+    <version>1.1.0</version>
+    <state>stable</state>
+    <date>2004-11-27</date>
+    <notes>
+<![CDATA[
++ Enabled the construction of nested transformers by allowing for multiple instances of XML_Transformer_CallbackRegistry. (Based upon a patch by Thomas Duffey <tduffey@homeboyz.org>)
+
++ Added collapseEmptyTagsMode parameter that controls the collapsing of empty tags and allows for the correct transforming of XHTML documents.
+
+* XML entities are no longer replaced twice. (Patch by Thomas Duffey <tduffey@homeboyz.org>)
+
+* Refactored the testsuite to use PHPUnit2.
+
+! XML_Transformer now requires XML_Util-1.1.0.
+]]>
+    </notes>
+    <filelist>
+      <dir>
+        <dir>
+          <dir>
+            <file/>
+            <file/>
+          </dir>
+
+          <dir>
+            <file/>
+            <file/>
+            <file/>
+            <file/>
+            <file/>
+          </dir>
+
+          <dir>
+            <file/>
+            <file/>
+            <file/>
+          </dir>
+
+          <file/>
+          <file/>
+        </dir>
+
+        <file/>
+        <file/>
+      </dir>
+    </filelist>
+    <deps>
+      <dep/>
+      <dep/>
+      <dep>pcre</dep>
+      <dep>xml</dep>
+      <dep>XML_Util</dep>
+    </deps>
+  </release>
+  <changelog>
+    <release>
+      <version>1.0.1</version>
+      <state>stable</state>
+      <date>2004-03-16</date>
+      <notes>
+<![CDATA[
+* The collapsing of empty tags (<foo></foo>) into their
+  short-tag (<foo />) equivalent has been made optional
+  and is disabled by default to restore backwards
+  compatibility with XML_Transformer versions prior to
+  0.9.0.
+]]>
+      </notes>
+    </release>
+    <release>
+      <version>1.0.0</version>
+      <state>stable</state>
+      <date>2004-03-15</date>
+      <notes>
+<![CDATA[
+* No functional changes since XML_Transformer-0.9.1.
+]]>
+      </notes>
+    </release>
+    <release>
+      <version>0.9.1</version>
+      <state>stable</state>
+      <date>2004-03-02</date>
+      <notes>
+<![CDATA[
+* Fixed E_NOTICE in XML/Transformer.php.
+]]>
+      </notes>
+    </release>
+    <release>
+      <version>0.9.0</version>
+      <state>stable</state>
+      <date>2004-02-06</date>
+      <notes>
+<![CDATA[
+* XML fragments are now handled more gracefully.
+
+  It is now possible, for instance, to return
+  "<t1/><t2/>" from a closing tag's callback.
+    by Azundris (http://www.azundris.com)
+
+* Entities are no longer unescaped during recursion.
+    by Azundris (http://www.azundris.com)
+
+* Empty elements like "<br></br>" are now transformed
+  into "<br/>".
+    by Azundris (http://www.azundris.com)
+
+* Refactored debug message system.
+
+- Replaced XML_Transformer_Util::attributesToString()
+  with XML_Util::attributesToString().
+
+- Replaced XML_Transformer_Util::qualifiedElement()
+  with XML_Util::splitQualifiedName().
+
+! The XML_Util package is now required.
+]]>
+      </notes>
+    </release>
+    <release>
+      <version>0.8.2</version>
+      <state>stable</state>
+      <date>2003-09-11</date>
+      <notes>
+<![CDATA[
+* Performance improvements due to changes in the
+  debug mode.
+]]>
+      </notes>
+    </release>
+    <release>
+      <version>0.8.1</version>
+      <state>stable</state>
+      <date>2003-05-06</date>
+      <notes>
+<![CDATA[
+* Bugfix release.
+]]>
+      </notes>
+    </release>
+    <release>
+      <version>0.8</version>
+      <state>stable</state>
+      <date>2002-10-07</date>
+      <notes>
+<![CDATA[
++ Added DocBook namespace handler.
+
++ Added Widget namespace handler.
+
+* Renamed XML_Transformer_Cache and XML_Transformer_OutputBuffer
+  to XML_Transformer_Driver_Cache and XML_Transformer_Driver_OutputBuffer
+  respectively.
+
+* Significant performance improvement by preventing unnecessary
+  recursive parsing.
+
+  By returning
+
+    array(
+      $cdata,
+      true
+    )
+
+  instead of
+
+    $cdata
+
+  a callback handler for the endElement event can notify the
+  Transformer not to recurively process its result.
+
+* Improved debugging information.
+
+* The target to which error messages and debugging information
+  are beeing sent can now be configured using setLogTarget().
+
+  The default target is the error.log.
+]]>
+      </notes>
+    </release>
+    <release>
+      <version>0.7</version>
+      <state>stable</state>
+      <date>2002-09-22</date>
+      <notes>
+<![CDATA[
++ Added Anchor namespace handler.
+
+  The Anchor namespace handler implements a database of
+  indirect links. These links can be maintained centrally
+  in a single location, and can be used using
+
+    <a:iref iref="name">...</a>
+
+  <a:random/> selects a single random link from the database.
+
++ Added Image namespace handler.
+
+    + <img:img/> is a replacement for XHTML's <img/> and
+      automatically determines the size of the image.
+
+      For this, the image must be in a format that is
+      understood by getimagesize().
+  
+    + <img:gtext /> is a container that renders its contents
+      as a PNG graphics using ImageTTFText().
+
+      For this to work, a cache directory below DocumentRoot
+      that is writeable by the Webserver owner is necessary.
+      The default is /cache/gtext.
+  
+    + <img:gtextdefault /> understands the same attributes as
+      <img:gtext /> and supplies these to all subsequent calls
+      of <img:gtext />.
+
++ Namespace handlers can now use getLock() to disable other
+  namespace handlers for the time of their transformation.
+  releaseLock() is used to enable all namespace handlers
+  again.
+
++ Added a caching version of the XML_Transformer that uses
+  the Cache_Lite PEAR package to cache the result of XML
+  transformations.
+
++ Added automatic loading of namespace handlers that are
+  stored in the XML/Transformer/Namespace directory.
+
++ Added new tags to the PHP Namespace Handler:
+
+    + <php:namespace name="a">
+       <php:define name="b">
+        <p>The attribute x is $x and the content is $content.</p>
+       </php:define>
+      </php:namespace>
+
+      This will define a new namespace a with a single tag b in it
+      (You may put multiple defines into a namespace). If you use
+      <a:b x="text">sometext</a:b>, the variable $x will be replaced
+      with the text, and the variable $content will be replaced with
+      the content.
+
+    + <php:cookievariable name=""/> inserts the contents of a given
+      HTTP Cookie into the output XML tree.
+
+    + <php:servervariable name=""/> inserts the contents of a
+      given server variable into the output XML tree.
+
+    + <php:logic/> executes a given block of PHP code and stores
+      its output into the output XML tree.
+
+* Refactored the XML_Transformer class into
+
+    * XML_Transformer.
+
+    * XML_Transformer_CallbackRegistry.
+
+      This class faciliates the registration of new callbacks
+      on-the-fly inside the transformation's recursion.
+
+    * XML_Transformer_OutputBuffer.
+
+      This class decouples the XML transformation from the output
+      buffering.
+
+    * XML_Transformer_Util.
+
+      Static utility methods.
+
+* Deprecated overloading of single XML elements.
+
+  By overloading a special namespace, &MAIN, the old behaviour can
+  be achieved.
+
+* setDefaultCallback() and unsetDefaultCallback() are deprecated.
+
+  By overloading the newly introduced &MAIN namespace with a class
+  that provides default element handlers the old behaviour can
+  be achieved.
+]]>
+      </notes>
+    </release>
+    <release>
+      <version>0.6</version>
+      <state>stable</state>
+      <date>2002-09-18</date>
+      <notes>
+<![CDATA[
++ Added methods setDefaultCallback() and unsetDefaultCallback() to
+  set/unset default callbacks for elements that are not overloaded.
+
++ Added a base class for namespace-handling transformer classes.
+
++ Removed canonicalName() method in favour of more general
+  canonicalizeAttributes() method.
+
++ Added PHP namespace handler. Initially the following tags are
+  supported:
+
+    + <php:expr/> evaluates a given PHP expression and stores its
+      return value into the output XML tree.
+
+    + <php:getvariable name=""/> inserts the contents of a given
+      global variable into the output XML tree.
+
+    + <php:setvariable name="">value</php:setvariable sets a given
+      global variable to a given value.
+
+    + <php:getparameter name=""/> inserts the contents of a given
+      HTTP GET parameter into the output XML tree.
+
+    + <php:postparameter name=""/> inserts the contents of a given
+      HTTP POST parameter into the output XML tree.
+
+    + <php:sessionvariable name=""/> inserts the contents of a given
+      session variable into the output XML tree.
+
+* Fixed a bug in overloadNamespace()'s error handling.
+
+* Recursive operation can now be selectively turned off for
+  overloaded namespaces, too.
+
+* Attributes are now canonicalized on-the-fly, rather than at
+  the time of their serialization which can be too late.
+
+  As a side-effect, the attributesToString() method can now be
+  called statically.
+
+* Fixed recursive transformation of overloaded namespaces.
+
+* Changed license from PHP License 2.02 to PHP License 3.00.
+]]>
+      </notes>
+    </release>
+    <release>
+      <version>0.5</version>
+      <state>stable</state>
+      <date>2002-09-08</date>
+      <notes>
+* Resolved infinite recursion problem that arose when handlers
+  do not remove the tags of their assigned element from the input
+  XML document, but only work on it's sub-tree.
+      </notes>
+    </release>
+    <release>
+      <version>0.4</version>
+      <state>stable</state>
+      <date>2002-09-04</date>
+      <notes>
++ Added a filtering mechanism to the debugger that limits
+  the generated debugging information to a given set of
+  elements.
+
+* Debugging information is now sent using error_log()
+  instead of syslog().
+
+* Fixed a bug in the case-folding handling.
+      </notes>
+    </release>
+    <release>
+      <version>0.3</version>
+      <state>stable</state>
+      <date>2002-05-16</date>
+      <notes>
++ Added setDebug() and stackdump() to allow for easier debugging.
+
++ Added setRecursiveOperation() to enable/disable the recursive
+  operation of the XML Transformer.
+
+* Changed the constructor to be more intuitive and user-friendly.
+
+* Changed setCaseFolding() to accept a second parameter to set
+  the case to which XML attributes and elements are folded.
+      </notes>
+    </release>
+    <release>
+      <version>0.2</version>
+      <date>2002-04-07</date>
+      <notes>
+* Renamed to XML_Transformer, per Stig's request.
+      </notes>
+    </release>
+    <release>
+      <version>0.1</version>
+      <date>2002-04-06</date>
+      <notes>
+* Initial independent PEAR release.
+      </notes>
+    </release>
+  </changelog>
+</package>

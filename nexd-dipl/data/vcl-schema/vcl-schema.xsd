@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" 
+                   targetNamespace="http://nexd.xplib.de/vcl/version/1.0" 
+                   xmlns:vcl="http://nexd.xplib.de/vcl/version/1.0" 
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="schema">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="vcl:collection">
+          <xs:attribute name="enumerate" use="optional">
+            <xs:simpleType>
+              <xs:restriction base="xs:token">
+                <xs:enumeration value="false"/>
+                <xs:enumeration value="true"/>
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute name="name" type="xs:string" use="optional"/>
+          <xs:attribute name="postfix" type="xs:string" use="optional"/>
+          <xs:attribute name="prefix" type="xs:string" use="optional"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="collection">
+    <xs:sequence>
+      <xs:element ref="vcl:collection"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="collection">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="vcl:any">
+          <xs:attribute name="match" type="xs:string" use="required"/>
+          <xs:attribute name="select" type="xs:string" use="optional"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="variable">
+    <xs:complexType mixed="false">
+      <xs:attribute name="name" type="xs:NMTOKEN" use="required"/>
+      <xs:attribute name="select" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="value-of">
+    <xs:complexType mixed="false">
+      <xs:attribute name="select" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="any">
+    <xs:complexContent mixed="true">
+      <xs:restriction base="xs:anyType">
+        <xs:sequence>
+          <xs:any processContents="lax" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

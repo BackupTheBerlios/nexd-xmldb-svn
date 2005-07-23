@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<article category="distro">
+  <articleinfo>
+    <authors>
+      <author id="3" />
+    </authors>
+    <date>20.02.2005</date>
+    <title>Pro-Linux: Distributionstest Ubuntu Linux 4.10</title>
+  </articleinfo>
+  <abstract>
+    Pro-Linux geht heute der Distribution Ubuntu Linux 4.10 in einem ausführlichen
+    Artikel auf den Grund.
+  </abstract>
+  <content>
+    <para>
+      Die Wellen, die die Veröffentlichung von Ubuntu schlug, haben sich längst 
+      gelegt. Immerhin sind bereits vier Monate seither vergangen und die nächste 
+      Version, geplant für den April, geistert in Testversionen bereits durchs 
+      Netz der Netze. Dennoch wollten wir wissen, was Ubuntu Linux zu bieten hat, 
+      und sicher geht es den Lesern, die es sich noch nicht angeschaut haben, 
+      genauso.
+    </para>
+    <para>
+      Es dürfte bereits bekannt sein, daß Ubuntu auf Debian Unstable beruht - und 
+      damit in enger Verwandtschaft zu Knoppix, Linspire, Xandros, Mepis/SphinxOS, 
+      UserLinux und möglicherweise noch weiteren Distributionen steht. Dennoch 
+      gibt es natürlich Unterschiede in den Details. Diesen Unterschieden war hjb 
+      auf der Spur. Lesen Sie also in unserem ausführlichen Artikel, was Ubuntu 
+      Linux ausmacht, wie sich das Arbeiten damit gestaltet und was es in der 
+      Praxis taugt.
+    </para>
+  </content>
+</article>

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<entity:definition version="1.0"
+    id="person"
+    classfile="app/newstorage/ent/person.php"
+
+    datasource="bc_storage"
+
+    xmlns:entity="http://www.binarycloud.com/ns/storage/entity"
+    xmlns="http://www.binarycloud.com/ns/storage/entity">
+
+  <id name="id" type="BIGINT">
+    <generator class="hilo">  
+      <param name="sequence">person_id_seq</param> 
+    </generator>
+  </id>
+  <!-- Array with all roles played by this person. -->
+  <property name="firstname" type="text" not-null="true" />
+  
+</entity:definition>

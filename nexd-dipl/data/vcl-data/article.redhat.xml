@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<article category="distro">
+  <articleinfo>
+    <authors>
+      <author id="2" />
+    </authors>
+    <date>21.02.2005</date>
+    <title>Red Hat will sich verstärkt der Community widmen</title>
+  </articleinfo>
+  <abstract>
+    Der Linux-Distributor Red Hat räumte diverse Strategie-Probleme mit seiner 
+    kommerziellen Distribution ein und versprach, sich in Zukunft wieder verstärkt
+    auf sein Fedora-Projekt zu konzentrieren.
+  </abstract>
+  <content>
+    <para>
+      Laut ZDNet investierte der Distributor in der Vergangenheit erhebliche 
+      Ressourcen in sein Red Hat Enterprise Linux (RHEL) und machte das 
+      Betriebssystem so für eine breitere Zielgruppe interessant. Dabei 
+      konzentrierte man so sehr auf den Enterprise-Markt, dass sie laut Aussagen 
+      von Michael Tieman, Vice President of Open Source Affairs, die 
+      Technikbegeisterten vernachlässigt haben. Red Hat, das zu den Pionieren 
+      der Open-Source-Bewegung gehörte, habe damit die »besten Unterstützer« 
+      isoliert und die Opportunität zu Kunden-Innovationen verloren.
+    </para>
+    <para>
+      Mit dem neu aufgelegten Fedora-Projekt wollte Red Hat zwar der 
+      technikbegeisterten Community entgegen kommen, sei aber mit den Resultaten 
+      noch nicht zufrieden. Wie das Unternehmen gegenüber CNET bestätigte, hat das
+      Projekt die von Red Hat gesetzten Erwartungen nicht erfüllt, sei aber auch 
+      nicht gescheitert oder gar unnütz. Fedora habe eine Reihe von interessanten 
+      Neuerungen geschaffen, die in von RHEL eingeflossen sind. So konnte durch 
+      das Feedback der Fedora-Community zum Beispiel das Security Enhanced 
+      Linux-Feature (SELinux) schneller integriert werden.
+    </para>
+    <para>
+      Wie Tieman allerdings weiter zu berichten weiss, sind die Erfolge des 
+      Fedora-Projektes erst der Anfang. Das Team arbeite an einer Reihe 
+      interessanter Funktionen und bereite das kommende Fedora Core 4 auch für 
+      IBMs Power- sowie die 64-Bit-CPU Itanium-Plattformen vor.
+    </para>
+  </content>
+</article>

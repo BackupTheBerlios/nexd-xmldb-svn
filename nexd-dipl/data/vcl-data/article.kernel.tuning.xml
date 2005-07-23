@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<article category="kernel">
+  <articleinfo>
+    <authors>
+      <author id="1" />
+    </authors>
+    <date>21.02.2005</date>
+    <title>Neues Update für automatisches Kernel-Tuning</title>
+  </articleinfo>
+  <abstract>
+    Jake Moilanen, Schöpfer eines genetischen Algorithmus für den Kernel, hat 
+    eine neue Version mit einigen Erweiterungen und Verbesserungen veröffentlicht.    
+  </abstract>
+  <content>
+    <para>
+      In seiner ersten Version hatte Moilanen erklärt, dass ein genetischer 
+      Algorithmus für den Kernel möglicherweise Vorteile für die Einstellungen 
+      von Parametern des I/O-Schedulers (Festplatte) und des Zaphod CPU-Schedulers
+      (Prozeßwechsel) bringen könnte. Der genetische Algorithmus testet beim Start
+      verschiedene Parameter-Kombinationen (abstrakte Objekte oder Modelle) durch,
+      die sich für eine bestimmte Situation als optimal erweisen. Nach dem 
+      Durchsuchen, Analysieren und dem Vergleich verschiedener Selektionen wird 
+      die optimale Kombination für den weiteren Betrieb genutzt.
+    </para>
+    <para>
+      Im neuen Release für den Kernel 2.6.10 führt der Autor sogenannte Phenotypes
+      ein, die eine feinere Einstellung von Optimierungskriterien ermöglichen. 
+      Unter Phenotypen versteht der Autor "...ein Set von Genen, die eine besondere 
+      Fitness-Messung ermöglichen." Fit ist eine Modell-Selektion dann, wenn sie 
+      bestimmten Optimierungskriterien genügt und sich unter den konkurrierenden 
+      Kombinationen in einer bestimmten Situation (hohe Last) herausragt. Alle 
+      Gene, die eine bestimmte Fitness-Kombination bewirken, sollen damit auch 
+      geändert werden können.
+    </para>
+    <para>
+      Weitere Verbesserungen soll eine "dynamische Mutationsrate" bringen. Wenn 
+      der Such- und Selektionsprozess durch eine neue bzw. bessere Modell-Selektion 
+      abgeschlossen ist, verringert sich automatisch die aktuelle Mutationsrate zur 
+      Vermeidung von Overhead. In dieser Situation, in der sich die Performance 
+      durch Selektion verbessert, sollte die verringerte Mutationsrate deutlich 
+      spürbar sein.
+    </para>
+  </content>
+</article>

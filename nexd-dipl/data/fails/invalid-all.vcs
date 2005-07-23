@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<vcl:schema xmlns:vcl="http://nexd.xplib.de/vcl/version/1.0"
+  name="autoren.xml" enumerate="false" postfix="vxml" prefix="virtual">
+  <vcl:collection match="/db/vcl-data/author">
+    <vcl:variable name="author_id" select="dum-di-dum[bla)foo(bar" />
+    <author vcl:id="$author_id">
+
+    </author>
+  </vcl:collection>
+  <vcl:collection match="/thats/a/not/existing/collection">
+    <vcl:variable name="author_id" select="/author/@id" />
+    <author vcl:id="$author_id">
+      <vcl:variable name="author_id" select="/author/@id" />
+      <vcl:value-of select="$autor_txt" />
+    </author>
+  </vcl:collection>
+</vcl:schema>

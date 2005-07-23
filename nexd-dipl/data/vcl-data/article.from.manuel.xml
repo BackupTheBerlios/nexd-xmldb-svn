@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<article category="stuff">
+  <articleinfo>
+    <authors>
+      <author id="4" />
+    </authors>
+    <date>17.02.2005</date>
+    <title>Zuviele Lizenzen unter Linux?</title>
+  </articleinfo>
+  <abstract>
+    Medienberichten zufolge strebt die Open Source Initiative (OSI) an, 
+    die Zahl der Open-Source-Lizenzen zu reduzieren.
+  </abstract>
+  <content>
+    <para>
+      Mit über 50 Lizenzen ist die Landschaft in der freien Software- und 
+      Open-Source-Szene nicht gerade übersichtlich. Mehrere Versionen einer und 
+      der selben Lizenz oder Lizenzen, die dasselbe aussagen, aber von unterschiedlichen 
+      Herstellern propagiert werden, verunsichern gleichermaßen die Anwender und 
+      Entwickler. Wenn es nach der OSI geht, soll sich die Landschaft rund um die 
+      Lizenzfragen bald lichten.
+    </para>
+    <para>
+      Gleich mehrere Organisationen und Hersteller fordern dieser Tage eine klarere 
+      Struktur. Unter anderem Computer Associates, HP und Novell hätten sich auf 
+      der LinuxWorld in Boston über die Anzahl der Open-Source-Lizenzen geärgert 
+      und ihre Besorgnis gemeldet. So sei es laut HPs Vice President für Linux, 
+      Martin Fink, gefährlich, jede zur Prüfung vorgelegte Lizenz zuzulassen. 
+      Michael Olson, CEO von Sleepycat Software, beschreibt die momentane Situation 
+      nur als »verdammt verwirrend«. Auch John Swainson, CEO von Computer Associates, 
+      ist mit der jetzigen Lösung nicht zufrieden und fordert eine stärkere Prüfung. 
+      Sein Kollege und Mitglied des OSDL-Boards Sam Greenblatt reüssiert deshalb, 
+      dass bereits in wenigen Wochen die ersten Resultate einer Bereinigung zu 
+      sehen sein werden. Es wird demnach in den kommenden sechs bis sieben Wochen 
+      Bewegung geben in diesem Sektor, so Greenblatt gegenüber ZDNet.
+    </para>
+  </content>
+</article>

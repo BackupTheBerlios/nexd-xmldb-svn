@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<!-- 
+  version: $Revision: 1.4 $ 
+-->
+<nexd-config>
+  
+	<engine max-connections="5" 
+          timeout="2000" 
+          query-cache="400">
+
+    <server port="1100" allow-remote="true" allow-remote-changes="false" />
+    
+	  <storage factory="de.xplib.nexd.engine.store.StorageFactoryImpl">
+	  
+      <params jdbc-driver="org.hsqldb.jdbcDriver"
+              jdbc-url="jdbc:hsqldb:storage/nexd2.db" />
+    </storage>
+    
+  </engine>
+  
+</nexd-config>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<vcl:schema xmlns:vcl="http://nexd.xplib.de/vcl/version/1.0"
+  name="autoren.xml" enumerate="false" postfix="vxml" prefix="virtual">
+  <author vcl:id="$author_id">
+
+  </author>
+</vcl:schema>

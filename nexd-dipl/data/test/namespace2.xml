@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+// {{{ Header
+-File         $Id: namespace2.xml,v 1.1 2004/12/17 17:23:33 nexd Exp $
+-License      
+-Copyright    (c) 2004 turing
+-Author       Manuel Holtgrewe <purestorm at ggnore dot net>
+// }}}
+-->
+<node:definition version="2.0" id="main" path="app/formdemo/DemoForm.php" xmlns="http://www.binarycloud.com/ns/node" xmlns:node="http://www.binarycloud.com/ns/node" xmlns:form="http://www.binarycloud.com/ns/form">
+  <contains>
+
+<!-- {{{ title -->
+    <node:definition id="title" path="binarycloud/form/nodes/TextFormInput.php">
+      <param name="size">40</param>
+      <param name="maxlength">64</param>
+      <param name="label">Title:</param>
+      <param name="required">true</param>
+      <param name="component" />
+      <param name="hint"><![CDATA[Specify a title for the comment here.]]></param>
+      <form:validator path="binarycloud/validators/NotVoidValidator.php">
+        <param name="error"><![CDATA[You must specify the comment\'s title.]]></param>
+      </form:validator>
+    </node:definition>
+
+<!-- }}} -->
+<!-- {{{ opinion -->
+
+    <node:definition id="opinion" path="binarycloud/form/nodes/OptionListFormInput.php">
+      <section name="items">
+        <param name="0"><![CDATA[Other (enter below)]]></param>
+        <param name="1"><![CDATA[What a bunch of ****]]></param>
+        <param name="2"><![CDATA[Well, okay]]></param>
+        <param name="3"><![CDATA[It rocks!]]></param>
+      </section>
+      <param name="value">1</param>
+      <param name="multiple">false</param>
+      <param name="label">Your opinion:</param>
+      <param name="type">vertical</param>
+      <param name="errors" />
+      <param name="component" />
+      <param name="hint"><![CDATA[Give your opinion here, please. If you select "other", you have to fill out the field below.]]></param>
+      <form:validator path="binarycloud/validators/NotVoidValidator.php">
+        <param name="error">You must specify your opinion</param>
+      </form:validator>
+    </node:definition>
+
+<!-- }}} -->
+<!-- {{{  other_opinion -->
+
+    <node:definition id="other_opinion" path="binarycloud/form/nodes/TextFormInput.php">
+      <param name="size">40</param>
+      <param name="maxlength">64</param>
+      <param name="label">Other opinion:</param>
+      <param name="component" />
+      <param name="hint"><![CDATA[Space for a custom opinion.]]></param>
+    </node:definition>
+
+<!-- }}} -->
+<!-- {{{ body -->
+
+    <node:definition id="body" path="binarycloud/form/nodes/TextAreaFormInput.php">
+      <param name="cols">60</param>
+      <param name="rows">10</param>
+      <param name="label">Comment:</param>
+      <param name="hint"><![CDATA[Give us a short overall comment here.]]></param>
+      <param name="component" />
+      <param name="errors" />
+      <form:validator path="binarycloud/validators/NotVoidValidator.php">
+        <param name="error">You must give a short comment.</param>
+      </form:validator>
+    </node:definition>
+
+<!-- }}} -->
+<!-- {{{ submit -->
+
+    <node:definition id="submit" path="binarycloud/form/nodes/ActionButtonsFormInput.php">
+      <section name="actions">
+        <param name="_reset">Reset</param>
+        <param name="add">Add Comment</param>
+        <param name="preview">Preview Comment</param>
+      </section>
+      <param name="component" />
+    </node:definition>
+
+<!-- }}} -->
+<!-- {{{ Node: CommentPreview -->
+
+    <node:definition id="preview">
+      <template path="app/formdemo/tpl/CommentPreview.tpl" />
+    </node:definition>
+
+<!-- }}} -->
+  </contains>
+</node:definition>
+

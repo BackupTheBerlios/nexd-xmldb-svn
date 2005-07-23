@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config xmlns="http://xdbm.xplib.de/config/version/1.0">
+ <ui-settings>
+  <language>de</language>
+ </ui-settings>
+ <drivers>
+  <driver jar="nexd.jar" class="de.xplib.nexd.engine.xapi.DatabaseImpl" uris="xmldb:nexd://localhost/db||xmldb:nexd://168.192.0.2/db"/>
+ </drivers>
+ <connections>
+  <connection jar="file:///home/devel/praesentation/bin/nexd.jar"
+   uri="xmldb:nexd://localhost/db" class="de.xplib.nexd.engine.xapi.DatabaseImpl"/>
+  <connection jar="file:///home/devel/praesentation/bin/nexd.jar"
+   uri="xmldb:nexd://168.192.0.2/db" class="de.xplib.nexd.engine.xapi.DatabaseImpl"/>
+ </connections>
+ <plugins>
+  <plugin jar="" position="center"
+   class="de.xplib.xdbm.ui.query.QueryEditorPlugin" id="query.plugin"/>
+  <plugin jar="" position="center"
+   class="de.xplib.xdbm.ui.resource.ResourcePlugin" id="resource"/>
+  <plugin jar="" position="center"
+   class="de.xplib.xdbm.ui.editor.EditorPlugin" id="editor"/>
+ </plugins>
+</config>

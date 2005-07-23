@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE vcl:schema SYSTEM "vcl-schema.dtd" [
+  <!ELEMENT author (info, articles)>
+  <!ATTLIST author
+    vcl:id CDATA #REQUIRED
+  >
+  <!ELEMENT info (vcl:value-of)>
+  <!ELEMENT articles (vcl:collection)>
+  <!ELEMENT foo EMPTY>
+  <!ATTLIST foo
+    vcl:bar CDATA #REQUIRED
+  >
+  <!ELEMENT article (title, abstract)>
+  <!ATTLIST article 
+    vcl:category CDATA #REQUIRED
+  >
+  <!ELEMENT title (vcl:value-of)>
+  <!ELEMENT abstract (vcl:value-of)>
+]>
+<vcl:schema xmlns:vcl="http://nexd.xplib.de/vcl/version/1.0"
+  name="autoren.xml" enumerate="false" postfix="vxml" prefix="virtual">
+  <vcl:collection match="/db/vcl-data/author">
+    <vcl:variable name="author_id" select="/author/@id" />
+    <vcl:variable name="author_txt" select="/author/*" />      
+    <author vcl:id="$author_id">
+      <info>
+        <vcl:value-of select="$author_txt" />
+      </info>
+      <articles>
+      <vcl:collection match="/db/vcl-data/article" select="//author[@id='$author_id']">
+        <![CDATA[FooBar]]>
+        <foo vcl:bar="$author_id" />
+        <article vcl:category="/article/@category">
+          <title><vcl:value-of select="/article/articleinfo/title/text()" /></title>
+          <abstract><vcl:value-of select="/article/abstract/text()" /></abstract>
+        </article>
+      </vcl:collection>
+      </articles>
+    </author>
+  </vcl:collection>
+</vcl:schema>

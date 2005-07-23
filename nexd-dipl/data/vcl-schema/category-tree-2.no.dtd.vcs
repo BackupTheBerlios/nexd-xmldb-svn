@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<vcl:schema xmlns:vcl="http://nexd.xplib.de/vcl/version/1.0">
+  <vcl:collection match="/db/vcl-data/category" select="/category[@id='0']">
+    <vcl:variable name="root_id" select="/category/@id" />
+    <structure>
+      <vcl:collection match="/db/vcl-data/category" select="/category[@pid='$root_id']">
+        <vcl:variable name="id_level_1" select="/category/@id" />
+        <node vcl:id="$id_level_1" type="category">
+          <title><vcl:value-of select="/category/title/text()" /></title>
+          <nodes>
+            <vcl:collection match="/db/vcl-data/category" select="/category[@pid='$id_level_1']">
+              <vcl:variable name="id_level_2" select="/category/@id" />
+              <node vcl:id="$id_level_2" type="category">
+                <title><vcl:value-of select="/category/title/text()" /></title>
+                <nodes>
+                  <vcl:collection match="/db/vcl-data/article" select="article[@category='$id_level_2']">
+                    <node type="article">
+                      <title><vcl:value-of select="/article/articleinfo/title/text()" /></title>
+                    </node>
+                  </vcl:collection>
+                </nodes>
+              </node>
+            </vcl:collection>
+            <vcl:collection match="/db/vcl-data/article" select="article[@category='$id_level_1']">
+              <node type="article">
+                <title><vcl:value-of select="/article/articleinfo/title/text()" /></title>
+              </node>
+            </vcl:collection>
+          </nodes>
+        </node>
+      </vcl:collection>
+    </structure>
+  </vcl:collection>
+</vcl:schema>

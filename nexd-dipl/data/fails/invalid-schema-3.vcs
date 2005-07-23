@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <vcl:collection match="/db/vcl-data/author"  xmlns:vcl="http://nexd.xplib.de/vcl/version/1.0">
+    <vcl:variable name="author_id" select="/author/*" />
+    <author vcl:id="$author_id">
+
+    </author>
+  </vcl:collection>
