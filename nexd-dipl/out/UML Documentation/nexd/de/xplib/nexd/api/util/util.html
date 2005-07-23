@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<!--NewPage--> 
+<HTML> 
+<HEAD> 
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<TITLE> 
+ 
+</TITLE> 
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style"> 
+</HEAD> 
+<BODY BGCOLOR="white" > 
+
+<!-- ========== START OF NAVBAR ========== --> 
+<A NAME="navbar_top"><!-- --></A> 
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0"> 
+<TR> 
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> 
+<A NAME="navbar_top_firstrow"><!-- --></A> 
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3"> 
+<TR ALIGN="center" VALIGN="top"> 
+<TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package Diagram</B></FONT>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-files/index-1.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD> 
+ </TR> 
+</TABLE> 
+</TD> 
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM> 
+</EM> 
+</TD> 
+</TR> 
+
+<TR> 
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2"> 
+&nbsp;PREV&nbsp; 
+&nbsp;NEXT</FONT></TD> 
+ <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2"> 
+<A HREF="../../../../../index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp; 
+&nbsp;<A HREF="nexd.html" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp; 
+&nbsp; 
+<NOSCRIPT> 
+<A HREF="../../../../../allclasses-noframe.html" TARGET=""><B>All Classes</B></A> 
+</NOSCRIPT> 
+</FONT></TD> 
+</TR> 
+</TABLE> 
+<!-- =========== END OF NAVBAR =========== --> 
+<HR> 
+<H2><FONT SIZE="-1">de.xplib.nexd.api.util</FONT> 
+<BR>Package Diagram util</H2> 
+ 
+<P> 
+ 
+<BR> 
+<HR> 
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%"> 
+<TR BGCOLOR="#CCCCFF"  ID="TableHeadingColor"> 
+<TD COLSPAN=2><FONT SIZE= "+2"><B>Class Summary</B></FONT></TD></TR> 
+<TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../nexd/de/xplib/nexd/api/util/Base64.html">Base64</A></B></TD> 
+<TD>Encodes and decodes to and from Base64 notation.
+
+<p>
+Change Log:
+</p>
+<ul>
+<li>v2.1 - Cleaned up javadoc comments and unused variables and methods.
+Added some convenience methods for reading and writing to and from files.
+</li>
+<li>v2.0.2 - Now specifies UTF-8 encoding in places where the code fails on
+systems with other encodings (like EBCDIC).</li>
+<li>v2.0.1 - Fixed an error when decoding a single byte, that is, when the
+encoded data was a single byte.</li>
+<li>v2.0 - I got rid of methods that used booleans to set options.
+Now everything is more consolidated and cleaner. The code now detects
+when data that's being decoded is gzip-compressed and will decompress it
+automatically. Generally things are cleaner. You'll probably have to
+change some method calls that you were making to support the new
+options format (<tt>int</tt>s that you "OR" together).</li>
+<li>v1.5.1 - Fixed bug when decompressing and decoding to a
+byte[] using <tt>decode( String s, boolean gzipCompressed )</tt>.
+Added the ability to "suspend" encoding in the Output Stream so
+you can turn on and off the encoding if you need to embed base64
+data in an otherwise "normal" stream (like an XML file).</li>
+<li>v1.5 - Output stream pases on flush() command but doesn't do anything
+itself. This helps when using GZIP streams.
+Added the ability to GZip-compress objects before encoding them.</li>
+<li>v1.4 - Added helper methods to read/write files.</li>
+<li>v1.3.6 - Fixed OutputStream.flush() so that 'position' is reset.</li>
+<li>v1.3.5 - Added flag to turn on and off line breaks. Fixed bug in input
+stream where last buffer being read, if not completely full, was not
+returned.</li>
+<li>v1.3.4 - Fixed when "improperly padded stream" error was thrown at the
+wrong time.</li>
+<li>v1.3.3 - Fixed I/O streams which were totally messed up.</li>
+</ul>
+
+<p>
+I am placing this code in the Public Domain. Do with it as you will.
+This software comes with no guarantees or warranties but with
+plenty of well-wishing instead!
+Please visit <a href="http://iharder.net/base64"
+>http://iharder.net/base64</a>
+periodically to check for updates or to contribute improvements.
+</p></TD> 
+</TR> 
+</TABLE>&nbsp;<P> 
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%"> 
+<TR BGCOLOR="#CCCCFF" ID="TableHeadingColor"> 
+<TD COLSPAN=1><FONT SIZE="+2"><B>Diagram Elements Detail</B></FONT></TD> 
+</TR> 
+</TABLE><BR><!-- ========== START OF NAVBAR ========== --> 
+<A NAME="navbar_bottom"><!-- --></A> 
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0"> 
+<TR> 
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> 
+<A NAME="navbar_bottom_firstrow"><!-- --></A> 
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3"> 
+<TR ALIGN="center" VALIGN="top"> 
+<TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package Diagram</B></FONT>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-files/index-1.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD> 
+ </TR> 
+</TABLE> 
+</TD> 
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM> 
+</EM> 
+</TD> 
+</TR> 
+
+<TR> 
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2"> 
+&nbsp;PREV&nbsp; 
+&nbsp;NEXT</FONT></TD> 
+ <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2"> 
+<A HREF="../../../../../index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp; 
+&nbsp;<A HREF="nexd.html" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp; 
+&nbsp; 
+<NOSCRIPT> 
+<A HREF="../../../../../allclasses-noframe.html" TARGET=""><B>All Classes</B></A> 
+</NOSCRIPT> 
+</FONT></TD> 
+</TR> 
+</TABLE> 
+<!-- =========== END OF NAVBAR =========== --> 
+<HR> 
+</BODY> 
+</HTML> 

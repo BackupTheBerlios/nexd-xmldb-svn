@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<!--NewPage--> 
+<HTML> 
+<HEAD> 
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<TITLE> 
+ 
+</TITLE> 
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style"> 
+</HEAD> 
+<BODY BGCOLOR="white" > 
+
+<!-- ========== START OF NAVBAR ========== --> 
+<A NAME="navbar_top"><!-- --></A> 
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0"> 
+<TR> 
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> 
+<A NAME="navbar_top_firstrow"><!-- --></A> 
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3"> 
+<TR ALIGN="center" VALIGN="top"> 
+<TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package Diagram</B></FONT>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-files/index-1.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD> 
+ </TR> 
+</TABLE> 
+</TD> 
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM> 
+</EM> 
+</TD> 
+</TR> 
+
+<TR> 
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2"> 
+&nbsp;PREV&nbsp; 
+&nbsp;NEXT</FONT></TD> 
+ <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2"> 
+<A HREF="../../../../../../index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp; 
+&nbsp;<A HREF="nexd.html" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp; 
+&nbsp; 
+<NOSCRIPT> 
+<A HREF="../../../../../../allclasses-noframe.html" TARGET=""><B>All Classes</B></A> 
+</NOSCRIPT> 
+</FONT></TD> 
+</TR> 
+</TABLE> 
+<!-- =========== END OF NAVBAR =========== --> 
+<HR> 
+<H2><FONT SIZE="-1">de.xplib.nexd.engine.xapi.vcl</FONT> 
+<BR>Package Diagram vcl</H2> 
+ 
+<P> 
+ 
+<BR> 
+<HR> 
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%"> 
+<TR BGCOLOR="#CCCCFF"  ID="TableHeadingColor"> 
+<TD COLSPAN=2><FONT SIZE= "+2"><B>Class Summary</B></FONT></TD></TR> 
+<TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xapi/vcl/VCLAttrImpl.html">VCLAttrImpl</A></B></TD> 
+<TD><p>This class represents the dynamic <code>{@link org.w3c.dom.Attr}</code>
+instances everywhere in the DOM <code>{@link org.w3c.dom.Document}
+</code> of the parsed <code>{@link de.xplib.nexd.api.vcl.VCLSchema}</code>.
+This attribute contains a XPath expression or it references a defined
+variable ({@link de.xplib.nexd.api.vcl.VCLVariable}).</p>
+<ul>
+<li><b>XPath</b>
+<pre>
+&lt;foo vcl:bar="/foo[@bar='manuel']/*" /&gt;
+
+will become
+
+&lt;foo bar="[Any value here]" /&gt;
+</pre></li>
+<li><b>Variable</b>
+<pre>
+&lt;foo vcl:bar="$foobar" /&gt;
+
+will become
+
+&lt;foo bar="[Any value here]" /&gt;
+</pre></li>
+</ul>
+<p>This interface implements a part of the GoF Composite pattern (163).</p></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xapi/vcl/VariableContext.html">VariableContext</A></B></TD> 
+<TD></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xapi/vcl/VCLSchemaImpl.html">VCLSchemaImpl</A></B></TD> 
+<TD><p>This class represents the <code>schema</code>
+<code>{@link org.w3c.dom.Element}</code> in the DOM
+<code>{@link org.w3c.dom.Document}</code> of the parsed
+<code>{@link VCLSchema}</code>. This is the first
+<code>{@link org.w3c.dom.Element}</code> in each Virtual Collection Language
+Schema.</p>
+<p>This class implements a part of the GoF Composite pattern (163).</p></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xapi/vcl/VCLValueOfImpl.html">VCLValueOfImpl</A></B></TD> 
+<TD><p>This class represents the <code>value-of</code>
+<code>{@link Element}</code> in the DOM <code>{@link org.w3c.dom.Document}
+</code> of the parsed <code>{@link de.xplib.nexd.api.vcl.VCLSchema}</code>.
+This object contains a XPath expression or it references a defined variable
+({@link de.xplib.nexd.api.vcl.VCLVariable}).</p>
+<ul>
+<li><b>XPath</b>
+<pre>
+&lt;vcl:value-of select="/foo[@bar='manuel']/*" /&gt;
+</pre></li>
+<li><b>Variable</b>
+<pre>
+&lt;vcl:value-of select="$foobar" /&gt;
+</pre></li>
+</ul>
+<p>This class implements a part of the GoF Composite pattern (163).</p></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xapi/vcl/VCLNodeIteratorImpl.html">VCLNodeIteratorImpl</A></B></TD> 
+<TD><p>This is the abstract base class for all used iterators. This class doesn't
+implement any design issue, it just makes coding easier.</p></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xapi/vcl/VCLCollectionReferenceImpl.html">VCLCollectionReferenceImpl</A></B></TD> 
+<TD><p>This class represents the <code>collection</code>
+<code>{@link Element}</code> in the DOM <code>{@link org.w3c.dom.Document}
+</code> of the parsed <code>{@link de.xplib.nexd.api.vcl.VCLSchema}</code>.
+This object references a {@link org.xmldb.api.base.Collection} in the xml
+database.</p>
+<ul>
+<li><b>match</b>
+<p>This Element selects the {@link org.xmldb.api.base.Collection}
+<i>bar</i> in its parent {@link org.xmldb.api.base.Collection} <i>foo</i>.
+</p>
+<pre>
+&lt;vcl:collection match="/foo/bar"&gt;
+&lt;/vcl:collection&gt;
+</pre></li>
+<li><b>match + select</b>
+<p>This Element selects the {@link org.xmldb.api.base.Collection}
+<i>bar</i> in its parent {@link org.xmldb.api.base.Collection} <i>foo</i>.
+But it just returns that {@link org.xmldb.api.modules.XMLResource} objects
+where the XPath expression in the <code>@select</code> matches.
+</p>
+<pre>
+&lt;vcl:collection match="/foo/bar" select="/foo[@bar='manuel']"&gt;
+&lt;/vcl:collection&gt;
+</pre></li>
+</ul>
+<p>This class implements a part of the GoF Composite pattern (163).</p></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xapi/vcl/VCLSchemaVisitorImpl.html">VCLSchemaVisitorImpl</A></B></TD> 
+<TD></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xapi/vcl/VCLVariableImpl.html">VCLVariableImpl</A></B></TD> 
+<TD><p>This class represents the <code>variable</code>
+<code>{@link Element}</code> in the DOM <code>{@link org.w3c.dom.Document}
+</code> of the parsed <code>{@link de.xplib.nexd.api.vcl.VCLSchema}</code>.
+This object contains a XPath expression and a name which is used to access
+the content later.</p>
+<pre>
+&lt;vcl:variable name="foo" select="/foo[@bar='manuel']/*" /&gt;
+</pre>
+<br />
+<b>Scope</b>
+<p>The following example shows the scope of a variable in a Virtual
+Collection Language Schema</p>
+<pre>
+&lt;vcl:collection match="/db/foo"&gt;                                  (1)
+&lt;vcl:variable name="var1" select="//*[@id=1]" /&gt;
+...
+&lt;vcl:collection match="/db/bar"&gt;                                (2)
+&lt;vcl:variable name="var11" select="//*[@type='int']" /&gt;
+...
+&lt;vcl:collection match="/db/foobar"&gt;                           (3)
+&lt;vcl:variable name="var111" select="//*[@name='manu']" /&gt;
+...
+&lt;/vcl:collection&gt;
+&lt;/vcl:collection&gt;
+&lt;vcl:collection match="/db/foobar"&gt;                             (4)
+&lt;vcl:variable name="var12" select="//*[@name='manuel']" /&gt;
+...
+&lt;/vcl:collection&gt;
+&lt;/vcl:collection&gt;
+</pre>
+<ul>
+<li><b>var1</b> is visible everywhere, this means in the collections
+<i>1</i>, <i>2</i>, <i>3</i> and <i>4</i>.
+</li>
+<li><b>var11</b> is visible in the collections <i>2</i> and <i>3</i>.</li>
+<li><b>var111</b> is only visible in <i>3</i>.</li>
+<li><b>var12</b> is only visible in <i>4</i>.</li>
+</ul>.
+
+<p>This class implements a part of the GoF Composite pattern (163).</p></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xapi/vcl/Expression.html">Expression</A></B></TD> 
+<TD></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xapi/vcl/VCLDocumentParser.html">VCLDocumentParser</A></B></TD> 
+<TD>&nbsp;</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xapi/vcl/VCLParserImpl.html">VCLParserImpl</A></B></TD> 
+<TD>Base parser for a Virtual-Collection-Language Schema file or resource. This
+parser tries to transform the input VCL-Schema in an object tree.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xapi/vcl/VCLDocumentCompileHelper.html">VCLDocumentCompileHelper</A></B></TD> 
+<TD>&nbsp;</TD> 
+</TR> 
+</TABLE>&nbsp;<P> 
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%"> 
+<TR BGCOLOR="#CCCCFF" ID="TableHeadingColor"> 
+<TD COLSPAN=1><FONT SIZE="+2"><B>Diagram Elements Detail</B></FONT></TD> 
+</TR> 
+</TABLE><BR><!-- ========== START OF NAVBAR ========== --> 
+<A NAME="navbar_bottom"><!-- --></A> 
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0"> 
+<TR> 
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> 
+<A NAME="navbar_bottom_firstrow"><!-- --></A> 
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3"> 
+<TR ALIGN="center" VALIGN="top"> 
+<TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package Diagram</B></FONT>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-files/index-1.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD> 
+ </TR> 
+</TABLE> 
+</TD> 
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM> 
+</EM> 
+</TD> 
+</TR> 
+
+<TR> 
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2"> 
+&nbsp;PREV&nbsp; 
+&nbsp;NEXT</FONT></TD> 
+ <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2"> 
+<A HREF="../../../../../../index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp; 
+&nbsp;<A HREF="nexd.html" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp; 
+&nbsp; 
+<NOSCRIPT> 
+<A HREF="../../../../../../allclasses-noframe.html" TARGET=""><B>All Classes</B></A> 
+</NOSCRIPT> 
+</FONT></TD> 
+</TR> 
+</TABLE> 
+<!-- =========== END OF NAVBAR =========== --> 
+<HR> 
+</BODY> 
+</HTML> 

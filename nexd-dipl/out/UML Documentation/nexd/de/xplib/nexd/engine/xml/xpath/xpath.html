@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN""http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<!--NewPage--> 
+<HTML> 
+<HEAD> 
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<TITLE> 
+ 
+</TITLE> 
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style"> 
+</HEAD> 
+<BODY BGCOLOR="white" > 
+
+<!-- ========== START OF NAVBAR ========== --> 
+<A NAME="navbar_top"><!-- --></A> 
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0"> 
+<TR> 
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> 
+<A NAME="navbar_top_firstrow"><!-- --></A> 
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3"> 
+<TR ALIGN="center" VALIGN="top"> 
+<TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package Diagram</B></FONT>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-files/index-1.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD> 
+ </TR> 
+</TABLE> 
+</TD> 
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM> 
+</EM> 
+</TD> 
+</TR> 
+
+<TR> 
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2"> 
+&nbsp;PREV&nbsp; 
+&nbsp;NEXT</FONT></TD> 
+ <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2"> 
+<A HREF="../../../../../../index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp; 
+&nbsp;<A HREF="nexd.html" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp; 
+&nbsp; 
+<NOSCRIPT> 
+<A HREF="../../../../../../allclasses-noframe.html" TARGET=""><B>All Classes</B></A> 
+</NOSCRIPT> 
+</FONT></TD> 
+</TR> 
+</TABLE> 
+<!-- =========== END OF NAVBAR =========== --> 
+<HR> 
+<H2><FONT SIZE="-1">de.xplib.nexd.engine.xml.xpath</FONT> 
+<BR>Package Diagram xpath</H2> 
+ 
+<P> 
+ 
+<BR> 
+<HR> 
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%"> 
+<TR BGCOLOR="#CCCCFF"  ID="TableHeadingColor"> 
+<TD COLSPAN=2><FONT SIZE= "+2"><B>Class Summary</B></FONT></TD></TR> 
+<TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AttrNotEqualsExpr.html">AttrNotEqualsExpr</A></B></TD> 
+<TD>An expression testing that an attribute is not equal to a given string. A
+'@attrName != "value"' test.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/XPathFactoryImpl.html">XPathFactoryImpl</A></B></TD> 
+<TD></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AbstractAttrCompareExpr.html">AbstractAttrCompareExpr</A></B></TD> 
+<TD>Compare attribute to string.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AttrEqualsExpr.html">AttrEqualsExpr</A></B></TD> 
+<TD>A '@attrName = "value"' test.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/PositionEqualsExpr.html">PositionEqualsExpr</A></B></TD> 
+<TD>Test position within element list.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/ThisNodeTest.html">ThisNodeTest</A></B></TD> 
+<TD>A '.' node test. This is part of the GoF Flyweight(195) pattern -- Only one
+object of this class ever exists, shared amongst all clients. You use
+INSTANCE instead of the constructor to get that object.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/ExprFactory.html">ExprFactory</A></B></TD> 
+<TD>A utility that parses a stream of tokens and creates the appropriate
+sub-class of AbstractBooleanExpr.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/NodeTestVisitor.html">NodeTestVisitor</A></B></TD> 
+<TD>Add functionality to ubclasses of AbstractNodeTest. This is a participant in
+the Visitor Pattern [Gamma et al, #331]. You pass a visitor to the
+XPath.accept method which then passes it to all the nodes on the parse tree,
+each one of which calls back one of the visitor's visit methods.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AbstractTextCompareExpr.html">AbstractTextCompareExpr</A></B></TD> 
+<TD>Compare text value.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AndExpr.html">AndExpr</A></B></TD> 
+<TD></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/TextNotEqualsExpr.html">TextNotEqualsExpr</A></B></TD> 
+<TD>An expression testing that the text node is not equal to a given string. An
+[text()!='value'] expression.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/ParentNodeTest.html">ParentNodeTest</A></B></TD> 
+<TD>A '..' node test. This is part of the GoF Flyweight(195) pattern -- Only one
+object of this class ever exists, shared amongst all clients. You use
+INSTANCE instead of the constructor to get that object.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AttrExistsExpr.html">AttrExistsExpr</A></B></TD> 
+<TD>A '@attrName' test to see if attribute exists.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/TextEqualsExpr.html">TextEqualsExpr</A></B></TD> 
+<TD>[text()='value'] expression</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AttrLessEqualsExpr.html">AttrLessEqualsExpr</A></B></TD> 
+<TD>A '@attrName <= "n"' test.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/NullTest.html">NullTest</A></B></TD> 
+<TD>Empty <code>AbstractNodeTest</code> implementation.
+This class is used allways when only a <code>AbstractBooleanExpr</code> is
+needed and no <code>AbstractNodeTest</code>. This simple helper prevents
+developers from writing many unnessary:
+
+<pre>
+if (step.getNodeTest() != null) {
+...
+}
+</pre></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AbstractBooleanExpr.html">AbstractBooleanExpr</A></B></TD> 
+<TD>an expression that returns a boolean value.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AttrTest.html">AttrTest</A></B></TD> 
+<TD>A node test for an element with a particular tagname.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/Step.html">Step</A></B></TD> 
+<TD>One of the steps which, separated by slashes, make up an XPath expression.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AttrLessExpr.html">AttrLessExpr</A></B></TD> 
+<TD>A '@attrName < "n"' test.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AbstractNodeTest.html">AbstractNodeTest</A></B></TD> 
+<TD>The test for a nodeset that appears before the optional [predicate] in an
+xpath step.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/Visitor.html">Visitor</A></B></TD> 
+<TD>Something that crawls over the parse tree. This is a participant in the
+Visitor Pattern [Gamma et al, #331]. You pass a visitor to the XPath.accept
+method which then passes it to all the nodes on the parse tree, each one of
+which calls back one of the visitor's visit methods.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/TrueExpr.html">TrueExpr</A></B></TD> 
+<TD>The boolean constant "true".
+This is part of the GoF Flyweight(195) pattern --
+Only one object of this class ever exists, shared amongst all clients. You
+use INSTANCE instead of the constructor to get that object.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/XPathTokensI.html">XPathTokensI</A></B></TD> 
+<TD></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AbstractAttrExpr.html">AbstractAttrExpr</A></B></TD> 
+<TD>A boolean test on an attribute.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AttrGreaterEqualsExpr.html">AttrGreaterEqualsExpr</A></B></TD> 
+<TD>A '@attrName >= n' test.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/XPath.html">XPath</A></B></TD> 
+<TD>The root of the parse tree for an XPath expression. This is a participant in
+the Visitor Pattern [Gamma et al, #331]. You create an XPath object (which
+parses an XPath expression into a parse tree), create a Vistor object, and
+pass the visitor to the XPath.accept method.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/ElementTest.html">ElementTest</A></B></TD> 
+<TD>A node test for an element with a particular tagname.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/XPathTokenizer.html">XPathTokenizer</A></B></TD> 
+<TD>Simplified replacement for java.util.StreamTokenizer which is not avilable in
+J2ME.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/XPathExceptionExt.html">XPathExceptionExt</A></B></TD> 
+<TD>Thrown when some problem parsing or executing an XPath expression.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AbstractAttrRelationalExpr.html">AbstractAttrRelationalExpr</A></B></TD> 
+<TD>Compare attribute relative to integer.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/OrExpr.html">OrExpr</A></B></TD> 
+<TD></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AbstractBinExpr.html">AbstractBinExpr</A></B></TD> 
+<TD></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AttrGreaterExpr.html">AttrGreaterExpr</A></B></TD> 
+<TD>A '@attrName > n' test.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/AllElementTest.html">AllElementTest</A></B></TD> 
+<TD>A '*' node test. This is part of the GoF Flyweight(195) pattern -- Only one
+object of this class ever exists, shared amongst all clients. You use
+INSTANCE instead of the constructor to get that object.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/TextTest.html">TextTest</A></B></TD> 
+<TD>A "text()" node test in a Xpath step. This is part of the GoF Flyweight(195)
+pattern -- Only one object of this class ever exists, shared amongst all
+clients. You use INSTANCE instead of the constructor to get that object.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/BooleanExprVisitor.html">BooleanExprVisitor</A></B></TD> 
+<TD>Add functionality to subclasses of AbstractBooleanExpr. This is a participant
+in the Visitor Pattern [Gamma et al, #331]. You pass a visitor to the
+XPath.accept method which then passes it to all the nodes on the parse tree,
+each one of which calls back one of the visitor's visit methods.</TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/NotExpr.html">NotExpr</A></B></TD> 
+<TD></TD> 
+</TR><TR BGCOLOR="white" ID="TableRowColor"> 
+<TD WIDTH="15%"><B><A HREF= "../../../../../../../nexd/de/xplib/nexd/engine/xml/xpath/TextExistsExpr.html">TextExistsExpr</A></B></TD> 
+<TD>[text()] expression This is part of the GoF Flyweight(195) pattern -- Only
+one object of this class ever exists, shared amongst all clients. You use
+INSTANCE instead of the constructor to get that object.</TD> 
+</TR> 
+</TABLE>&nbsp;<P> 
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%"> 
+<TR BGCOLOR="#CCCCFF" ID="TableHeadingColor"> 
+<TD COLSPAN=1><FONT SIZE="+2"><B>Diagram Elements Detail</B></FONT></TD> 
+</TR> 
+</TABLE><BR><!-- ========== START OF NAVBAR ========== --> 
+<A NAME="navbar_bottom"><!-- --></A> 
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0"> 
+<TR> 
+<TD COLSPAN=3 BGCOLOR="#EEEEFF" CLASS="NavBarCell1"> 
+<A NAME="navbar_bottom_firstrow"><!-- --></A> 
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3"> 
+<TR ALIGN="center" VALIGN="top"> 
+<TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package Diagram</B></FONT>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-files/index-1.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD> 
+<TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD> 
+ </TR> 
+</TABLE> 
+</TD> 
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM> 
+</EM> 
+</TD> 
+</TR> 
+
+<TR> 
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2"> 
+&nbsp;PREV&nbsp; 
+&nbsp;NEXT</FONT></TD> 
+ <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2"> 
+<A HREF="../../../../../../index.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp; 
+&nbsp;<A HREF="nexd.html" TARGET="_top"><B>NO FRAMES</B></A>  &nbsp; 
+&nbsp; 
+<NOSCRIPT> 
+<A HREF="../../../../../../allclasses-noframe.html" TARGET=""><B>All Classes</B></A> 
+</NOSCRIPT> 
+</FONT></TD> 
+</TR> 
+</TABLE> 
+<!-- =========== END OF NAVBAR =========== --> 
+<HR> 
+</BODY> 
+</HTML> 

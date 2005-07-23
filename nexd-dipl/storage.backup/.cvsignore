@@ -1,0 +1,8 @@
+nexd.db.lck.lck
+nexd.db.script
+nexd-copy.db.lck.lck
+nexd-copy.db.log
+nexd-copy.db.properties
+nexd.db.app.log
+nexd.db.log
+nexd.db.properties
