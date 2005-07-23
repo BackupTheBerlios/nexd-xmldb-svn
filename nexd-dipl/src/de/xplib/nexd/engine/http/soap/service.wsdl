@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions 
+  targetNamespace="http://192.168.0.100:1100" 
+  xmlns:apachesoap="http://xml.apache.org/xml-soap" 
+  xmlns:impl="http://192.168.0.100:1100" 
+  xmlns:intf="http://192.168.0.100:1100" 
+  xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" 
+  xmlns:tns1="http://dbmanagement.sixdml.org" 
+  xmlns:tns10="http://pcvr.api.nexd.xplib.de" 
+  xmlns:tns2="http://base.api.xmldb.org" 
+  xmlns:tns3="http://net.java" 
+  xmlns:tns4="http://api.nexd.xplib.de" 
+  xmlns:tns5="http://vcl.api.nexd.xplib.de" 
+  xmlns:tns6="http://exceptions.sixdml.org" 
+  xmlns:tns7="http://lang.java" 
+  xmlns:tns8="http://sax.xml.org" 
+  xmlns:tns9="http://dom.w3c.org" 
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+  xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--WSDL created by Apache Axis version: 1.2RC2
+Built on Nov 16, 2004 (12:19:44 EST)-->
+  <wsdl:types>
+    <schema targetNamespace="http://base.api.xmldb.org" 
+      xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://192.168.0.100:1100"/>
+      <import namespace="http://sax.xml.org"/>
+      <import namespace="http://pcvr.api.nexd.xplib.de"/>
+      <import namespace="http://xml.apache.org/xml-soap"/>
+      <import namespace="http://vcl.api.nexd.xplib.de"/>
+      <import namespace="http://dbmanagement.sixdml.org"/>
+      <import namespace="http://exceptions.sixdml.org"/>
+      <import namespace="http://net.java"/>
+      <import namespace="http://lang.java"/>
+      <import namespace="http://dom.w3c.org"/>
+      <import namespace="http://api.nexd.xplib.de"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="XMLDBException">
+        <sequence>
+          <element name="errorCode" type="xsd:int"/>
+          <element name="vendorErrorCode" type="xsd:int"/>
+        </sequence>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://vcl.api.nexd.xplib.de" 
+      xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://192.168.0.100:1100"/>
+      <import namespace="http://sax.xml.org"/>
+      <import namespace="http://pcvr.api.nexd.xplib.de"/>
+      <import namespace="http://base.api.xmldb.org"/>
+      <import namespace="http://xml.apache.org/xml-soap"/>
+      <import namespace="http://dbmanagement.sixdml.org"/>
+      <import namespace="http://exceptions.sixdml.org"/>
+      <import namespace="http://net.java"/>
+      <import namespace="http://lang.java"/>
+      <import namespace="http://dom.w3c.org"/>
+      <import namespace="http://api.nexd.xplib.de"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="InvalidCollectionReferenceException">
+        <sequence>
+          <element name="code" type="xsd:short"/>
+        </sequence>
+      </complexType>
+      <complexType name="InvalidVCLSchemaException">
+        <sequence>
+          <element name="code" type="xsd:int"/>
+        </sequence>
+      </complexType>
+      <complexType name="UndeclaredVariableException">
+        <sequence/>
+      </complexType>
+      <complexType name="VariableExistsException">
+        <sequence/>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://api.nexd.xplib.de" 
+      xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://192.168.0.100:1100"/>
+      <import namespace="http://sax.xml.org"/>
+      <import namespace="http://pcvr.api.nexd.xplib.de"/>
+      <import namespace="http://base.api.xmldb.org"/>
+      <import namespace="http://xml.apache.org/xml-soap"/>
+      <import namespace="http://vcl.api.nexd.xplib.de"/>
+      <import namespace="http://dbmanagement.sixdml.org"/>
+      <import namespace="http://exceptions.sixdml.org"/>
+      <import namespace="http://net.java"/>
+      <import namespace="http://lang.java"/>
+      <import namespace="http://dom.w3c.org"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="InvalidParentCollectionException">
+        <sequence/>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://dbmanagement.sixdml.org" 
+      xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://192.168.0.100:1100"/>
+      <import namespace="http://sax.xml.org"/>
+      <import namespace="http://pcvr.api.nexd.xplib.de"/>
+      <import namespace="http://base.api.xmldb.org"/>
+      <import namespace="http://xml.apache.org/xml-soap"/>
+      <import namespace="http://vcl.api.nexd.xplib.de"/>
+      <import namespace="http://exceptions.sixdml.org"/>
+      <import namespace="http://net.java"/>
+      <import namespace="http://lang.java"/>
+      <import namespace="http://dom.w3c.org"/>
+      <import namespace="http://api.nexd.xplib.de"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="SixdmlCollection">
+        <sequence>
+          <element name="name" nillable="false" type="soapenc:string"/>
+          <element name="path" nillable="false" type="soapenc:string"/>
+          <element name="internalId" nillable="false" type="soapenc:string"/>
+        </sequence>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://exceptions.sixdml.org" 
+      xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://192.168.0.100:1100"/>
+      <import namespace="http://sax.xml.org"/>
+      <import namespace="http://pcvr.api.nexd.xplib.de"/>
+      <import namespace="http://base.api.xmldb.org"/>
+      <import namespace="http://xml.apache.org/xml-soap"/>
+      <import namespace="http://vcl.api.nexd.xplib.de"/>
+      <import namespace="http://dbmanagement.sixdml.org"/>
+      <import namespace="http://net.java"/>
+      <import namespace="http://lang.java"/>
+      <import namespace="http://dom.w3c.org"/>
+      <import namespace="http://api.nexd.xplib.de"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="SixdmlException">
+        <sequence>
+          <element name="cause" nillable="true" type="xsd:anyType"/>
+        </sequence>
+      </complexType>
+      <complexType name="InvalidQueryException">
+        <complexContent>
+          <extension base="tns6:SixdmlException">
+            <sequence/>
+          </extension>
+        </complexContent>
+      </complexType>
+      <complexType name="InvalidCollectionDocumentException">
+        <complexContent>
+          <extension base="tns6:SixdmlException">
+            <sequence/>
+          </extension>
+        </complexContent>
+      </complexType>
+      <complexType name="InvalidSchemaException">
+        <complexContent>
+          <extension base="tns6:SixdmlException">
+            <sequence/>
+          </extension>
+        </complexContent>
+      </complexType>
+    </schema>
+    <schema targetNamespace="http://sax.xml.org" 
+      xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://192.168.0.100:1100"/>
+      <import namespace="http://pcvr.api.nexd.xplib.de"/>
+      <import namespace="http://base.api.xmldb.org"/>
+      <import namespace="http://xml.apache.org/xml-soap"/>
+      <import namespace="http://vcl.api.nexd.xplib.de"/>
+      <import namespace="http://dbmanagement.sixdml.org"/>
+      <import namespace="http://exceptions.sixdml.org"/>
+      <import namespace="http://net.java"/>
+      <import namespace="http://lang.java"/>
+      <import namespace="http://dom.w3c.org"/>
+      <import namespace="http://api.nexd.xplib.de"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="SAXException">
+        <sequence>
+          <element name="exception" nillable="true" type="xsd:anyType"/>
+          <element name="message" nillable="true" type="soapenc:string"/>
+        </sequence>
+      </complexType>
+    </schema>
+    <schema 
+      targetNamespace="http://192.168.0.100:1100" 
+      xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://sax.xml.org"/>
+      <import namespace="http://pcvr.api.nexd.xplib.de"/>
+      <import namespace="http://base.api.xmldb.org"/>
+      <import namespace="http://xml.apache.org/xml-soap"/>
+      <import namespace="http://vcl.api.nexd.xplib.de"/>
+      <import namespace="http://dbmanagement.sixdml.org"/>
+      <import namespace="http://exceptions.sixdml.org"/>
+      <import namespace="http://net.java"/>
+      <import namespace="http://lang.java"/>
+      <import namespace="http://dom.w3c.org"/>
+      <import namespace="http://api.nexd.xplib.de"/>
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="ArrayOf_soapenc_string">
+        <complexContent>
+          <restriction base="soapenc:Array">
+            <attribute ref="soapenc:arrayType" 
+              wsdl:arrayType="soapenc:string[]"/>
+          </restriction>
+        </complexContent>
+      </complexType>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="storeCollectionResponse2">
+    <wsdl:part name="storeCollectionReturn" type="tns4:VirtualCollection"/>
+  </wsdl:message>
+  <wsdl:message name="dropCollectionSchemaResponse">
+  </wsdl:message>
+  <wsdl:message name="containsIdResponse">
+    <wsdl:part name="containsIdReturn" type="xsd:boolean"/>
+  </wsdl:message>
+  <wsdl:message name="storeCollectionStylesheetResponse">
+  </wsdl:message>
+  <wsdl:message name="queryParentCollectionRequest">
+    <wsdl:part name="childIn" type="tns1:SixdmlCollection"/>
+  </wsdl:message>
+  <wsdl:message name="queryChildCollectionResponse">
+    <wsdl:part name="queryChildCollectionReturn" type="tns1:SixdmlCollection"/>
+  </wsdl:message>
+  <wsdl:message name="queryChildCollectionRequest">
+    <wsdl:part name="parentIn" type="tns1:SixdmlCollection"/>
+    <wsdl:part name="nameIn" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="dropCollectionStylesheetResponse">
+  </wsdl:message>
+  <wsdl:message name="queryResourcesRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+  </wsdl:message>
+  <wsdl:message name="queryCollectionRequest">
+    <wsdl:part name="collPath" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="storeResourceRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+    <wsdl:part name="resIn" type="xsd:anyType"/>
+  </wsdl:message>
+  <wsdl:message name="InvalidQueryException">
+    <wsdl:part name="fault" type="tns6:InvalidQueryException"/>
+  </wsdl:message>
+  <wsdl:message name="InvalidVCLSchemaException">
+    <wsdl:part name="fault" type="tns5:InvalidVCLSchemaException"/>
+  </wsdl:message>
+  <wsdl:message name="queryVCLSchemaResponse">
+    <wsdl:part name="queryVCLSchemaReturn" type="xsd:anyType"/>
+  </wsdl:message>
+  <wsdl:message name="queryResourcesResponse">
+    <wsdl:part name="queryResourcesReturn" type="impl:ArrayOf_soapenc_string"/>
+  </wsdl:message>
+  <wsdl:message name="storeCollectionRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+    <wsdl:part name="nameIn" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="queryResourceResponse">
+    <wsdl:part name="queryResourceReturn" type="tns2:Resource"/>
+  </wsdl:message>
+  <wsdl:message name="dropResourceRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+    <wsdl:part name="resIn" type="tns2:Resource"/>
+  </wsdl:message>
+  <wsdl:message name="storeCollectionStylesheetRequest">
+    <wsdl:part name="collIn" type="tns4:VirtualCollection"/>
+    <wsdl:part name="xslIn" type="tns3:URL"/>
+  </wsdl:message>
+  <wsdl:message name="storeCollectionResponse">
+    <wsdl:part name="storeCollectionReturn" type="tns1:SixdmlCollection"/>
+  </wsdl:message>
+  <wsdl:message name="queryResourceByXPathResponse">
+    <wsdl:part name="queryResourceByXPathReturn" type="tns2:ResourceSet"/>
+  </wsdl:message>
+  <wsdl:message name="storeCollectionRequest1">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+    <wsdl:part name="nameIn" type="xsd:string"/>
+    <wsdl:part name="schemaIn" type="xsd:anyType"/>
+  </wsdl:message>
+  <wsdl:message name="dropCollectionSchemaRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+  </wsdl:message>
+  <wsdl:message name="queryCollectionsResponse">
+    <wsdl:part name="queryCollectionsReturn" 
+      type="impl:ArrayOf_soapenc_string"/>
+  </wsdl:message>
+  <wsdl:message name="commitTransactionRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+  </wsdl:message>
+  <wsdl:message name="queryResourcesByXPathRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+    <wsdl:part name="queryIn" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="queryResourceCountRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+  </wsdl:message>
+  <wsdl:message name="InvalidCollectionReferenceException">
+    <wsdl:part name="fault" type="tns5:InvalidCollectionReferenceException"/>
+  </wsdl:message>
+  <wsdl:message name="InvalidSchemaException">
+    <wsdl:part name="fault" type="tns6:InvalidSchemaException"/>
+  </wsdl:message>
+  <wsdl:message name="dropCollectionRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+    <wsdl:part name="nameIn" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="storeResourceResponse">
+  </wsdl:message>
+  <wsdl:message name="queryCollectionCountResponse">
+    <wsdl:part name="queryCollectionCountReturn" type="xsd:int"/>
+  </wsdl:message>
+  <wsdl:message name="queryCollectionCountRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+  </wsdl:message>
+  <wsdl:message name="updateResourceResponse">
+  </wsdl:message>
+  <wsdl:message name="storeCollectionRequest2">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+    <wsdl:part name="nameIn" type="xsd:string"/>
+    <wsdl:part name="schemaIn" type="tns3:URL"/>
+    <wsdl:part name="xslIn" type="tns3:URL"/>
+  </wsdl:message>
+  <wsdl:message name="queryResourceCountResponse">
+    <wsdl:part name="queryResourceCountReturn" type="xsd:int"/>
+  </wsdl:message>
+  <wsdl:message name="queryPCVResourceResponse">
+    <wsdl:part name="queryPCVResourceReturn" type="xsd:anyType"/>
+  </wsdl:message>
+  <wsdl:message name="queryResourceRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+    <wsdl:part name="idIn" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="queryCollectionStylesheetRequest">
+    <wsdl:part name="collIn" type="tns4:VirtualCollection"/>
+  </wsdl:message>
+  <wsdl:message name="queryParentCollectionResponse">
+    <wsdl:part name="queryParentCollectionReturn" type="tns1:SixdmlCollection"/>
+  </wsdl:message>
+  <wsdl:message name="queryResourcesByXPathResponse">
+    <wsdl:part name="queryResourcesByXPathReturn" type="xsd:anyType"/>
+  </wsdl:message>
+  <wsdl:message name="dropResourceResponse">
+  </wsdl:message>
+  <wsdl:message name="beginTransactionRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+  </wsdl:message>
+  <wsdl:message name="beginTransactionResponse">
+    <wsdl:part name="beginTransactionReturn" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="queryCollectionSchemaResponse">
+    <wsdl:part name="queryCollectionSchemaReturn" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="XMLDBException">
+    <wsdl:part name="fault" type="tns2:XMLDBException"/>
+  </wsdl:message>
+  <wsdl:message name="storeCollectionSchemaRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+    <wsdl:part name="schemaIn" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="queryResourceByXPathRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+    <wsdl:part name="idIn" type="xsd:string"/>
+    <wsdl:part name="queryIn" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="closeRequest">
+  </wsdl:message>
+  <wsdl:message name="queryPCVResourceRequest">
+    <wsdl:part name="collIn" type="tns4:VirtualCollection"/>
+    <wsdl:part name="idIn" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="InvalidParentCollectionException">
+    <wsdl:part name="fault" type="tns4:InvalidParentCollectionException"/>
+  </wsdl:message>
+  <wsdl:message name="UndeclaredVariableException">
+    <wsdl:part name="fault" type="tns5:UndeclaredVariableException"/>
+  </wsdl:message>
+  <wsdl:message name="containsIdRequest">
+    <wsdl:part name="collIn" type="xsd:anyType"/>
+    <wsdl:part name="idIn" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="commitTransactionResponse">
+  </wsdl:message>
+  <wsdl:message name="storeCollectionResponse1">
+    <wsdl:part name="storeCollectionReturn" type="xsd:anyType"/>
+  </wsdl:message>
+  <wsdl:message name="queryCollectionStylesheetResponse">
+    <wsdl:part name="queryCollectionStylesheetReturn" type="xsd:anyType"/>
+  </wsdl:message>
+  <wsdl:message name="queryVCLSchemaRequest">
+    <wsdl:part name="collIn" type="tns4:VirtualCollection"/>
+  </wsdl:message>
+  <wsdl:message name="InvalidCollectionDocumentException">
+    <wsdl:part name="fault" type="tns6:InvalidCollectionDocumentException"/>
+  </wsdl:message>
+  <wsdl:message name="storeCollectionSchemaResponse">
+  </wsdl:message>
+  <wsdl:message name="queryCollectionsRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+  </wsdl:message>
+  <wsdl:message name="VariableExistsException">
+    <wsdl:part name="fault" type="tns5:VariableExistsException"/>
+  </wsdl:message>
+  <wsdl:message name="queryCollectionSchemaRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+  </wsdl:message>
+  <wsdl:message name="queryCollectionResponse">
+    <wsdl:part name="queryCollectionReturn" type="tns1:SixdmlCollection"/>
+  </wsdl:message>
+  <wsdl:message name="dropCollectionStylesheetRequest">
+    <wsdl:part name="collIn" type="tns4:VirtualCollection"/>
+  </wsdl:message>
+  <wsdl:message name="SAXException">
+    <wsdl:part name="fault" type="tns8:SAXException"/>
+  </wsdl:message>
+  <wsdl:message name="dropCollectionResponse">
+  </wsdl:message>
+  <wsdl:message name="closeResponse">
+  </wsdl:message>
+  <wsdl:message name="updateResourceRequest">
+    <wsdl:part name="collIn" type="tns1:SixdmlCollection"/>
+    <wsdl:part name="resIn" type="xsd:anyType"/>
+  </wsdl:message>
+  <wsdl:portType name="NEXDEngineService">
+    <wsdl:operation name="close">
+      <wsdl:input message="impl:closeRequest" name="closeRequest"/>
+      <wsdl:output message="impl:closeResponse" name="closeResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="containsId" parameterOrder="collIn idIn">
+      <wsdl:input message="impl:containsIdRequest" name="containsIdRequest"/>
+      <wsdl:output message="impl:containsIdResponse" name="containsIdResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="beginTransaction" parameterOrder="collIn">
+      <wsdl:input message="impl:beginTransactionRequest" 
+        name="beginTransactionRequest"/>
+      <wsdl:output message="impl:beginTransactionResponse" 
+        name="beginTransactionResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="commitTransaction" parameterOrder="collIn">
+      <wsdl:input message="impl:commitTransactionRequest" 
+        name="commitTransactionRequest"/>
+      <wsdl:output message="impl:commitTransactionResponse" 
+        name="commitTransactionResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="storeCollection" parameterOrder="collIn nameIn">
+      <wsdl:input message="impl:storeCollectionRequest" 
+        name="storeCollectionRequest"/>
+      <wsdl:output message="impl:storeCollectionResponse" 
+        name="storeCollectionResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="storeCollection" 
+      parameterOrder="collIn nameIn schemaIn">
+      <wsdl:input message="impl:storeCollectionRequest1" 
+        name="storeCollectionRequest1"/>
+      <wsdl:output message="impl:storeCollectionResponse1" 
+        name="storeCollectionResponse1"/>
+      <wsdl:fault message="impl:InvalidVCLSchemaException" 
+        name="InvalidVCLSchemaException"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+      <wsdl:fault message="impl:VariableExistsException" 
+        name="VariableExistsException"/>
+      <wsdl:fault message="impl:InvalidCollectionReferenceException" 
+        name="InvalidCollectionReferenceException"/>
+      <wsdl:fault message="impl:SAXException" name="SAXException"/>
+      <wsdl:fault message="impl:UndeclaredVariableException" 
+        name="UndeclaredVariableException"/>
+      <wsdl:fault message="impl:InvalidQueryException" 
+        name="InvalidQueryException"/>
+      <wsdl:fault message="impl:InvalidParentCollectionException" 
+        name="InvalidParentCollectionException"/>
+    </wsdl:operation>
+    <wsdl:operation name="storeCollection" 
+      parameterOrder="collIn nameIn schemaIn xslIn">
+      <wsdl:input message="impl:storeCollectionRequest2" 
+        name="storeCollectionRequest2"/>
+      <wsdl:output message="impl:storeCollectionResponse2" 
+        name="storeCollectionResponse2"/>
+      <wsdl:fault message="impl:InvalidVCLSchemaException" 
+        name="InvalidVCLSchemaException"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+      <wsdl:fault message="impl:VariableExistsException" 
+        name="VariableExistsException"/>
+      <wsdl:fault message="impl:InvalidCollectionReferenceException" 
+        name="InvalidCollectionReferenceException"/>
+      <wsdl:fault message="impl:SAXException" name="SAXException"/>
+      <wsdl:fault message="impl:UndeclaredVariableException" 
+        name="UndeclaredVariableException"/>
+      <wsdl:fault message="impl:InvalidQueryException" 
+        name="InvalidQueryException"/>
+      <wsdl:fault message="impl:InvalidParentCollectionException" 
+        name="InvalidParentCollectionException"/>
+    </wsdl:operation>
+    <wsdl:operation name="dropCollection" parameterOrder="collIn nameIn">
+      <wsdl:input message="impl:dropCollectionRequest" 
+        name="dropCollectionRequest"/>
+      <wsdl:output message="impl:dropCollectionResponse" 
+        name="dropCollectionResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryCollection" parameterOrder="collPath">
+      <wsdl:input message="impl:queryCollectionRequest" 
+        name="queryCollectionRequest"/>
+      <wsdl:output message="impl:queryCollectionResponse" 
+        name="queryCollectionResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryChildCollection" 
+      parameterOrder="parentIn nameIn">
+      <wsdl:input message="impl:queryChildCollectionRequest" 
+        name="queryChildCollectionRequest"/>
+      <wsdl:output message="impl:queryChildCollectionResponse" 
+        name="queryChildCollectionResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryParentCollection" parameterOrder="childIn">
+      <wsdl:input message="impl:queryParentCollectionRequest" 
+        name="queryParentCollectionRequest"/>
+      <wsdl:output message="impl:queryParentCollectionResponse" 
+        name="queryParentCollectionResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryCollectionCount" parameterOrder="collIn">
+      <wsdl:input message="impl:queryCollectionCountRequest" 
+        name="queryCollectionCountRequest"/>
+      <wsdl:output message="impl:queryCollectionCountResponse" 
+        name="queryCollectionCountResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryCollections" parameterOrder="collIn">
+      <wsdl:input message="impl:queryCollectionsRequest" 
+        name="queryCollectionsRequest"/>
+      <wsdl:output message="impl:queryCollectionsResponse" 
+        name="queryCollectionsResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="storeCollectionSchema" 
+      parameterOrder="collIn schemaIn">
+      <wsdl:input message="impl:storeCollectionSchemaRequest" 
+        name="storeCollectionSchemaRequest"/>
+      <wsdl:output message="impl:storeCollectionSchemaResponse" 
+        name="storeCollectionSchemaResponse"/>
+      <wsdl:fault message="impl:InvalidSchemaException" 
+        name="InvalidSchemaException"/>
+      <wsdl:fault message="impl:InvalidCollectionDocumentException" 
+        name="InvalidCollectionDocumentException"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="dropCollectionSchema" parameterOrder="collIn">
+      <wsdl:input message="impl:dropCollectionSchemaRequest" 
+        name="dropCollectionSchemaRequest"/>
+      <wsdl:output message="impl:dropCollectionSchemaResponse" 
+        name="dropCollectionSchemaResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryCollectionSchema" parameterOrder="collIn">
+      <wsdl:input message="impl:queryCollectionSchemaRequest" 
+        name="queryCollectionSchemaRequest"/>
+      <wsdl:output message="impl:queryCollectionSchemaResponse" 
+        name="queryCollectionSchemaResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="storeCollectionStylesheet" 
+      parameterOrder="collIn xslIn">
+      <wsdl:input message="impl:storeCollectionStylesheetRequest" 
+        name="storeCollectionStylesheetRequest"/>
+      <wsdl:output message="impl:storeCollectionStylesheetResponse" 
+        name="storeCollectionStylesheetResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+      <wsdl:fault message="impl:SAXException" name="SAXException"/>
+    </wsdl:operation>
+    <wsdl:operation name="dropCollectionStylesheet" parameterOrder="collIn">
+      <wsdl:input message="impl:dropCollectionStylesheetRequest" 
+        name="dropCollectionStylesheetRequest"/>
+      <wsdl:output message="impl:dropCollectionStylesheetResponse" 
+        name="dropCollectionStylesheetResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryCollectionStylesheet" parameterOrder="collIn">
+      <wsdl:input message="impl:queryCollectionStylesheetRequest" 
+        name="queryCollectionStylesheetRequest"/>
+      <wsdl:output message="impl:queryCollectionStylesheetResponse" 
+        name="queryCollectionStylesheetResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="storeResource" parameterOrder="collIn resIn">
+      <wsdl:input message="impl:storeResourceRequest" 
+        name="storeResourceRequest"/>
+      <wsdl:output message="impl:storeResourceResponse" 
+        name="storeResourceResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="updateResource" parameterOrder="collIn resIn">
+      <wsdl:input message="impl:updateResourceRequest" 
+        name="updateResourceRequest"/>
+      <wsdl:output message="impl:updateResourceResponse" 
+        name="updateResourceResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="dropResource" parameterOrder="collIn resIn">
+      <wsdl:input message="impl:dropResourceRequest" 
+        name="dropResourceRequest"/>
+      <wsdl:output message="impl:dropResourceResponse" 
+        name="dropResourceResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryResource" parameterOrder="collIn idIn">
+      <wsdl:input message="impl:queryResourceRequest" 
+        name="queryResourceRequest"/>
+      <wsdl:output message="impl:queryResourceResponse" 
+        name="queryResourceResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryResourceCount" parameterOrder="collIn">
+      <wsdl:input message="impl:queryResourceCountRequest" 
+        name="queryResourceCountRequest"/>
+      <wsdl:output message="impl:queryResourceCountResponse" 
+        name="queryResourceCountResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryResources" parameterOrder="collIn">
+      <wsdl:input message="impl:queryResourcesRequest" 
+        name="queryResourcesRequest"/>
+      <wsdl:output message="impl:queryResourcesResponse" 
+        name="queryResourcesResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryResourcesByXPath" 
+      parameterOrder="collIn queryIn">
+      <wsdl:input message="impl:queryResourcesByXPathRequest" 
+        name="queryResourcesByXPathRequest"/>
+      <wsdl:output message="impl:queryResourcesByXPathResponse" 
+        name="queryResourcesByXPathResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+      <wsdl:fault message="impl:InvalidQueryException" 
+        name="InvalidQueryException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryResourceByXPath" 
+      parameterOrder="collIn idIn queryIn">
+      <wsdl:input message="impl:queryResourceByXPathRequest" 
+        name="queryResourceByXPathRequest"/>
+      <wsdl:output message="impl:queryResourceByXPathResponse" 
+        name="queryResourceByXPathResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+      <wsdl:fault message="impl:InvalidQueryException" 
+        name="InvalidQueryException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryVCLSchema" parameterOrder="collIn">
+      <wsdl:input message="impl:queryVCLSchemaRequest" 
+        name="queryVCLSchemaRequest"/>
+      <wsdl:output message="impl:queryVCLSchemaResponse" 
+        name="queryVCLSchemaResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+    <wsdl:operation name="queryPCVResource" parameterOrder="collIn idIn">
+      <wsdl:input message="impl:queryPCVResourceRequest" 
+        name="queryPCVResourceRequest"/>
+      <wsdl:output message="impl:queryPCVResourceResponse" 
+        name="queryPCVResourceResponse"/>
+      <wsdl:fault message="impl:XMLDBException" name="XMLDBException"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NEXDEngineServiceSoapBinding" 
+    type="impl:NEXDEngineService">
+    <wsdlsoap:binding style="rpc" 
+      transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="close">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="closeRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="closeResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="containsId">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="containsIdRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="containsIdResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="beginTransaction">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="beginTransactionRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="beginTransactionResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="commitTransaction">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="commitTransactionRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="commitTransactionResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeCollection">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="storeCollectionRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="storeCollectionResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeCollection">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="storeCollectionRequest1">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="storeCollectionResponse1">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="InvalidVCLSchemaException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="InvalidVCLSchemaException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="VariableExistsException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="VariableExistsException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCollectionReferenceException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="InvalidCollectionReferenceException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="SAXException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="SAXException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="UndeclaredVariableException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="UndeclaredVariableException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="InvalidQueryException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="InvalidQueryException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="InvalidParentCollectionException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="InvalidParentCollectionException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeCollection">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="storeCollectionRequest2">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="storeCollectionResponse2">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="InvalidVCLSchemaException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="InvalidVCLSchemaException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="VariableExistsException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="VariableExistsException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCollectionReferenceException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="InvalidCollectionReferenceException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="SAXException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="SAXException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="UndeclaredVariableException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="UndeclaredVariableException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="InvalidQueryException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="InvalidQueryException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="InvalidParentCollectionException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="InvalidParentCollectionException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="dropCollection">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="dropCollectionRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="dropCollectionResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryCollection">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryCollectionRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryCollectionResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryChildCollection">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryChildCollectionRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryChildCollectionResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryParentCollection">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryParentCollectionRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryParentCollectionResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryCollectionCount">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryCollectionCountRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryCollectionCountResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryCollections">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryCollectionsRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryCollectionsResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeCollectionSchema">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="storeCollectionSchemaRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="storeCollectionSchemaResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="InvalidSchemaException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="InvalidSchemaException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="InvalidCollectionDocumentException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="InvalidCollectionDocumentException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="dropCollectionSchema">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="dropCollectionSchemaRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="dropCollectionSchemaResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryCollectionSchema">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryCollectionSchemaRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryCollectionSchemaResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeCollectionStylesheet">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="storeCollectionStylesheetRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="storeCollectionStylesheetResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="SAXException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="SAXException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="dropCollectionStylesheet">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="dropCollectionStylesheetRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="dropCollectionStylesheetResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryCollectionStylesheet">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryCollectionStylesheetRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryCollectionStylesheetResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="storeResource">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="storeResourceRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="storeResourceResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateResource">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="updateResourceRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="updateResourceResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="dropResource">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="dropResourceRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="dropResourceResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryResource">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryResourceRequest">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+                       namespace="urn:NEXDEngineService" 
+                       use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryResourceResponse">
+        <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+                       namespace="http://192.168.0.100:1100" 
+                       use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryResourceCount">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryResourceCountRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryResourceCountResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryResources">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryResourcesRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryResourcesResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryResourcesByXPath">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryResourcesByXPathRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryResourcesByXPathResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="InvalidQueryException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="InvalidQueryException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryResourceByXPath">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryResourceByXPathRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryResourceByXPathResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+      <wsdl:fault name="InvalidQueryException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="InvalidQueryException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryVCLSchema">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryVCLSchemaRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryVCLSchemaResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          name="XMLDBException" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="queryPCVResource">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="queryPCVResourceRequest">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="urn:NEXDEngineService" use="encoded"/>
+      </wsdl:input>
+      <wsdl:output name="queryPCVResourceResponse">
+        <wsdlsoap:body 
+          encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+          namespace="http://192.168.0.100:1100" 
+          use="encoded"/>
+      </wsdl:output>
+      <wsdl:fault name="XMLDBException">
+        <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" 
+                        name="XMLDBException" 
+                        namespace="http://192.168.0.100:1100" 
+                        use="encoded"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  
+  <wsdl:service name="NEXDEngineServiceService">
+    <wsdl:port binding="impl:NEXDEngineServiceSoapBinding" name="NEXDEngineService">
+      <wsdlsoap:address location="http://192.168.0.100:1100"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

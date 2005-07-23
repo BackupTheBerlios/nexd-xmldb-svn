@@ -1,0 +1,760 @@
+<?xml version="1.0"?>
+<definitions targetNamespace="http://de.xplib.nexd"
+	xmlns:tns="http://de.xplib.nexd"
+	xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsd4="http://de.xplib.nexd"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+	<types>
+		<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.w3.org/2001/XMLSchema">
+			<complexType name="ArrayOfstring">
+				<complexContent>
+					<restriction base="SOAP-ENC:Array">
+						<attribute ref="SOAP-ENC:arrayType" wsdl:arrayType="xsd:string[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+		</xsd:schema>
+		<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://de.xplib.nexd">
+			<complexType name="PCVResource">
+				<sequence>
+					<element name="NAMESPACE_URI" type="xsd:string"/>
+					<element name="NAMESPACE_PREFIX" type="xsd:string"/>
+					<element name="NAME_SCHEMA" type="xsd:string"/>
+					<element name="QNAME_SCHEMA" type="xsd:string"/>
+					<element name="NAME_ATTR" type="xsd:string"/>
+					<element name="QNAME_ATTR" type="xsd:string"/>
+					<element name="NAME_COLLECTION" type="xsd:string"/>
+					<element name="QNAME_COLLECTION" type="xsd:string"/>
+					<element name="NAME_VARIABLE" type="xsd:string"/>
+					<element name="QNAME_VARIABLE" type="xsd:string"/>
+					<element name="NAME_VALUE_OF" type="xsd:string"/>
+					<element name="QNAME_VALUE_OF" type="xsd:string"/>
+					<element name="NAME_RESOURCE" type="xsd:string"/>
+					<element name="QNAME_RESOURCE" type="xsd:string"/>
+					<element name="ATTR_SCHEMA_RESNAME" type="xsd:string"/>
+					<element name="ATTR_COLLECTION_MATCH" type="xsd:string"/>
+					<element name="ATTR_RESOURCE_REFERENCE" type="xsd:string"/>
+					<element name="ATTR_ATTR_NAME" type="xsd:string"/>
+					<element name="ATTR_ATTR_VALUE" type="xsd:string"/>
+					<element name="ATTR_VALUE_OF_VALUE" type="xsd:string"/>
+					<element name="RESOURCE_TYPE" type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<complexType name="VirtualCollection">
+				<sequence>
+				</sequence>
+			</complexType>
+			<complexType name="ResourceSet">
+				<sequence>
+				</sequence>
+			</complexType>
+			<complexType name="Resource">
+				<sequence>
+				</sequence>
+			</complexType>
+			<complexType name="SixdmlCollection">
+				<sequence>
+				</sequence>
+			</complexType>
+			<complexType name="VCLSchema">
+				<sequence>
+					<element name="NAMESPACE_PREFIX" type="xsd:string"/>
+					<element name="NAMESPACE_URI" type="xsd:string"/>
+					<element name="ELEM_NAME" type="xsd:string"/>
+					<element name="ATTR_PREFIX" type="xsd:string"/>
+					<element name="ATTR_POSTFIX" type="xsd:string"/>
+					<element name="ATTR_ENUMERATE" type="xsd:string"/>
+					<element name="ATTR_NAME" type="xsd:string"/>
+					<element name="RESOURCE_TYPE" type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<complexType name="Node">
+				<sequence>
+					<element name="ELEMENT_NODE" type="xsd:short"/>
+					<element name="ATTRIBUTE_NODE" type="xsd:short"/>
+					<element name="TEXT_NODE" type="xsd:short"/>
+					<element name="CDATA_SECTION_NODE" type="xsd:short"/>
+					<element name="ENTITY_REFERENCE_NODE" type="xsd:short"/>
+					<element name="ENTITY_NODE" type="xsd:short"/>
+					<element name="PROCESSING_INSTRUCTION_NODE" type="xsd:short"/>
+					<element name="COMMENT_NODE" type="xsd:short"/>
+					<element name="DOCUMENT_NODE" type="xsd:short"/>
+					<element name="DOCUMENT_TYPE_NODE" type="xsd:short"/>
+					<element name="DOCUMENT_FRAGMENT_NODE" type="xsd:short"/>
+					<element name="NOTATION_NODE" type="xsd:short"/>
+					<element name="DOCUMENT_POSITION_DISCONNECTED" type="xsd:short"/>
+					<element name="DOCUMENT_POSITION_PRECEDING" type="xsd:short"/>
+					<element name="DOCUMENT_POSITION_FOLLOWING" type="xsd:short"/>
+					<element name="DOCUMENT_POSITION_CONTAINS" type="xsd:short"/>
+					<element name="DOCUMENT_POSITION_CONTAINED_BY" type="xsd:short"/>
+					<element name="DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC" type="xsd:short"/>
+				</sequence>
+			</complexType>
+			<complexType name="SixdmlResource">
+				<sequence>
+					<element name="RESOURCE_TYPE" type="xsd:string"/>
+				</sequence>
+			</complexType>
+			<complexType name="URL">
+				<sequence>
+				</sequence>
+			</complexType>
+		</xsd:schema>
+	</types>
+
+	<message name="queryParentCollection-12-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+	</message>
+
+	<message name="close-1-Response">
+	</message>
+
+	<message name="dropCollectionSchema-16-Response">
+	</message>
+
+	<message name="queryResources-26-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+	</message>
+
+	<message name="queryCollectionSchema-17-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+	</message>
+
+	<message name="storeResource-21-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+		<part name="in2" type="xsd4:SixdmlResource" />
+	</message>
+
+	<message name="queryResourceCount-25-Response">
+		<part name="result" type="xsd:int" />
+	</message>
+
+	<message name="beginTransaction-4-Response">
+		<part name="result" type="xsd:string" />
+	</message>
+
+	<message name="queryResourceCount-25-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+	</message>
+
+	<message name="queryCollectionSchema-17-Response">
+		<part name="result" type="xsd:string" />
+	</message>
+
+	<message name="storeCollection-7-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+		<part name="in2" type="xsd:string" />
+		<part name="in3" type="xsd4:URL" />
+	</message>
+
+	<message name="storeCollection-6-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+		<part name="in2" type="xsd:string" />
+	</message>
+
+	<message name="dropResource-23-Response">
+	</message>
+
+	<message name="queryResource-24-Response">
+		<part name="result" type="xsd4:Resource" />
+	</message>
+
+	<message name="storeCollection-6-Response">
+		<part name="result" type="xsd4:SixdmlCollection" />
+	</message>
+
+	<message name="queryCollectionStylesheet-20-Response">
+		<part name="result" type="xsd4:Node" />
+	</message>
+
+	<message name="storeCollection-7-Response">
+		<part name="result" type="xsd4:VirtualCollection" />
+	</message>
+
+	<message name="queryResources-26-Response">
+		<part name="result" type="xsd:ArrayOfstring" />
+	</message>
+
+	<message name="queryResourceByXPath-28-Response">
+		<part name="result" type="xsd4:ResourceSet" />
+	</message>
+
+	<message name="dropCollection-9-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+		<part name="in2" type="xsd:string" />
+	</message>
+
+	<message name="queryCollection-10-Request">
+		<part name="in1" type="xsd:string" />
+	</message>
+
+	<message name="queryCollections-14-Response">
+		<part name="result" type="xsd:ArrayOfstring" />
+	</message>
+
+	<message name="open-2-Request">
+		<part name="in1" type="xsd:string" />
+		<part name="in2" type="xsd:string" />
+	</message>
+
+	<message name="storeCollectionStylesheet-18-Request">
+		<part name="in1" type="xsd4:VirtualCollection" />
+		<part name="in2" type="xsd4:URL" />
+	</message>
+
+	<message name="queryResource-24-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+		<part name="in2" type="xsd:string" />
+	</message>
+
+	<message name="dropCollection-9-Response">
+	</message>
+
+	<message name="storeCollectionSchema-15-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+		<part name="in2" type="xsd4:URL" />
+	</message>
+
+	<message name="storeCollectionSchema-15-Response">
+	</message>
+
+	<message name="queryResourcesByXPath-27-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+		<part name="in2" type="xsd:string" />
+	</message>
+
+	<message name="queryCollectionCount-13-Response">
+		<part name="result" type="xsd:int" />
+	</message>
+
+	<message name="queryChildCollection-11-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+		<part name="in2" type="xsd:string" />
+	</message>
+
+	<message name="close-1-Request">
+	</message>
+
+	<message name="dropResource-23-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+		<part name="in2" type="xsd4:Resource" />
+	</message>
+
+	<message name="commitTransaction-5-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+	</message>
+
+	<message name="queryCollection-10-Response">
+		<part name="result" type="xsd4:SixdmlCollection" />
+	</message>
+
+	<message name="dropCollectionStylesheet-19-Response">
+	</message>
+
+	<message name="containsId-3-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+		<part name="in2" type="xsd:string" />
+	</message>
+
+	<message name="open-2-Response">
+	</message>
+
+	<message name="commitTransaction-5-Response">
+	</message>
+
+	<message name="queryPCVResource-30-Request">
+		<part name="in1" type="xsd4:VirtualCollection" />
+		<part name="in2" type="xsd:string" />
+	</message>
+
+	<message name="storeCollectionStylesheet-18-Response">
+	</message>
+
+	<message name="queryParentCollection-12-Response">
+		<part name="result" type="xsd4:SixdmlCollection" />
+	</message>
+
+	<message name="queryCollectionStylesheet-20-Request">
+		<part name="in1" type="xsd4:VirtualCollection" />
+	</message>
+
+	<message name="updateResource-22-Response">
+	</message>
+
+	<message name="queryPCVResource-30-Response">
+		<part name="result" type="xsd4:PCVResource" />
+	</message>
+
+	<message name="queryCollections-14-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+	</message>
+
+	<message name="containsId-3-Response">
+		<part name="result" type="xsd:boolean" />
+	</message>
+
+	<message name="storeCollection-8-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+		<part name="in2" type="xsd:string" />
+		<part name="in3" type="xsd4:URL" />
+		<part name="in4" type="xsd4:URL" />
+	</message>
+
+	<message name="queryVCLSchema-29-Request">
+		<part name="in1" type="xsd4:VirtualCollection" />
+	</message>
+
+	<message name="queryResourcesByXPath-27-Response">
+		<part name="result" type="xsd4:ResourceSet" />
+	</message>
+
+	<message name="queryChildCollection-11-Response">
+		<part name="result" type="xsd4:SixdmlCollection" />
+	</message>
+
+	<message name="updateResource-22-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+		<part name="in2" type="xsd4:Resource" />
+	</message>
+
+	<message name="queryVCLSchema-29-Response">
+		<part name="result" type="xsd4:VCLSchema" />
+	</message>
+
+	<message name="beginTransaction-4-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+	</message>
+
+	<message name="storeResource-21-Response">
+	</message>
+
+	<message name="dropCollectionSchema-16-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+	</message>
+
+	<message name="dropCollectionStylesheet-19-Request">
+		<part name="in1" type="xsd4:VirtualCollection" />
+	</message>
+
+	<message name="queryCollectionCount-13-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+	</message>
+
+	<message name="queryResourceByXPath-28-Request">
+		<part name="in1" type="xsd4:SixdmlCollection" />
+		<part name="in2" type="xsd:string" />
+		<part name="in3" type="xsd:string" />
+	</message>
+
+	<message name="storeCollection-8-Response">
+		<part name="result" type="xsd4:VirtualCollection" />
+	</message>
+
+	<portType name="NEXDServicePortType">
+		<operation name="close">
+			<input message="tns:close-1-Request" />
+			<output message="tns:close-1-Response" />
+		</operation>
+		<operation name="open">
+			<input message="tns:open-2-Request" />
+			<output message="tns:open-2-Response" />
+		</operation>
+		<operation name="containsId">
+			<input message="tns:containsId-3-Request" />
+			<output message="tns:containsId-3-Response" />
+		</operation>
+		<operation name="beginTransaction">
+			<input message="tns:beginTransaction-4-Request" />
+			<output message="tns:beginTransaction-4-Response" />
+		</operation>
+		<operation name="commitTransaction">
+			<input message="tns:commitTransaction-5-Request" />
+			<output message="tns:commitTransaction-5-Response" />
+		</operation>
+		<operation name="storeCollection">
+			<input message="tns:storeCollection-6-Request" />
+			<output message="tns:storeCollection-6-Response" />
+		</operation>
+		<operation name="storeCollection">
+			<input message="tns:storeCollection-7-Request" />
+			<output message="tns:storeCollection-7-Response" />
+		</operation>
+		<operation name="storeCollection">
+			<input message="tns:storeCollection-8-Request" />
+			<output message="tns:storeCollection-8-Response" />
+		</operation>
+		<operation name="dropCollection">
+			<input message="tns:dropCollection-9-Request" />
+			<output message="tns:dropCollection-9-Response" />
+		</operation>
+		<operation name="queryCollection">
+			<input message="tns:queryCollection-10-Request" />
+			<output message="tns:queryCollection-10-Response" />
+		</operation>
+		<operation name="queryChildCollection">
+			<input message="tns:queryChildCollection-11-Request" />
+			<output message="tns:queryChildCollection-11-Response" />
+		</operation>
+		<operation name="queryParentCollection">
+			<input message="tns:queryParentCollection-12-Request" />
+			<output message="tns:queryParentCollection-12-Response" />
+		</operation>
+		<operation name="queryCollectionCount">
+			<input message="tns:queryCollectionCount-13-Request" />
+			<output message="tns:queryCollectionCount-13-Response" />
+		</operation>
+		<operation name="queryCollections">
+			<input message="tns:queryCollections-14-Request" />
+			<output message="tns:queryCollections-14-Response" />
+		</operation>
+		<operation name="storeCollectionSchema">
+			<input message="tns:storeCollectionSchema-15-Request" />
+			<output message="tns:storeCollectionSchema-15-Response" />
+		</operation>
+		<operation name="dropCollectionSchema">
+			<input message="tns:dropCollectionSchema-16-Request" />
+			<output message="tns:dropCollectionSchema-16-Response" />
+		</operation>
+		<operation name="queryCollectionSchema">
+			<input message="tns:queryCollectionSchema-17-Request" />
+			<output message="tns:queryCollectionSchema-17-Response" />
+		</operation>
+		<operation name="storeCollectionStylesheet">
+			<input message="tns:storeCollectionStylesheet-18-Request" />
+			<output message="tns:storeCollectionStylesheet-18-Response" />
+		</operation>
+		<operation name="dropCollectionStylesheet">
+			<input message="tns:dropCollectionStylesheet-19-Request" />
+			<output message="tns:dropCollectionStylesheet-19-Response" />
+		</operation>
+		<operation name="queryCollectionStylesheet">
+			<input message="tns:queryCollectionStylesheet-20-Request" />
+			<output message="tns:queryCollectionStylesheet-20-Response" />
+		</operation>
+		<operation name="storeResource">
+			<input message="tns:storeResource-21-Request" />
+			<output message="tns:storeResource-21-Response" />
+		</operation>
+		<operation name="updateResource">
+			<input message="tns:updateResource-22-Request" />
+			<output message="tns:updateResource-22-Response" />
+		</operation>
+		<operation name="dropResource">
+			<input message="tns:dropResource-23-Request" />
+			<output message="tns:dropResource-23-Response" />
+		</operation>
+		<operation name="queryResource">
+			<input message="tns:queryResource-24-Request" />
+			<output message="tns:queryResource-24-Response" />
+		</operation>
+		<operation name="queryResourceCount">
+			<input message="tns:queryResourceCount-25-Request" />
+			<output message="tns:queryResourceCount-25-Response" />
+		</operation>
+		<operation name="queryResources">
+			<input message="tns:queryResources-26-Request" />
+			<output message="tns:queryResources-26-Response" />
+		</operation>
+		<operation name="queryResourcesByXPath">
+			<input message="tns:queryResourcesByXPath-27-Request" />
+			<output message="tns:queryResourcesByXPath-27-Response" />
+		</operation>
+		<operation name="queryResourceByXPath">
+			<input message="tns:queryResourceByXPath-28-Request" />
+			<output message="tns:queryResourceByXPath-28-Response" />
+		</operation>
+		<operation name="queryVCLSchema">
+			<input message="tns:queryVCLSchema-29-Request" />
+			<output message="tns:queryVCLSchema-29-Response" />
+		</operation>
+		<operation name="queryPCVResource">
+			<input message="tns:queryPCVResource-30-Request" />
+			<output message="tns:queryPCVResource-30-Response" />
+		</operation>
+	</portType>
+
+	<binding name="NEXDServiceBinding" type="tns:NEXDServicePortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http" />
+		<operation name="close">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="open">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="containsId">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="beginTransaction">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="commitTransaction">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="storeCollection">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="storeCollection">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="storeCollection">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="dropCollection">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryCollection">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryChildCollection">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryParentCollection">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryCollectionCount">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryCollections">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="storeCollectionSchema">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="dropCollectionSchema">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryCollectionSchema">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="storeCollectionStylesheet">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="dropCollectionStylesheet">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryCollectionStylesheet">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="storeResource">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="updateResource">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="dropResource">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryResource">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryResourceCount">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryResources">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryResourcesByXPath">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryResourceByXPath">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryVCLSchema">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+		<operation name="queryPCVResource">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</input>
+			<output>
+				<soap:body namespace="urn:NEXDEngineService" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" />
+			</output>
+		</operation>
+	</binding>
+
+	<service name="NEXDService">
+		<documentation>Spheon JSOAP</documentation>
+		<port name="NEXDServicePort" binding="tns:NEXDServiceBinding">
+			<soap:address location="foobar" />
+		</port>
+	</service>
+</definitions>

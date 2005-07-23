@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<spheon-jsoap>
+	<service urn="urn:NEXDEngineService" class="de.xplib.nexd.core.NEXDEngineI">
+		<method name="beginTransaction" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+		</method>
+		<method name="close" paramnames="0">
+		</method>
+		<method name="commitTransaction" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+		</method>
+		<method name="containsId" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+			<param>java.lang.String</param>
+		</method>
+		<method name="dropCollection" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+			<param>java.lang.String</param>
+		</method>
+		<method name="dropCollectionSchema" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+		</method>
+		<method name="dropCollectionStylesheet" paramnames="0">
+			<param>de.xplib.nexd.api.VirtualCollection</param>
+		</method>
+		<method name="dropResource" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+			<param>org.xmldb.api.base.Resource</param>
+		</method>
+		<method name="open" paramnames="0">
+			<param>java.lang.String</param>
+			<param>java.lang.String</param>
+		</method>
+		<method name="queryChildCollection" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+			<param>java.lang.String</param>
+		</method>
+		<method name="queryCollection" paramnames="0">
+			<param>java.lang.String</param>
+		</method>
+		<method name="queryCollectionCount" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+		</method>
+		<method name="queryCollectionSchema" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+		</method>
+		<method name="queryCollectionStylesheet" paramnames="0">
+			<param>de.xplib.nexd.api.VirtualCollection</param>
+		</method>
+		<method name="queryCollections" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+		</method>
+		<method name="queryPCVResource" paramnames="0">
+			<param>de.xplib.nexd.api.VirtualCollection</param>
+			<param>java.lang.String</param>
+		</method>
+		<method name="queryParentCollection" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+		</method>
+		<method name="queryResource" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+			<param>java.lang.String</param>
+		</method>
+		<method name="queryResourceByXPath" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+			<param>java.lang.String</param>
+			<param>java.lang.String</param>
+		</method>
+		<method name="queryResourceCount" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+		</method>
+		<method name="queryResources" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+		</method>
+		<method name="queryResourcesByXPath" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+			<param>java.lang.String</param>
+		</method>
+		<method name="queryVCLSchema" paramnames="0">
+			<param>de.xplib.nexd.api.VirtualCollection</param>
+		</method>
+		<method name="storeCollection" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+			<param>java.lang.String</param>
+			<param>java.net.URL</param>
+			<param>java.net.URL</param>
+		</method>
+		<method name="storeCollectionSchema" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+			<param>java.net.URL</param>
+		</method>
+		<method name="storeCollectionStylesheet" paramnames="0">
+			<param>de.xplib.nexd.api.VirtualCollection</param>
+			<param>java.net.URL</param>
+		</method>
+		<method name="storeResource" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+			<param>org.sixdml.dbmanagement.SixdmlResource</param>
+		</method>
+		<method name="updateResource" paramnames="0">
+			<param>org.sixdml.dbmanagement.SixdmlCollection</param>
+			<param>org.xmldb.api.base.Resource</param>
+		</method>
+	</service>
+	<xsd uri="http://de.xplib.nexd">
+		<soap type="Node">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,Node,org.w3c.dom.Node</soap>
+		<java type="org.w3c.dom.Node">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,Node,org.w3c.dom.Node</java>
+		<soap type="PCVResource">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,PCVResource,de.xplib.nexd.api.pcvr.PCVResource</soap>
+		<java type="de.xplib.nexd.api.pcvr.PCVResource">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,PCVResource,de.xplib.nexd.api.pcvr.PCVResource</java>
+		<soap type="Resource">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,Resource,org.xmldb.api.base.Resource</soap>
+		<java type="org.xmldb.api.base.Resource">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,Resource,org.xmldb.api.base.Resource</java>
+		<soap type="ResourceSet">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,ResourceSet,org.xmldb.api.base.ResourceSet</soap>
+		<java type="org.xmldb.api.base.ResourceSet">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,ResourceSet,org.xmldb.api.base.ResourceSet</java>
+		<soap type="SixdmlCollection">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,SixdmlCollection,de.xplib.nexd.xapi.CollectionImpl</soap>
+		<java type="org.sixdml.dbmanagement.SixdmlCollection">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,SixdmlCollection,de.xplib.nexd.xapi.CollectionImpl</java>
+		<soap type="SixdmlResource">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,SixdmlResource,org.sixdml.dbmanagement.SixdmlResource</soap>
+		<java type="org.sixdml.dbmanagement.SixdmlResource">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,SixdmlResource,org.sixdml.dbmanagement.SixdmlResource</java>
+		<soap type="URL">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,URL,java.net.URL</soap>
+		<java type="java.net.URL">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,URL,java.net.URL</java>
+		<soap type="VCLSchema">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,VCLSchema,de.xplib.nexd.api.vcl.VCLSchema</soap>
+		<java type="de.xplib.nexd.api.vcl.VCLSchema">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,VCLSchema,de.xplib.nexd.api.vcl.VCLSchema</java>
+		<soap type="VirtualCollection">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,VirtualCollection,de.xplib.nexd.api.VirtualCollection</soap>
+		<java type="de.xplib.nexd.api.VirtualCollection">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,VirtualCollection,de.xplib.nexd.api.VirtualCollection</java>
+		<soap type="Document">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,Document,de.xplib.nexd.xml.dom.DocumentImpl</soap>
+		<java type="de.xplib.nexd.xml.dom.DocumentImpl">@de.fmui.spheon.jsoap.encoding.xsdStructWrapper,Document,de.xplib.nexd.xml.dom.DocumentImpl</java>
+	</xsd>
+</spheon-jsoap>
