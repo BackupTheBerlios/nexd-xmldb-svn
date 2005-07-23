@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfebhqrfqkwpgl41">
+		<property name="$metaclass" value="Class Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.xpath.Step">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="50,10,244,210"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.xml.xpath.Step:Dependency_Link">
+				<property name="sourceAnchor" value="294,115"/>
+				<property name="targetAnchor" value="356,115"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.xpath.Step.Step:Step~QAbstractNodeTest;~QAbstractBooleanExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.xpath.Step.multiLevel">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.xpath.Step.toString:toString">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.xpath.Step.Step:Step~QXPath;~Z~QXPathTokenizer;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.xml.xpath.Step:Dependency_Link1">
+				<property name="sourceAnchor" value="230,220"/>
+				<property name="targetAnchor" value="651,259"/>
+				<property name="bendpoints" value="230,259"/>
+				<property name="smooth_bendpoints" value="230,259"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.xpath.Step.Step:Step~QXPath;~Z~QXPathTokenizer;~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.xpath.XPath">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="50,287,244,227"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.xpath.XPath.ASSERTION">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.xpath.XPath.generateString:generateString">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.xpath.XPath.XPath:XPath~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.xpath.XPath.string">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.xml.xpath.XPath:Dependency_Link">
+				<property name="sourceAnchor" value="294,355"/>
+				<property name="targetAnchor" value="651,355"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.xpath.XPath.XPath:XPath~QString;~QReader;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.xpath.XPath.toString:toString">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.xpath.XPath:steps">
+				<property name="sourceAnchor" value="172,287"/>
+				<property name="targetAnchor" value="172,220"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.xpath.XPath.steps">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.xml.xpath.XPath:Dependency_Link1">
+				<property name="sourceAnchor" value="256,293"/>
+				<property name="targetAnchor" value="312,237"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.xpath.XPathTokenizer">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="651,10,164,414"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.xpath.XPathTokenizer.XPathTokenizer:XPathTokenizer~QReader;">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.xpath.ExprFactory">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="356,10,228,230"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.xpath.ExprFactory.Q_STRING">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.xml.xpath.ExprFactory:Dependency_Link">
+				<property name="sourceAnchor" value="584,125"/>
+				<property name="targetAnchor" value="651,125"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

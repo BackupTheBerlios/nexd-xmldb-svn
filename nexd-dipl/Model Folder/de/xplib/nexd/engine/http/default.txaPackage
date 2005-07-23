@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="N-w2q8ptebbzmcfmkqdu34">
+		<property name="$metaclass" value="Object"/>
+		<property name="@stereotype" value="actor"/>
+		<property name="$name" value="Actor"/>
+		<link uin="L1b7x3iebbzn9m7-ompeb2">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzmcfmkqdu34" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzmn8d-v6157t" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebbzn9lo-492qwn">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="Http Request"/>
+			<property name="normalizedIndex" value="0.5"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebbzn9nj2smhea:N-w2q8ptebbzmn8d-v6157t"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzmcfmkqdu34" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzmn8d-v6157t" role="Supplier">
+			</participant>
+		</link>
+	</node>
+	<node uin="N-w2q8ptebbznufyvksgsn">
+		<property name="$metaclass" value="Object"/>
+		<property name="incomingMessagesHistory" value="design:link:::L-jj7sjxebbzomzbw19e8g:N-w2q8ptebbzmn8d-v6157t"/>
+		<node uin="N-4aytaiebbzon1bpm9s4p">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation1"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebbzomzbw19e8g:N-w2q8ptebbzmn8d-v6157t"/>
+		</node>
+		<link uin="L-jj7sjxebbzt2prggljy3">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="."/>
+			<property name="normalizedIndex" value="0.6666667"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebbzomzbw19e8g:N-w2q8ptebbzmn8d-v6157t"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebbzt2qi-nq0y6v:N-w2q8ptebbzq6jsv2jlz9"/>
+			<property name="operationDeclaringClass" value="java.lang.Thread"/>
+			<property name="operationSignature" value="()V"/>
+			<property name="operationName" value="start"/>
+			<link uin="Lc0q5rjebbztujq-5g6e41">
+				<property name="$metaclass" value="Dependency Link"/>
+				<property name="$name" value="Dependency Link1"/>
+				<participant referencedUin="design:link:::L-jj7sjxebbzt2prggljy3:N-w2q8ptebbznufyvksgsn" role="Client">
+				</participant>
+				<participant referencedUin="jdt:e_method:bin:java.lang.Thread.start:start" role="Supplier">
+				</participant>
+			</link>
+			<participant referencedUin="design:node:::N-w2q8ptebbznufyvksgsn" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L1b7x3iebbzs3zrmkdg07">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbznufyvksgsn" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebbzs3zb9uvs9l">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="new"/>
+			<property name="normalizedIndex" value="0.33333334"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebbzomzbw19e8g:N-w2q8ptebbzmn8d-v6157t"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebbzs40i7uuhhv:N-w2q8ptebbzq6jsv2jlz9"/>
+			<property name="creation" value="true"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbznufyvksgsn" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Supplier">
+			</participant>
+		</link>
+		<link uin="Lc0q5rjebbzogt6-q5i8wz">
+			<property name="$metaclass" value="Dependency Link"/>
+			<property name="$name" value="Dependency Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbznufyvksgsn" role="Client">
+			</participant>
+			<participant referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.ServerThread" role="Supplier">
+			</participant>
+		</link>
+	</node>
+	<node uin="N-w2q8ptebc0k7kgzb33vi">
+		<property name="$metaclass" value="Object"/>
+		<property name="incomingMessagesHistory" value="design:link:::L-jj7sjxebc0luzb6vce:N-w2q8ptebbzq6jsv2jlz9"/>
+		<link uin="Lc0q5rjebc0lbol-jnuyxr">
+			<property name="$metaclass" value="Dependency Link"/>
+			<property name="$name" value="Dependency Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebc0k7kgzb33vi" role="Client">
+			</participant>
+			<participant referencedUin="jdt:e_class:bin:de.fmui.spheon.jsoap.SoapParser" role="Supplier">
+			</participant>
+		</link>
+		<node uin="N-4aytaiebc0lv24y2zof9">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation1"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebc0luzb6vce:N-w2q8ptebbzq6jsv2jlz9"/>
+		</node>
+	</node>
+	<node uin="N-w2q8ptebbzv6c08iqiwj">
+		<property name="$metaclass" value="Object"/>
+		<property name="$name" value="req"/>
+		<property name="incomingMessagesHistory" value="design:link:::L-jj7sjxebbzx4jc-xd2hni:N-w2q8ptebbzq6jsv2jlz9;design:link:::L-jj7sjxebc06tbd-2h497f:N-w2q8ptebbzq6jsv2jlz9"/>
+		<node uin="N-4aytaiebc06td6-h1ios8">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation2"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebc06tbd-2h497f:N-w2q8ptebbzq6jsv2jlz9"/>
+		</node>
+		<node uin="N-4aytaiebbzx4lhl0go3u">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation1"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebbzx4jc-xd2hni:N-w2q8ptebbzq6jsv2jlz9"/>
+		</node>
+		<link uin="Lc0q5rjebbzvnap-ll228q">
+			<property name="$metaclass" value="Dependency Link"/>
+			<property name="$name" value="Dependency Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzv6c08iqiwj" role="Client">
+			</participant>
+			<participant referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.Request" role="Supplier">
+			</participant>
+		</link>
+	</node>
+	<node uin="N-w2q8ptebbzq6jsv2jlz9">
+		<property name="$metaclass" value="Object"/>
+		<property name="$name" value="obj"/>
+		<property name="incomingMessagesHistory" value="design:link:::L-jj7sjxebbzs3zb9uvs9l:N-w2q8ptebbznufyvksgsn;design:link:::L-jj7sjxebbzt2prggljy3:N-w2q8ptebbznufyvksgsn;design:link:::L-jj7sjxebbzu6tr-zc2qms:N-w2q8ptebbzq6jsv2jlz9;design:link:::L-jj7sjxebc0hcy6lxaj7w:N-w2q8ptebbzq6jsv2jlz9"/>
+		<link uin="L1b7x3iebc0luzkv846ei">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link5"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebc0k7kgzb33vi" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebc0ia42fp49ww">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="."/>
+			<property name="normalizedIndex" value="0.2"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebc0hcy6lxaj7w:N-w2q8ptebbzq6jsv2jlz9"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebc0ia6bv5an5g:N-w2q8ptebbzzwuw-vh0w5y"/>
+			<property name="operationDeclaringClass" value="de.xplib.nexd.engine.http.soap.ServicePool"/>
+			<property name="operationSignature" value="(QInetAddress;)QService;"/>
+			<property name="operationName" value="borrowService"/>
+			<property name="return" value="service"/>
+			<link uin="Lc0q5rjebc0jf0rkb45f6">
+				<property name="$metaclass" value="Dependency Link"/>
+				<property name="$name" value="Dependency Link1"/>
+				<participant referencedUin="design:link:::L-jj7sjxebc0ia42fp49ww:N-w2q8ptebbzq6jsv2jlz9" role="Client">
+				</participant>
+				<participant referencedUin="jdt:e_method:src:de.xplib.nexd.engine.http.soap.ServicePool.borrowService:borrowService~QInetAddress;" role="Supplier">
+				</participant>
+			</link>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzzwuw-vh0w5y" role="Supplier">
+			</participant>
+		</link>
+		<node uin="N-4aytaiebbzs40i7uuhhv">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation1"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebbzs3zb9uvs9l:N-w2q8ptebbznufyvksgsn"/>
+		</node>
+		<link uin="L1b7x3iebbzybrg9n5hkd">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link3"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzvxc7-bgpu39" role="Supplier">
+			</participant>
+		</link>
+		<node uin="N-4aytaiebc0hd0gpvx7lz">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation4"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebc0hcy6lxaj7w:N-w2q8ptebbzq6jsv2jlz9"/>
+		</node>
+		<link uin="L1b7x3iebbzu6u5mzt3ud">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebbzx4jc-xd2hni">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="new"/>
+			<property name="normalizedIndex" value="0.16666667"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebbzu6tr-zc2qms:N-w2q8ptebbzq6jsv2jlz9"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebbzx4lhl0go3u:N-w2q8ptebbzv6c08iqiwj"/>
+			<property name="creation" value="true"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzv6c08iqiwj" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebc07is5-nvzkq6">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="."/>
+			<property name="normalizedIndex" value="0.6666667"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebbzu6tr-zc2qms:N-w2q8ptebbzq6jsv2jlz9"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebc07iu9-x26tg1:N-w2q8ptebbzvxc7-bgpu39"/>
+			<property name="condition" value="url = WSDL_QUERY"/>
+			<property name="operationDeclaringClass" value="de.xplib.nexd.engine.http.Response"/>
+			<property name="operationSignature" value="(QString;)V"/>
+			<property name="operationName" value="sendBody"/>
+			<property name="arguments" value="Service.getWSDL()"/>
+			<link uin="Lc0q5rjebc08w5ss3uy5s">
+				<property name="$metaclass" value="Dependency Link"/>
+				<property name="$name" value="Dependency Link1"/>
+				<participant referencedUin="design:link:::L-jj7sjxebc07is5-nvzkq6:N-w2q8ptebbzq6jsv2jlz9" role="Client">
+				</participant>
+				<participant referencedUin="jdt:e_method:src:de.xplib.nexd.engine.http.Response.sendBody:sendBody~QString;" role="Supplier">
+				</participant>
+			</link>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzvxc7-bgpu39" role="Supplier">
+			</participant>
+		</link>
+		<node uin="N-4aytaiebbzu6vqmzb94y">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation3"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebbzu6tr-zc2qms:N-w2q8ptebbzq6jsv2jlz9"/>
+		</node>
+		<link uin="L-jj7sjxebbzybramygffz">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="new"/>
+			<property name="normalizedIndex" value="0.33333334"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebbzu6tr-zc2qms:N-w2q8ptebbzq6jsv2jlz9"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebbzybu0-uppbyi:N-w2q8ptebbzvxc7-bgpu39"/>
+			<property name="creation" value="true"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzvxc7-bgpu39" role="Supplier">
+			</participant>
+		</link>
+		<link uin="Lc0q5rjebbzrxt5ynpzw4">
+			<property name="$metaclass" value="Dependency Link"/>
+			<property name="$name" value="Dependency Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.ServerThread" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebc0q95y5509bw">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="."/>
+			<property name="normalizedIndex" value="0.8"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebc0hcy6lxaj7w:N-w2q8ptebbzq6jsv2jlz9"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebc0q98e-rbqozp:N-w2q8ptebbzvxc7-bgpu39"/>
+			<property name="operationDeclaringClass" value="de.xplib.nexd.engine.http.Response"/>
+			<property name="operationSignature" value="(QString;)V"/>
+			<property name="operationName" value="sendBody"/>
+			<link uin="Lc0q5rjebc0qsg9-8pa4r7">
+				<property name="$metaclass" value="Dependency Link"/>
+				<property name="$name" value="Dependency Link1"/>
+				<participant referencedUin="design:link:::L-jj7sjxebc0q95y5509bw:N-w2q8ptebbzq6jsv2jlz9" role="Client">
+				</participant>
+				<participant referencedUin="jdt:e_method:src:de.xplib.nexd.engine.http.Response.sendBody:sendBody~QString;" role="Supplier">
+				</participant>
+			</link>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzvxc7-bgpu39" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L1b7x3iebc0ia4nd1dx9c">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link4"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzzwuw-vh0w5y" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebbzu6tr-zc2qms">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="."/>
+			<property name="normalizedIndex" value="0.5"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebbzt2prggljy3:N-w2q8ptebbznufyvksgsn"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebbzu6vqmzb94y:N-w2q8ptebbzq6jsv2jlz9"/>
+			<property name="operationDeclaringClass" value="de.xplib.nexd.engine.http.ServerThread"/>
+			<property name="operationSignature" value="()V"/>
+			<property name="operationName" value="run"/>
+			<link uin="Lc0q5rjebbzuli2-mle932">
+				<property name="$metaclass" value="Dependency Link"/>
+				<property name="$name" value="Dependency Link1"/>
+				<participant referencedUin="design:link:::L-jj7sjxebbzu6tr-zc2qms:N-w2q8ptebbzq6jsv2jlz9" role="Client">
+				</participant>
+				<participant referencedUin="jdt:e_method:src:de.xplib.nexd.engine.http.ServerThread.run:run" role="Supplier">
+				</participant>
+			</link>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebc06tbd-2h497f">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="."/>
+			<property name="normalizedIndex" value="0.5"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebbzu6tr-zc2qms:N-w2q8ptebbzq6jsv2jlz9"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebc06td6-h1ios8:N-w2q8ptebbzv6c08iqiwj"/>
+			<property name="operationDeclaringClass" value="de.xplib.nexd.engine.http.Request"/>
+			<property name="operationSignature" value="()QString;"/>
+			<property name="operationName" value="getUrl"/>
+			<property name="return" value="url"/>
+			<link uin="Lc0q5rjebc07b27-x6xhnj">
+				<property name="$metaclass" value="Dependency Link"/>
+				<property name="$name" value="Dependency Link1"/>
+				<participant referencedUin="design:link:::L-jj7sjxebc06tbd-2h497f:N-w2q8ptebbzq6jsv2jlz9" role="Client">
+				</participant>
+				<participant referencedUin="jdt:e_method:src:de.xplib.nexd.engine.http.Request.getUrl:getUrl" role="Supplier">
+				</participant>
+			</link>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzv6c08iqiwj" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebc0hcy6lxaj7w">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="."/>
+			<property name="normalizedIndex" value="0.8333334"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebbzu6tr-zc2qms:N-w2q8ptebbzq6jsv2jlz9"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebc0hd0gpvx7lz:N-w2q8ptebbzq6jsv2jlz9"/>
+			<property name="condition" value="url != WSDL_QUERY"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Supplier">
+			</participant>
+		</link>
+		<node uin="N-4aytaiebbzt2qi-nq0y6v">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation2"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebbzt2prggljy3:N-w2q8ptebbznufyvksgsn"/>
+		</node>
+		<link uin="L1b7x3iebbzx4js-720wj6">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link2"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzv6c08iqiwj" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebc0luzb6vce">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="."/>
+			<property name="normalizedIndex" value="0.4"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebc0hcy6lxaj7w:N-w2q8ptebbzq6jsv2jlz9"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebc0lv24y2zof9:N-w2q8ptebc0k7kgzb33vi"/>
+			<property name="operationDeclaringClass" value="de.fmui.spheon.jsoap.SoapParser"/>
+			<property name="operationSignature" value="(Lde.fmui.spheon.jsoap.SoapConfig;Lde.fmui.spheon.jsoap.Envelope;Ljava.lang.Object;)Lde.fmui.spheon.jsoap.Envelope;"/>
+			<property name="operationName" value="execute"/>
+			<property name="arguments" value="SoapConfig,Envelope,service"/>
+			<link uin="Lc0q5rjebc0moau-ofwqvi">
+				<property name="$metaclass" value="Dependency Link"/>
+				<property name="$name" value="Dependency Link1"/>
+				<participant referencedUin="design:link:::L-jj7sjxebc0luzb6vce:N-w2q8ptebbzq6jsv2jlz9" role="Client">
+				</participant>
+				<participant referencedUin="jdt:e_method:bin:de.fmui.spheon.jsoap.SoapParser.execute:execute~Lde.fmui.spheon.jsoap.SoapConfig;~Lde.fmui.spheon.jsoap.Envelope;~Ljava.lang.Object;" role="Supplier">
+				</participant>
+			</link>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebc0k7kgzb33vi" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebc0nzdh-awsft9">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="."/>
+			<property name="normalizedIndex" value="0.6"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebc0hcy6lxaj7w:N-w2q8ptebbzq6jsv2jlz9"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebc0pbbz4j51xo:N-w2q8ptebbzzwuw-vh0w5y"/>
+			<property name="operationDeclaringClass" value="de.xplib.nexd.engine.http.soap.ServicePool"/>
+			<property name="operationSignature" value="(QService;)V"/>
+			<property name="operationName" value="returnService"/>
+			<property name="arguments" value="service"/>
+			<link uin="Lc0q5rjebc0pm0l-35ltd4">
+				<property name="$metaclass" value="Dependency Link"/>
+				<property name="$name" value="Dependency Link1"/>
+				<participant referencedUin="design:link:::L-jj7sjxebc0nzdh-awsft9:N-w2q8ptebbzq6jsv2jlz9" role="Client">
+				</participant>
+				<participant referencedUin="jdt:e_method:src:de.xplib.nexd.engine.http.soap.ServicePool.returnService:returnService~QService;" role="Supplier">
+				</participant>
+			</link>
+			<participant referencedUin="design:node:::N-w2q8ptebbzq6jsv2jlz9" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbzzwuw-vh0w5y" role="Supplier">
+			</participant>
+		</link>
+	</node>
+	<node uin="N-w2q8ptebbzvxc7-bgpu39">
+		<property name="$metaclass" value="Object"/>
+		<property name="$name" value="res"/>
+		<property name="incomingMessagesHistory" value="design:link:::L-jj7sjxebbzybramygffz:N-w2q8ptebbzq6jsv2jlz9;design:link:::L-jj7sjxebc07is5-nvzkq6:N-w2q8ptebbzq6jsv2jlz9;design:link:::L-jj7sjxebc0q95y5509bw:N-w2q8ptebbzq6jsv2jlz9"/>
+		<node uin="N-4aytaiebc07iu9-x26tg1">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation2"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebc07is5-nvzkq6:N-w2q8ptebbzq6jsv2jlz9"/>
+		</node>
+		<node uin="N-4aytaiebc0q98e-rbqozp">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation3"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebc0q95y5509bw:N-w2q8ptebbzq6jsv2jlz9"/>
+		</node>
+		<link uin="Lc0q5rjebbzwbzmkvmn4z">
+			<property name="$metaclass" value="Dependency Link"/>
+			<property name="$name" value="Dependency Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzvxc7-bgpu39" role="Client">
+			</participant>
+			<participant referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.Response" role="Supplier">
+			</participant>
+		</link>
+		<node uin="N-4aytaiebbzybu0-uppbyi">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation1"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebbzybramygffz:N-w2q8ptebbzq6jsv2jlz9"/>
+		</node>
+	</node>
+	<node uin="N-w2q8ptebbzmn8d-v6157t">
+		<property name="$metaclass" value="Object"/>
+		<property name="incomingMessagesHistory" value="design:link:::L-jj7sjxebbzn9lo-492qwn:N-w2q8ptebbzmcfmkqdu34"/>
+		<link uin="Lc0q5rjebbzn47kwa7vqs">
+			<property name="$metaclass" value="Dependency Link"/>
+			<property name="$name" value="Dependency Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzmn8d-v6157t" role="Client">
+			</participant>
+			<participant referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.Server" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L-jj7sjxebbzomzbw19e8g">
+			<property name="$metaclass" value="Message Link"/>
+			<property name="$name" value="."/>
+			<property name="normalizedIndex" value="0.5"/>
+			<property name="predecessorUid" value="design:link:::L-jj7sjxebbzn9lo-492qwn:N-w2q8ptebbzmcfmkqdu34"/>
+			<property name="activationUid" value="design:node:::N-4aytaiebbzon1bpm9s4p:N-w2q8ptebbznufyvksgsn"/>
+			<property name="operationDeclaringClass" value="de.xplib.nexd.engine.http.ServerThread"/>
+			<property name="operationSignature" value="(QSocket;QSoapConfig;QServicePool;)V"/>
+			<property name="operationName" value="runServerThread"/>
+			<link uin="Lc0q5rjebbzoupq-nasdht">
+				<property name="$metaclass" value="Dependency Link"/>
+				<property name="$name" value="Dependency Link1"/>
+				<participant referencedUin="design:link:::L-jj7sjxebbzomzbw19e8g:N-w2q8ptebbzmn8d-v6157t" role="Client">
+				</participant>
+				<participant referencedUin="jdt:e_method:src:de.xplib.nexd.engine.http.ServerThread.runServerThread:runServerThread~QSocket;~QSoapConfig;~QServicePool;" role="Supplier">
+				</participant>
+			</link>
+			<participant referencedUin="design:node:::N-w2q8ptebbzmn8d-v6157t" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbznufyvksgsn" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L1b7x3iebbzomzo-h0f7k0">
+			<property name="$metaclass" value="Messages Link"/>
+			<property name="$name" value="Messages Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzmn8d-v6157t" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N-w2q8ptebbznufyvksgsn" role="Supplier">
+			</participant>
+		</link>
+		<node uin="N-4aytaiebbzn9nj2smhea">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation1"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebbzn9lo-492qwn:N-w2q8ptebbzmcfmkqdu34"/>
+		</node>
+	</node>
+	<node uin="N-w2q8ptebbzzwuw-vh0w5y">
+		<property name="$metaclass" value="Object"/>
+		<property name="$name" value="pool"/>
+		<property name="incomingMessagesHistory" value="design:link:::L-jj7sjxebc0ia42fp49ww:N-w2q8ptebbzq6jsv2jlz9;design:link:::L-jj7sjxebc0nzdh-awsft9:N-w2q8ptebbzq6jsv2jlz9"/>
+		<link uin="Lc0q5rjebc0aghkuirwbk">
+			<property name="$metaclass" value="Dependency Link"/>
+			<property name="$name" value="Dependency Link1"/>
+			<participant referencedUin="design:node:::N-w2q8ptebbzzwuw-vh0w5y" role="Client">
+			</participant>
+			<participant referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.ServicePool" role="Supplier">
+			</participant>
+		</link>
+		<node uin="N-4aytaiebc0pbbz4j51xo">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation3"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebc0nzdh-awsft9:N-w2q8ptebbzq6jsv2jlz9"/>
+		</node>
+		<node uin="N-4aytaiebc0ia6bv5an5g">
+			<property name="$metaclass" value="Activation"/>
+			<property name="$name" value="Activation1"/>
+			<property name="messageUid" value="design:link:::L-jj7sjxebc0ia42fp49ww:N-w2q8ptebbzq6jsv2jlz9"/>
+		</node>
+	</node>
+</nodeSet>

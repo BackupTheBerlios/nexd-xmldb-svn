@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V574ng9eb3j86o3-1x2mi9">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.util.NonValidDocumentException">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.util.XSValidator">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.util.AbstractValidator">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.util.ValidatorI">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.util.DTDValidator">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.util.ValidatorErrorHandler">
+			<property name="$hidden" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfeaxupuoga1ctcu">
+		<property name="$metaclass" value="Class Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.InternalIdI">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="723,10,103,94"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageValidationObjectI">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="683,158,168,111"/>
+			<property name="hideAttribute" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.store.StorageValidationObjectI:StorageEntityI">
+				<property name="sourceAnchor" value="693,158"/>
+				<property name="targetAnchor" value="620,104"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.store.StorageValidationObjectI:Dependency_Link">
+				<property name="sourceAnchor" value="799,269"/>
+				<property name="targetAnchor" value="353,269"/>
+				<property name="bendpoints" value="799,421,353,421"/>
+				<property name="smooth_bendpoints" value="799,421,353,421"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.store.StorageValidationObjectI:Dependency_Link1">
+				<property name="sourceAnchor" value="783,269"/>
+				<property name="targetAnchor" value="654,373"/>
+				<property name="bendpoints" value="783,373"/>
+				<property name="smooth_bendpoints" value="783,373"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageObjectI">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="503,158,109,111"/>
+			<property name="hideAttribute" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.store.StorageObjectI:StorageEntityI">
+				<property name="sourceAnchor" value="557,158"/>
+				<property name="targetAnchor" value="557,104"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageI">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="319,10,65,60"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.store.StorageI:lnkStorageEntityI">
+				<property name="sourceAnchor" value="353,10"/>
+				<property name="targetAnchor" value="553,10"/>
+				<property name="bendpoints" value="353,-20,553,-20"/>
+				<property name="smooth_bendpoints" value="353,-20,553,-20"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageDocumentObjectI">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="462,322,192,94"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.store.StorageDocumentObjectI:StorageObjectI">
+				<property name="sourceAnchor" value="557,322"/>
+				<property name="targetAnchor" value="557,269"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageCollectionI">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="287,158,129,111"/>
+			<property name="hideAttribute" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.store.StorageCollectionI:StorageEntityI">
+				<property name="sourceAnchor" value="416,162"/>
+				<property name="targetAnchor" value="495,104"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.store.StorageCollectionI:lnkStorageEntityI">
+				<property name="sourceAnchor" value="353,158"/>
+				<property name="targetAnchor" value="476,90"/>
+				<property name="bendpoints" value="353,90"/>
+				<property name="smooth_bendpoints" value="353,90"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageEntityI">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="476,10,163,94"/>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.store.StorageEntityI:lnkInternalIdI">
+				<property name="sourceAnchor" value="639,57"/>
+				<property name="targetAnchor" value="723,57"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.AbstractStorageFactory">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="10,10,200,159"/>
+			<property name="hideAttribute" value="true"/>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.store.AbstractStorageFactory:storageI">
+				<property name="sourceAnchor" value="210,40"/>
+				<property name="targetAnchor" value="319,40"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

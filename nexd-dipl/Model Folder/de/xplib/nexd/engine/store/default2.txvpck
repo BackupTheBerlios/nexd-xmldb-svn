@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V574ng9eb3j7syi-6qfzat">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.ConstantsFieldI">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.StorageFactoryImpl">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.NodeTupleList">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.XPathSQLBuilder">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.StorageImpl">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.CollectionDeleteCommand">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.DocumentObjectI">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.StorageCollectionImpl">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.StorageValidationObjectImpl">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.ConstantsTableI">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.ConstantsQueryI">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.CollectionIId">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.NestedSetIId">
+			<property name="$hidden" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

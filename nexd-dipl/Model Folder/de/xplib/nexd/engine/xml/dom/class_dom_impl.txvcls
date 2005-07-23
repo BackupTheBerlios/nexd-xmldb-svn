@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfebgctmck-bizrw4">
+		<property name="$metaclass" value="Class Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.ElementNSImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1087,682,111,40"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.ElementNSImpl:ElementImpl">
+				<property name="sourceAnchor" value="1146,682"/>
+				<property name="targetAnchor" value="1146,633"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.ElementNSImpl:qName">
+				<property name="sourceAnchor" value="1144,722"/>
+				<property name="targetAnchor" value="1038,790"/>
+				<property name="bendpoints" value="1144,790"/>
+				<property name="smooth_bendpoints" value="1144,790"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.AttrImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1348,525,116,108"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrImpl.getValue:getValue">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrImpl.isId:isId">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.AttrImpl.nodeValue">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.AttrImpl:AbstractParentNode">
+				<property name="sourceAnchor" value="1433,525"/>
+				<property name="targetAnchor" value="1307,346"/>
+				<property name="bendpoints" value="1432,417"/>
+				<property name="smooth_bendpoints" value="1432,417"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrImpl.getName:getName">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrImpl.setId:setId">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.AttrImpl:ownerElement">
+				<property name="sourceAnchor" value="1348,579"/>
+				<property name="targetAnchor" value="1210,579"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrImpl.getTextContent:getTextContent">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.AttrImpl.idAttr">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.AttrImpl.ownerElement">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrImpl.AttrImpl:AttrImpl~QDocumentImpl;~QString;">
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrImpl.setValue:setValue~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrImpl.getSpecified:getSpecified">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrImpl.cloneNode:cloneNode~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.TextImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="425,156,98,108"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.TextImpl:AbstractCharacterData">
+				<property name="sourceAnchor" value="458,156"/>
+				<property name="targetAnchor" value="458,95"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.TextImpl.splitText:splitText~I">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.TextImpl.isElementContentWhitespace:isElementContentWhitespace">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.TextImpl.getIsWhitespaceInElementContent:getIsWhitespaceInElementContent">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.TextImpl.getWholeText:getWholeText">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.TextImpl.cloneNode:cloneNode~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.CDATASectionImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="406,308,136,91"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.CDATASectionImpl:TextImpl">
+				<property name="sourceAnchor" value="474,308"/>
+				<property name="targetAnchor" value="474,264"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.CDATASectionImpl.cloneNode:cloneNode~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.DocumentImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="577,156,200,516"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.insertBefore:insertBefore~QNode;~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.setNormalizationFeature:setNormalizationFeature~QString;~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.importElement:importElement~QNode;~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.canSetNormalizationFeature:canSetNormalizationFeature~QString;~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.domImpl">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.getElementById:getElementById~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.getNotSupported:getNotSupported~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.cloneNode:cloneNode~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.getType:getType">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.getElementsByTagName:getElementsByTagName~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.getOID:getOID">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.findElementById:findElementById~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.DocumentImpl:cache">
+				<property name="sourceAnchor" value="676,672"/>
+				<property name="targetAnchor" value="676,782"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.getElementsByTagNameNS:getElementsByTagNameNS~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.renameNode:renameNode~QNode;~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.importNode:importNode~QNode;~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.DocumentImpl:AbstractParentNode">
+				<property name="sourceAnchor" value="777,495"/>
+				<property name="targetAnchor" value="1209,287"/>
+				<property name="bendpoints" value="1085,495,1085,287"/>
+				<property name="smooth_bendpoints" value="1085,495,1085,287"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.adoptNode:adoptNode~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.importAttr:importAttr~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.getNormalizationFeature:getNormalizationFeature~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.cache">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.doctype">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.documentElement">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.DocumentImpl:documentElement">
+				<property name="sourceAnchor" value="777,579"/>
+				<property name="targetAnchor" value="1094,579"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.removeChild:removeChild~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.DocumentImpl:doctype">
+				<property name="sourceAnchor" value="777,353"/>
+				<property name="targetAnchor" value="877,353"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.normalizeDocument:normalizeDocument">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.getImplementation:getImplementation">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.DocumentImpl:domImpl">
+				<property name="sourceAnchor" value="577,461"/>
+				<property name="targetAnchor" value="406,490"/>
+				<property name="bounds_setted_by_user" value="true"/>
+				<property name="bendpoints" value="407,461"/>
+				<property name="smooth_bendpoints" value="407,461"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentImpl.importDTD:importDTD~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.DOMImplementationImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="298,490,200,142"/>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.xml.dom.DOMImplementationImpl:_lnkDocumentImpl">
+				<property name="sourceAnchor" value="378,490"/>
+				<property name="targetAnchor" value="577,433"/>
+				<property name="bounds_setted_by_user" value="true"/>
+				<property name="bendpoints" value="377,453,377,433"/>
+				<property name="smooth_bendpoints" value="377,453,377,433"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.AbstractCharacterData">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="339,38,153,57"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.AbstractCharacterData:AbstractNode">
+				<property name="sourceAnchor" value="369,38"/>
+				<property name="targetAnchor" value="898,20"/>
+				<property name="bendpoints" value="369,20"/>
+				<property name="smooth_bendpoints" value="369,20"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.QName">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="851,631,187,414"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.NodeListImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1207,4,142,125"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NodeListImpl.NodeListImpl:NodeListImpl~QAbstractNode;~QFastArrayList;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NodeListImpl.NodeListImpl:NodeListImpl~QAbstractNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.xml.dom.NodeListImpl:lnkAbstractNode">
+				<property name="sourceAnchor" value="1207,58"/>
+				<property name="targetAnchor" value="1038,58"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NodeListImpl.getLength:getLength">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NodeListImpl.item:item~I">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.ProcessingInstructionImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="588,38,178,57"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.ProcessingInstructionImpl:AbstractNode">
+				<property name="sourceAnchor" value="766,66"/>
+				<property name="targetAnchor" value="898,66"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.AbstractNode">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="898,-13,140,159"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.setPrefix:setPrefix~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.insertBefore:insertBefore~QNode;~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.AbstractNode:fwChildNodes">
+				<property name="sourceAnchor" value="1038,66"/>
+				<property name="targetAnchor" value="1207,66"/>
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.isSupported:isSupported~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.getPrefix:getPrefix">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.getLastChild:getLastChild">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.getLocalName:getLocalName">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.AbstractNode.fwChildNodes">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.hasAttributes:hasAttributes">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.getNodeValue:getNodeValue">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.appendChild:appendChild~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.AbstractNode.NO_CHILD_MSG">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.AbstractNode:parentNode">
+				<property name="sourceAnchor" value="1012,146"/>
+				<property name="targetAnchor" value="1209,219"/>
+				<property name="bounds_setted_by_user" value="true"/>
+				<property name="bendpoints" value="1012,219"/>
+				<property name="smooth_bendpoints" value="1012,219"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.getFirstChild:getFirstChild">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.getNamespaceURI:getNamespaceURI">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.normalize:normalize">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.setNodeValue:setNodeValue~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.isSameNode:isSameNode~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.getAttributes:getAttributes">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.AbstractNode.ownerDocument">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.getPreviousSibling:getPreviousSibling">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.AbstractNode.parentNode">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.getNextSibling:getNextSibling">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.replaceChild:replaceChild~QNode;~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.lookupNamespaceURI:lookupNamespaceURI~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.AbstractNode:ownerDocument">
+				<property name="sourceAnchor" value="924,146"/>
+				<property name="targetAnchor" value="777,217"/>
+				<property name="bendpoints" value="924,217"/>
+				<property name="smooth_bendpoints" value="924,217"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.removeChild:removeChild~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.hasChildNodes:hasChildNodes">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.getChildNodes:getChildNodes">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractNode.lookupNamespacePrefix:lookupNamespacePrefix~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.CommentImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="298,156,102,91"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.CommentImpl.cloneNode:cloneNode~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.CommentImpl:AbstractCharacterData">
+				<property name="sourceAnchor" value="369,156"/>
+				<property name="targetAnchor" value="369,95"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1209,204,138,142"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode.getLastChild:getLastChild">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode.ADD_TOP">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode.insertBefore:insertBefore~QNode;~QNode;">
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode.replaceChild:replaceChild~QNode;~QNode;">
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode.ADD_BOTTOM">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode.childNodes">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode.hasChildNodes:hasChildNodes">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode.removeChild:removeChild~QNode;">
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode:lnkNodeListImpl">
+				<property name="sourceAnchor" value="1270,204"/>
+				<property name="targetAnchor" value="1271,129"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode:AbstractNode">
+				<property name="sourceAnchor" value="1209,227"/>
+				<property name="targetAnchor" value="1038,113"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode:childNodes">
+				<property name="sourceAnchor" value="1278,204"/>
+				<property name="targetAnchor" value="1278,129"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode.appendChild:appendChild~QNode;">
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode.AbstractParentNode:AbstractParentNode~QDocumentImpl;~QString;~S">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AbstractParentNode.getFirstChild:getFirstChild">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.AttrNSImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1366,665,98,74"/>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.AttrNSImpl:qName">
+				<property name="sourceAnchor" value="1417,739"/>
+				<property name="targetAnchor" value="1038,843"/>
+				<property name="bendpoints" value="1417,843"/>
+				<property name="smooth_bendpoints" value="1417,843"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrNSImpl.getPrefix:getPrefix">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrNSImpl.setPrefix:setPrefix~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.AttrNSImpl:AttrImpl">
+				<property name="sourceAnchor" value="1415,665"/>
+				<property name="targetAnchor" value="1415,633"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrNSImpl.getLocalName:getLocalName">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrNSImpl.cloneNode:cloneNode~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrNSImpl.getNamespaceURI:getNamespaceURI">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.AttrNSImpl.getNodeName:getNodeName">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.AttrNSImpl.qName">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1206,400,144,91"/>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl.owner">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl.getNamedItem:getNamedItem~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl.NamedNodeMapImpl:NamedNodeMapImpl~QAbstractParentNode;~QFastHashMap;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl.removeNamedItem:removeNamedItem~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl.NamedNodeMapImpl:NamedNodeMapImpl~QAbstractParentNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl.removeNamedItemNS:removeNamedItemNS~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl.setNamedItemNS:setNamedItemNS~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl.getLength:getLength">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl.getNamedItemNS:getNamedItemNS~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl:lnkAttrImpl">
+				<property name="sourceAnchor" value="1350,445"/>
+				<property name="targetAnchor" value="1410,525"/>
+				<property name="bendpoints" value="1410,445"/>
+				<property name="smooth_bendpoints" value="1410,445"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl.setNamedItem:setNamedItem~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl:owner">
+				<property name="sourceAnchor" value="1278,400"/>
+				<property name="targetAnchor" value="1278,346"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.NamedNodeMapImpl.item:item~I">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.ElementImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1094,525,116,108"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.ElementImpl:AbstractParentNode">
+				<property name="sourceAnchor" value="1124,525"/>
+				<property name="targetAnchor" value="1209,346"/>
+				<property name="bendpoints" value="1124,424"/>
+				<property name="smooth_bendpoints" value="1124,424"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.hasAttribute:hasAttribute~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.ElementImpl:attributes">
+				<property name="sourceAnchor" value="1147,525"/>
+				<property name="targetAnchor" value="1206,443"/>
+				<property name="bendpoints" value="1147,443"/>
+				<property name="smooth_bendpoints" value="1147,443"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.getAttributeNodeNS:getAttributeNodeNS~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.getTagName:getTagName">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.setIdAttributeNode:setIdAttributeNode~QAttr;~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.setAttributeNodeNS:setAttributeNodeNS~QAttr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.setIdAttribute:setIdAttribute~QString;~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.setAttributeNS:setAttributeNS~QString;~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.setAttribute:setAttribute~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.getAttributeNS:getAttributeNS~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.removeAttributeNode:removeAttributeNode~QAttr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.hasAttributeNS:hasAttributeNS~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.removeAttributeNS:removeAttributeNS~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.setIdAttributeNS:setIdAttributeNS~QString;~QString;~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.ElementImpl.attributes">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.getElementsByTagNameNS:getElementsByTagNameNS~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.removeAttribute:removeAttribute~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.getAttributeNode:getAttributeNode~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.getElementsByTagName:getElementsByTagName~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.getAttribute:getAttribute~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.hasAttributes:hasAttributes">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.setAttributeNode:setAttributeNode~QAttr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.ElementImpl.cloneNode:cloneNode~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.DocumentCacheImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="599,782,155,193"/>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.DocumentCacheImpl.chgList">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.DocumentCacheImpl.newCache">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentCacheImpl.delete:delete~QAbstractNode;">
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.DocumentCacheImpl.chgCache">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.DocumentCacheImpl.newList">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.DocumentCacheImpl:delCache">
+				<property name="sourceAnchor" value="645,975"/>
+				<property name="targetAnchor" value="1349,60"/>
+				<property name="bendpoints" value="645,1068,1498,1068,1498,60"/>
+				<property name="smooth_bendpoints" value="645,1068,1498,1068,1498,60"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.DocumentCacheImpl:newCache">
+				<property name="sourceAnchor" value="656,975"/>
+				<property name="targetAnchor" value="1349,80"/>
+				<property name="bendpoints" value="656,1056,1486,1056,1486,80"/>
+				<property name="smooth_bendpoints" value="656,1056,1486,1056,1486,80"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.DocumentCacheImpl.delList">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentCacheImpl.DocumentCacheImpl:DocumentCacheImpl">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.xml.dom.DocumentCacheImpl:chgCache">
+				<property name="sourceAnchor" value="650,975"/>
+				<property name="targetAnchor" value="1349,72"/>
+				<property name="bounds_setted_by_user" value="true"/>
+				<property name="bendpoints" value="650,1062,1492,1062,1492,72"/>
+				<property name="smooth_bendpoints" value="650,1062,1492,1062,1492,72"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.DocumentCacheImpl.delCache">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.DocumentTypeImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="877,240,182,227"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentTypeImpl.getEntities:getEntities">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.DocumentTypeImpl.NODE_MAP">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentTypeImpl.getName:getName">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentTypeImpl.cloneNode:cloneNode~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentTypeImpl.DocumentTypeImpl:DocumentTypeImpl~QString;~QString;~QString;">
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentTypeImpl.getInternalSubset:getInternalSubset">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.DocumentTypeImpl:AbstractNode">
+				<property name="sourceAnchor" value="968,240"/>
+				<property name="targetAnchor" value="968,146"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xml.dom.DocumentTypeImpl.getNotations:getNotations">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xml.dom.DocumentTypeImpl.subset">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.EntityReferenceImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1411,196,139,142"/>
+			<property name="$hidden" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.EntityReferenceImpl:AbstractParentNode">
+				<property name="sourceAnchor" value="1411,271"/>
+				<property name="targetAnchor" value="1347,271"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

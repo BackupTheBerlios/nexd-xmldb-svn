@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfebb5h4krikhldn">
+		<property name="$metaclass" value="Class Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.XPathQueryCache">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="-117,494,187,176"/>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.XPathQueryCache:instance">
+				<property name="sourceAnchor" value="70,666"/>
+				<property name="targetAnchor" value="66,670"/>
+				<property name="bendpoints" value="99,666,99,699,66,699"/>
+				<property name="smooth_bendpoints" value="99,666,99,699,66,699"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.XPathQueryCache.DEFAULT_SIZE">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.XPathQueryCache.getInstance:getInstance~I">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.XPathQueryCache.XPathQueryCache:XPathQueryCache~I">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.NEXDEnginePool">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="-119,266,200,176"/>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.NEXDEnginePool:instance">
+				<property name="sourceAnchor" value="81,438"/>
+				<property name="targetAnchor" value="77,442"/>
+				<property name="bendpoints" value="110,438,110,471,77,471"/>
+				<property name="smooth_bendpoints" value="110,438,110,471,77,471"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.NEXDEnginePool:enginePool">
+				<property name="sourceAnchor" value="81,354"/>
+				<property name="targetAnchor" value="203,354"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.NEXDEnginePool.NEXDEnginePool:NEXDEnginePool">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.VirtualCollectionManager">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="627,236,171,176"/>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualCollectionManager.engine">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.VirtualCollectionManager:resManager">
+				<property name="sourceAnchor" value="712,412"/>
+				<property name="targetAnchor" value="712,500"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.VirtualCollectionManager.VirtualCollectionManager:VirtualCollectionManager~QNEXDEngineImpl;~QStorageI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualCollectionManager.LOG">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualCollectionManager.BASE_XPATH">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualCollectionManager.resManager">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.VirtualCollectionManager:engine">
+				<property name="sourceAnchor" value="627,384"/>
+				<property name="targetAnchor" value="497,384"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.VirtualResourceManager">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="619,500,187,193"/>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.LOG">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.VARIABLE_XPATH">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.VirtualResourceManager.VirtualResourceManager:VirtualResourceManager~QNEXDEngineImpl;~QStorageI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.VirtualResourceManager.getReferenceName:getReferenceName~QStorageDocumentObjectI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.engine">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.VirtualResourceManager:engine">
+				<property name="sourceAnchor" value="619,596"/>
+				<property name="targetAnchor" value="497,596"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.ROOT_RESOURCE_XPATH">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.PATTERN">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.VirtualResourceManager.create:create~QVirtualCollectionImpl;~QCollectionImpl;~QVCLSchema;">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.NEXDEngineImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="203,1,294,692"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value=""/>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.NEXDEngineImpl.cache">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.NEXDEngineImpl.storeCollection:storeCollection~QSixdmlCollection;~QString;~QURL;~QURL;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.NEXDEngineImpl.transactions">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.NEXDEngineImpl.queryDocument:queryDocument~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.NEXDEngineImpl:transactions">
+				<property name="sourceAnchor" value="497,89"/>
+				<property name="targetAnchor" value="615,89"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.NEXDEngineImpl.ROOT_COLLECTION_PATH">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.NEXDEngineImpl:Dependency_Link">
+				<property name="sourceAnchor" value="203,81"/>
+				<property name="targetAnchor" value="51,78"/>
+				<property name="bounds_setted_by_user" value="true"/>
+				<property name="bendpoints" value="205,76"/>
+				<property name="smooth_bendpoints" value="205,76"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.NEXDEngineImpl.vcollManager">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.NEXDEngineImpl.buildQueryResourceSet:buildQueryResourceSet~QSixdmlCollection;~[QStorageObjectI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.NEXDEngineImpl:cache">
+				<property name="sourceAnchor" value="203,582"/>
+				<property name="targetAnchor" value="70,582"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.NEXDEngineImpl.log">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.NEXDEngineImpl:vcollManager">
+				<property name="sourceAnchor" value="497,316"/>
+				<property name="targetAnchor" value="627,316"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.TransactionManager">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="615,1,196,176"/>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.TransactionManager:instance">
+				<property name="sourceAnchor" value="811,173"/>
+				<property name="targetAnchor" value="807,177"/>
+				<property name="bendpoints" value="840,173,840,206,807,206"/>
+				<property name="smooth_bendpoints" value="840,173,840,206,807,206"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.CollectionLockVisitor">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="-97,1,148,244"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.CollectionLockVisitor.CollectionLockVisitor:CollectionLockVisitor~QNEXDEngineImpl;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.CollectionLockVisitor.getCollections:getCollections">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.CollectionLockVisitor:engine">
+				<property name="sourceAnchor" value="51,181"/>
+				<property name="targetAnchor" value="203,180"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.CollectionLockVisitor.engine">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.CollectionLockVisitor.log">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

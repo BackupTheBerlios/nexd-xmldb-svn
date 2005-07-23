@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfeb3hw3yqcqcb2s">
+		<property name="$metaclass" value="Class Diagram"/>
+		<reference referencedUin="design:view:::V574ng9eaxuwj6qd4rq8z">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="444,20,151,57"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eay413h1-b0yfho">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="234,108,162,57"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eb3hxdgt9i0gyc">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="287,1,83,91"/>
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eb3hxdhabje3ka">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="444,198,151,57"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eb3hux6bx4mpr4">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="108,290,83,91"/>
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eb3huuvjiftwvr">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="44,20,140,57"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eaxzpshxspqj0x">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="444,108,151,57"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eay0vk3wftq2zg">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="234,20,162,57"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eaxuofqb-rlqx6h">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="44,108,140,57"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

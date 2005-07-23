@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V574ng9eb3j7qhx-nvqhsf">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.ServicePool">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eb3j8iz1-1d7nu4">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.Service">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.ServiceFactory">
+			<property name="$hidden" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

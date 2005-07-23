@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfebc1xgswcu0wcw">
+		<property name="$metaclass" value="Class Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.xsd.PCVResourceType">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="-74,351,130,40"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.http.soap.xsd.PCVResourceType:AbstractXMLResourceType">
+				<property name="sourceAnchor" value="28,351"/>
+				<property name="targetAnchor" value="121,301"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.xsd.SixdmlCollectionType">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="413,170,158,108"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.http.soap.xsd.SixdmlCollectionType.getEntry:getEntry~QSoapConfig;~QEntry;~QString;~QObject;~QClass;~QObjectMap;~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.http.soap.xsd.SixdmlCollectionType.getParamValue:getParamValue~QSoapConfig;~QEntry;~QMap;~QList;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.http.soap.xsd.SixdmlCollectionType:AbstractEncoder">
+				<property name="sourceAnchor" value="435,170"/>
+				<property name="targetAnchor" value="361,100"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.http.soap.xsd.SixdmlCollectionType.getValue:getValue~QSoapConfig;~QParameter;~QEntry;~QHashMap;~QList;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.xsd.SixdmlResourceType">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="86,351,146,40"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.http.soap.xsd.SixdmlResourceType:AbstractXMLResourceType">
+				<property name="sourceAnchor" value="159,351"/>
+				<property name="targetAnchor" value="159,301"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.xsd.DomDocumentType">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="609,170,137,40"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.http.soap.xsd.DomDocumentType:AbstractEncoder">
+				<property name="sourceAnchor" value="620,170"/>
+				<property name="targetAnchor" value="405,91"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.xsd.VirtualResourceType">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="87,446,143,40"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.http.soap.xsd.VirtualResourceType:SixdmlResourceType">
+				<property name="sourceAnchor" value="158,446"/>
+				<property name="targetAnchor" value="158,391"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.xsd.AbstractResourceType">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="82,170,154,40"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.http.soap.xsd.AbstractResourceType:AbstractEncoder">
+				<property name="sourceAnchor" value="184,170"/>
+				<property name="targetAnchor" value="275,100"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.xsd.ResourceSetType">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="596,26,163,74"/>
+			<property name="hideAll" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.xsd.ResourceType">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="273,170,102,40"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.http.soap.xsd.ResourceType:AbstractEncoder">
+				<property name="sourceAnchor" value="323,170"/>
+				<property name="targetAnchor" value="323,100"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.xsd.AbstractEncoder">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="242,26,163,74"/>
+			<property name="hideAll" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.xsd.VirtualCollectionType">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="418,351,148,40"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.http.soap.xsd.VirtualCollectionType:SixdmlCollectionType">
+				<property name="sourceAnchor" value="492,351"/>
+				<property name="targetAnchor" value="492,278"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.xsd.AbstractXMLResourceType">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="68,261,182,40"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.http.soap.xsd.AbstractXMLResourceType:AbstractResourceType">
+				<property name="sourceAnchor" value="159,261"/>
+				<property name="targetAnchor" value="159,210"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.xsd.DomNodeType">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="-62,170,106,40"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.http.soap.xsd.DomNodeType:AbstractEncoder">
+				<property name="sourceAnchor" value="44,170"/>
+				<property name="targetAnchor" value="242,93"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.xsd.VCLSchemaType">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="264,351,120,40"/>
+			<property name="hideAll" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.http.soap.xsd.VCLSchemaType:AbstractXMLResourceType">
+				<property name="sourceAnchor" value="287,351"/>
+				<property name="targetAnchor" value="195,301"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

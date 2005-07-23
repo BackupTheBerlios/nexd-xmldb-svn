@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V574ng9eaxuodj5-sa8a9n">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="design:view:::V574ng9eaxuwj6qd4rq8z">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eb3hux6bx4mpr4">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eb3huuvjiftwvr">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eay11okh-9cixkc">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eay0vk3wftq2zg">
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eaxuofqb-rlqx6h">
+			<property name="$hidden" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

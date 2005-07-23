@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V574ng9eay0vk3wftq2zg">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.xml.DocumentCacheI">
+			<property name="bounds" value="315,278,155,133"/>
+			<property name="$hidden" value="true"/>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.xml.DocumentCacheI:lnkDOMNodeI">
+				<property name="sourceAnchor" value="375,278"/>
+				<property name="targetAnchor" value="375,251"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.xml.DOMNodeI">
+			<property name="bounds" value="236,135,163,116"/>
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eay413h1-b0yfho">
+			<property name="bounds" value="367,10,150,113"/>
+			<property name="$hidden" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.xml.DOMEntityReferenceI">
+			<property name="bounds" value="10,135,146,65"/>
+			<property name="$hidden" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.xml.DOMEntityReferenceI:DOMNodeI">
+				<property name="sourceAnchor" value="156,167"/>
+				<property name="targetAnchor" value="236,167"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.xml.DOMDocumentI">
+			<property name="bounds" value="123,270,191,269"/>
+			<property name="$hidden" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.xml.DOMDocumentI:DOMNodeI">
+				<property name="sourceAnchor" value="179,270"/>
+				<property name="targetAnchor" value="235,237"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.xml.DOMDocumentI:lnkDocumentCacheI">
+				<property name="sourceAnchor" value="314,302"/>
+				<property name="targetAnchor" value="315,302"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.xml.DOMDocumentTypeI">
+			<property name="bounds" value="205,10,159,99"/>
+			<property name="$hidden" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.xml.DOMDocumentTypeI:DOMNodeI">
+				<property name="sourceAnchor" value="276,109"/>
+				<property name="targetAnchor" value="276,135"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

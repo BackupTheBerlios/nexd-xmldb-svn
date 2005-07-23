@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfebbyxpzt7tktuw">
+		<property name="$metaclass" value="Class Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.comm.DefaultSessionFactory">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="35,10,278,108"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.comm.DefaultSessionFactory:lnkSOAPSession">
+				<property name="sourceAnchor" value="313,64"/>
+				<property name="targetAnchor" value="431,64"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.comm.DefaultSessionFactory:lnkLocalSession">
+				<property name="sourceAnchor" value="167,118"/>
+				<property name="targetAnchor" value="167,271"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.comm.LocalSession">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="85,271,165,91"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.comm.SOAPSession">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="431,10,479,373"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryResource:queryResource~QSixdmlCollection;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.storeCollectionStylesheet:storeCollectionStylesheet~QVirtualCollection;~QURL;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryCollectionStylesheet:queryCollectionStylesheet~QVirtualCollection;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryChildCollection:queryChildCollection~QSixdmlCollection;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryCollectionCount:queryCollectionCount~QSixdmlCollection;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.storeCollectionSchema:storeCollectionSchema~QSixdmlCollection;~QURL;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.containsId:containsId~QSixdmlCollection;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.dropCollection:dropCollection~QSixdmlCollection;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.dropCollectionSchema:dropCollectionSchema~QSixdmlCollection;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.storeCollection:storeCollection~QSixdmlCollection;~QString;~QURL;~QURL;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.dropResource:dropResource~QSixdmlCollection;~QResource;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.open:open~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryCollections:queryCollections~QSixdmlCollection;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryVCLSchema:queryVCLSchema~QVirtualCollection;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryPCVResource:queryPCVResource~QVirtualCollection;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.storeCollection:storeCollection~QSixdmlCollection;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.commitTransaction:commitTransaction~QSixdmlCollection;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.close:close">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryParentCollection:queryParentCollection~QSixdmlCollection;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.storeResource:storeResource~QSixdmlCollection;~QSixdmlResource;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.beginTransaction:beginTransaction~QSixdmlCollection;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryCollection:queryCollection~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryResourceCount:queryResourceCount~QSixdmlCollection;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.updateResource:updateResource~QSixdmlCollection;~QResource;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.storeCollection:storeCollection~QSixdmlCollection;~QString;~QURL;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryResourcesByXPath:queryResourcesByXPath~QSixdmlCollection;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryResourceByXPath:queryResourceByXPath~QSixdmlCollection;~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryResources:queryResources~QSixdmlCollection;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.dropCollectionStylesheet:dropCollectionStylesheet~QVirtualCollection;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryCollectionSchema:queryCollectionSchema~QSixdmlCollection;">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

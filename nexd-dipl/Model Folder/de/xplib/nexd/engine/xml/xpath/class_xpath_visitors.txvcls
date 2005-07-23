@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfebhx3ppggl8if2">
+		<property name="$metaclass" value="Class Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.xpath.BooleanExprVisitor">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="10,10,283,340"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.xpath.NodeTestVisitor">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="548,10,200,199"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.xpath.Visitor">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="380,70,72,80"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.xpath.Visitor:NodeTestVisitor">
+				<property name="sourceAnchor" value="452,110"/>
+				<property name="targetAnchor" value="548,110"/>
+			</reference>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.xpath.Visitor:BooleanExprVisitor">
+				<property name="sourceAnchor" value="380,110"/>
+				<property name="targetAnchor" value="293,110"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfeaz5vhm8jtlv4l">
+		<property name="$metaclass" value="Class Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.xml.DocumentCacheI">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="340,202,155,145"/>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.xml.DocumentCacheI:lnkDOMNodeI">
+				<property name="sourceAnchor" value="417,202"/>
+				<property name="targetAnchor" value="417,138"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.xml.DOMNodeI">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="336,10,163,128"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.xml.DOMDocumentI">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="44,10,191,281"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.xml.DOMDocumentI:DOMNodeI">
+				<property name="sourceAnchor" value="235,74"/>
+				<property name="targetAnchor" value="336,74"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.xml.DOMDocumentI:lnkDocumentCacheI">
+				<property name="sourceAnchor" value="235,246"/>
+				<property name="targetAnchor" value="340,246"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

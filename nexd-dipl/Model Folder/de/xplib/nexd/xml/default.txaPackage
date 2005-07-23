@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="N1br2i9eay13fa69gn2ih">
+		<property name="$metaclass" value="State"/>
+		<property name="$name" value="deleted"/>
+		<link uin="L4gc60leay1mgggdy8l0q">
+			<property name="$metaclass" value="Transition"/>
+			<property name="$name" value="Transition1"/>
+			<property name="$event_name" value="store physical"/>
+			<participant referencedUin="design:node:::N1br2i9eay13fa69gn2ih" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::Nz3s0jweay1ifh3-d2pwox" role="Supplier">
+			</participant>
+		</link>
+	</node>
+	<node uin="N1br2i9eay0yy0o-hdcrkg">
+		<property name="$metaclass" value="State"/>
+		<property name="$name" value="inserted"/>
+		<link uin="L4gc60leay1iqyv-t7psxi">
+			<property name="$metaclass" value="Transition"/>
+			<property name="$name" value="Transition3"/>
+			<property name="$action_expression" value="removeChild() or replaceChild()"/>
+			<participant referencedUin="design:node:::N1br2i9eay0yy0o-hdcrkg" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::Nz3s0jweay1ifh3-d2pwox" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L4gc60leay1dsq7-wj05y2">
+			<property name="$metaclass" value="Transition"/>
+			<property name="$name" value="Transition2"/>
+			<property name="$event_name" value="store physical "/>
+			<participant referencedUin="design:node:::N1br2i9eay0yy0o-hdcrkg" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N1br2i9eay1d9g6-4wig3q" role="Supplier">
+			</participant>
+		</link>
+	</node>
+	<node uin="Nz3s0jweay1ifh3-d2pwox">
+		<property name="$metaclass" value="End State"/>
+		<property name="$name" value="End remove node"/>
+	</node>
+	<node uin="N-rxgrn1eay0yd6webqns8">
+		<property name="$metaclass" value="Start State"/>
+		<property name="$name" value="Start insert node"/>
+		<link uin="L4gc60leay0zezc-eu9f0u">
+			<property name="$metaclass" value="Transition"/>
+			<property name="$name" value="Transition1"/>
+			<property name="$action_expression" value="appendChild()"/>
+			<participant referencedUin="design:node:::N-rxgrn1eay0yd6webqns8" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N1br2i9eay0yy0o-hdcrkg" role="Supplier">
+			</participant>
+		</link>
+	</node>
+	<node uin="N1br2i9eay135cl-w83ico">
+		<property name="$metaclass" value="State"/>
+		<property name="$name" value="changed"/>
+		<link uin="L4gc60leay1wzbc-rdupsz">
+			<property name="$metaclass" value="Transition"/>
+			<property name="$name" value="Transition2"/>
+			<property name="$action_expression" value="removeChild() or replaceChild()"/>
+			<participant referencedUin="design:node:::N1br2i9eay135cl-w83ico" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N1br2i9eay13fa69gn2ih" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L4gc60leay1r5ft112xd5">
+			<property name="$metaclass" value="Transition"/>
+			<property name="$name" value="Transition1"/>
+			<property name="$event_name" value="store physical"/>
+			<participant referencedUin="design:node:::N1br2i9eay135cl-w83ico" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N1br2i9eay1d9g6-4wig3q" role="Supplier">
+			</participant>
+		</link>
+	</node>
+	<node uin="N1br2i9eay1d9g6-4wig3q">
+		<property name="$metaclass" value="State"/>
+		<property name="$name" value="persistent"/>
+		<link uin="L4gc60leay1sac0-n04iqo">
+			<property name="$metaclass" value="Transition"/>
+			<property name="$name" value="Transition1"/>
+			<property name="$action_expression" value="appendChild()"/>
+			<participant referencedUin="design:node:::N1br2i9eay1d9g6-4wig3q" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N1br2i9eay135cl-w83ico" role="Supplier">
+			</participant>
+		</link>
+		<link uin="L4gc60leay1zm80cecv8b">
+			<property name="$metaclass" value="Transition"/>
+			<property name="$name" value="Transition2"/>
+			<property name="$action_expression" value="removeChild() or replaceChild()"/>
+			<participant referencedUin="design:node:::N1br2i9eay1d9g6-4wig3q" role="Client">
+			</participant>
+			<participant referencedUin="design:node:::N1br2i9eay13fa69gn2ih" role="Supplier">
+			</participant>
+		</link>
+	</node>
+</nodeSet>

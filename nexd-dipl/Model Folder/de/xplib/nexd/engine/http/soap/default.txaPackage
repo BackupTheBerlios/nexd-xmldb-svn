@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="N1g64yebc1n3yq-fqecec">
+		<property name="$metaclass" value="Note"/>
+		<property name="$name" value="Note1"/>
+		<property name="$note_text" value="Returns a configured number of Service instances"/>
+		<link uin="L-9f06mwebc1o3iq9m9746">
+			<property name="$metaclass" value="Note Link"/>
+			<property name="$name" value="Note Link1"/>
+			<participant referencedUin="design:node:::N1g64yebc1n3yq-fqecec" role="Client">
+			</participant>
+			<participant referencedUin="jdt:e_method:src:de.xplib.nexd.engine.http.soap.ServicePool.borrowService:borrowService~QInetAddress;" role="Supplier">
+			</participant>
+		</link>
+	</node>
+	<node uin="N1g64yebc1oiyibdywpb">
+		<property name="$metaclass" value="Note"/>
+		<property name="$name" value="Note2"/>
+		<property name="$note_text" value="Releases a returned Service instance and makes it available by borrowService(). "/>
+		<link uin="L-9f06mwebc1uctk-jb0qdj">
+			<property name="$metaclass" value="Note Link"/>
+			<property name="$name" value="Note Link1"/>
+			<participant referencedUin="design:node:::N1g64yebc1oiyibdywpb" role="Client">
+			</participant>
+			<participant referencedUin="jdt:e_method:src:de.xplib.nexd.engine.http.soap.ServicePool.returnService:returnService~QService;" role="Supplier">
+			</participant>
+		</link>
+	</node>
+</nodeSet>

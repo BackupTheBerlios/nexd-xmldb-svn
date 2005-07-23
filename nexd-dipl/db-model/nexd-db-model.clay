@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<clay-model clay-version="1.1.0">
+<database-model alias="" author="" begin-script="" end-script="" name="nexd-db-model" remarks="" sql-dialect-id="jp.azzurri.clay.model.physical.dialect.HSQLDB_1_7_2_Dialect" version="1.0">
+<database-model-description></database-model-description>
+<schema-list>
+<schema alias="" name="DEFAULT_SCHEMA" remarks="">
+<schema-description></schema-description>
+<domain-list/>
+<table-list>
+<table alias="" name="NEXD_COLLECTION" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="107" width="147" x="14" y="14"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="ID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="PID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type> 
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="TYPE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="5" name="SMALLINT" selected-variant-pattern="SMALLINT">
+<variant type-name-pattern="SMALLINT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="false" name="NAME" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="CID" remarks="NOT NULL">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_NEXD_COLLECTION" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="ID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="PARENTID" on-delete="CASCADE" on-update="NO ACTION" referenced-key="SYS_PK_NEXD_COLLECTION" referenced-table="NEXD_COLLECTION" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-description></foreign-key-description>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="PID" referenced-key-column-name="ID"/>
+</foreign-key>
+</foreign-key-list>
+<index-list>
+<index alias="" name="SYS_PK_NEXD_COLLECTION" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="ID" sort="ASC"/>
+</index>
+<index alias="" name="SYS_IDX_1" remarks="" unique="false">
+<index-description></index-description>
+<index-column name="PID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="NEXD_DOM_ATTR" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="332" y="120"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="NID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="true" name="NAME" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="2147483647" decimal-digits="0" default-value="" mandatory="false" name="VALUE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_NEXD_DOM_ATTR" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="NID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="SYS_FK_45" on-delete="CASCADE" on-update="NO ACTION" referenced-key="SYS_PK_NEXD_DOM_NODE" referenced-table="NEXD_DOM_NODE" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-description></foreign-key-description>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="NID" referenced-key-column-name="ID"/>
+</foreign-key>
+</foreign-key-list>
+<index-list>
+<index alias="" name="SYS_PK_NEXD_DOM_ATTR" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+<index alias="" name="SYS_IDX_46" remarks="" unique="false">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="NEXD_DOM_DOCTYPE" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="630" y="10"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="NID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="true" name="NAME" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="2147483647" decimal-digits="0" default-value="" mandatory="false" name="PUBLICID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="2147483647" decimal-digits="0" default-value="" mandatory="false" name="SYSTEMID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="2147483647" decimal-digits="0" default-value="" mandatory="false" name="SUBSET" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_NEXD_DOM_DOCTYPE" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="NID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="SYS_FK_61" on-delete="CASCADE" on-update="NO ACTION" referenced-key="SYS_PK_NEXD_DOM_NODE" referenced-table="NEXD_DOM_NODE" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-description></foreign-key-description>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="NID" referenced-key-column-name="ID"/>
+</foreign-key>
+</foreign-key-list>
+<index-list>
+<index alias="" name="SYS_PK_NEXD_DOM_DOCTYPE" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+<index alias="" name="SYS_IDX_62" remarks="" unique="false">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="NEXD_DOM_DOCUMENT" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="940" y="10"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="NID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="4" decimal-digits="0" default-value="" mandatory="true" name="VERSION" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="20" decimal-digits="0" default-value="" mandatory="false" name="ENCODING" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="false" name="STANDALONE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="-7" name="BIT" selected-variant-pattern="BIT">
+<variant type-name-pattern="BIT"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_NEXD_DOM_DOCUMENT" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="NID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="SYS_FK_39" on-delete="CASCADE" on-update="NO ACTION" referenced-key="SYS_PK_NEXD_DOM_NODE" referenced-table="NEXD_DOM_NODE" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-description></foreign-key-description>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="NID" referenced-key-column-name="ID"/>
+</foreign-key>
+</foreign-key-list>
+<index-list>
+<index alias="" name="SYS_PK_NEXD_DOM_DOCUMENT" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+<index alias="" name="SYS_IDX_40" remarks="" unique="false">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="NEXD_DOM_ELEMENT" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="1250" y="10"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="NID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="true" name="NAME" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_NEXD_DOM_ELEMENT" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="NID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="SYS_FK_42" on-delete="CASCADE" on-update="NO ACTION" referenced-key="SYS_PK_NEXD_DOM_NODE" referenced-table="NEXD_DOM_NODE" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-description></foreign-key-description>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="NID" referenced-key-column-name="ID"/>
+</foreign-key>
+</foreign-key-list>
+<index-list>
+<index alias="" name="SYS_PK_NEXD_DOM_ELEMENT" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+<index alias="" name="SYS_IDX_43" remarks="" unique="false">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="NEXD_DOM_ENTITYREF" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="395" y="322"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="NID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="true" name="NAME" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_NEXD_DOM_ENTITYREF" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="NID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="SYS_FK_54" on-delete="CASCADE" on-update="NO ACTION" referenced-key="SYS_PK_NEXD_DOM_NODE" referenced-table="NEXD_DOM_NODE" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-description></foreign-key-description>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="NID" referenced-key-column-name="ID"/>
+</foreign-key>
+</foreign-key-list>
+<index-list>
+<index alias="" name="SYS_PK_NEXD_DOM_ENTITYREF" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+<index alias="" name="SYS_IDX_55" remarks="" unique="false">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="NEXD_DOM_NODE" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="194" y="40"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="ID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="LFT" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="RGT" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="TYPE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="5" name="SMALLINT" selected-variant-pattern="SMALLINT">
+<variant type-name-pattern="SMALLINT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="RID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_NEXD_DOM_NODE" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="ID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="SYS_FK_35" on-delete="CASCADE" on-update="NO ACTION" referenced-key="SYS_PK_NEXD_RESOURCE" referenced-table="NEXD_RESOURCE" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-description></foreign-key-description>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="RID" referenced-key-column-name="ID"/>
+</foreign-key>
+</foreign-key-list>
+<index-list>
+<index alias="" name="SYS_IDX_SYS_CT_34_36" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="ID" sort="ASC"/>
+<index-column name="LFT" sort="ASC"/>
+<index-column name="RGT" sort="ASC"/>
+</index>
+<index alias="" name="SYS_PK_NEXD_DOM_NODE" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="ID" sort="ASC"/>
+</index>
+<index alias="" name="SYS_IDX_37" remarks="" unique="false">
+<index-description></index-description>
+<index-column name="RID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="NEXD_DOM_PI" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="933" y="110"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="NID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="true" name="TARGET" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="2147483647" decimal-digits="0" default-value="" mandatory="false" name="DATA" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_NEXD_DOM_PI" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="NID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="SYS_FK_51" on-delete="CASCADE" on-update="NO ACTION" referenced-key="SYS_PK_NEXD_DOM_NODE" referenced-table="NEXD_DOM_NODE" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-description></foreign-key-description>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="NID" referenced-key-column-name="ID"/>
+</foreign-key>
+</foreign-key-list>
+<index-list>
+<index alias="" name="SYS_PK_NEXD_DOM_PI" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+<index alias="" name="SYS_IDX_52" remarks="" unique="false">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="NEXD_DOM_TEXT" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="958" y="194"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="NID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="2147483647" decimal-digits="0" default-value="" mandatory="false" name="VALUE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_NEXD_DOM_TEXT" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="NID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="SYS_FK_48" on-delete="CASCADE" on-update="NO ACTION" referenced-key="SYS_PK_NEXD_DOM_NODE" referenced-table="NEXD_DOM_NODE" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-description></foreign-key-description>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="NID" referenced-key-column-name="ID"/>
+</foreign-key>
+</foreign-key-list>
+<index-list>
+<index alias="" name="SYS_PK_NEXD_DOM_TEXT" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+<index alias="" name="SYS_IDX_49" remarks="" unique="false">
+<index-description></index-description>
+<index-column name="NID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="NEXD_RESOURCE" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="216" y="298"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="ID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="CID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="TYPE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="5" name="SMALLINT" selected-variant-pattern="SMALLINT">
+<variant type-name-pattern="SMALLINT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="true" name="NAME" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_NEXD_RESOURCE" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="ID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="SYS_FK_3" on-delete="CASCADE" on-update="NO ACTION" referenced-key="SYS_PK_NEXD_COLLECTION" referenced-table="NEXD_COLLECTION" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-description></foreign-key-description>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="CID" referenced-key-column-name="ID"/>
+</foreign-key>
+</foreign-key-list>
+<index-list>
+<index alias="" name="SYS_IDX_SYS_CT_4_7" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="CID" sort="ASC"/>
+<index-column name="NAME" sort="ASC"/>
+</index>
+<index alias="" name="SYS_PK_NEXD_RESOURCE" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="ID" sort="ASC"/>
+</index>
+<index alias="" name="SYS_IDX_5" remarks="" unique="false">
+<index-description></index-description>
+<index-column name="CID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="NEXD_SCHEMA" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="-28" y="303"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="CID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="TYPE" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="-6" name="TINYINT" selected-variant-pattern="TINYINT">
+<variant type-name-pattern="TINYINT"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="2147483647" decimal-digits="0" default-value="" mandatory="true" name="SCHEMA" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_NEXD_SCHEMA" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="CID"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list>
+<foreign-key alias="" name="SYS_FK_58" on-delete="CASCADE" on-update="NO ACTION" referenced-key="SYS_PK_NEXD_COLLECTION" referenced-table="NEXD_COLLECTION" referenced-table-schema="DEFAULT_SCHEMA" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="">
+<foreign-key-description></foreign-key-description>
+<foreign-key-figure>
+<fk-fig-bendpoint-list/>
+</foreign-key-figure>
+<foreign-key-column column-name="CID" referenced-key-column-name="ID"/>
+</foreign-key>
+</foreign-key-list>
+<index-list>
+<index alias="" name="SYS_PK_NEXD_SCHEMA" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="CID" sort="ASC"/>
+</index>
+<index alias="" name="SYS_IDX_59" remarks="" unique="false">
+<index-description></index-description>
+<index-column name="CID" sort="ASC"/>
+</index>
+</index-list>
+</table>
+<table alias="" name="NEXD_SEQUENCE" remarks="">
+<table-description></table-description>
+<table-figure-bounds height="-1" width="-1" x="518" y="188"/>
+<column-list>
+<column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="true" name="NAME" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+<variant precision-max="32672" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+</data-type>
+</column>
+<column alias="" auto-increment="false" column-size="0" decimal-digits="0" default-value="" mandatory="true" name="ID" remarks="">
+<column-description></column-description>
+<data-type jdbc-type="4" name="INTEGER" selected-variant-pattern="INTEGER">
+<variant type-name-pattern="INTEGER"/>
+</data-type>
+</column>
+</column-list>
+<primary-key alias="" name="SYS_PK_NEXD_SEQUENCE" remarks="">
+<primary-key-description></primary-key-description>
+<primary-key-column name="NAME"/>
+</primary-key>
+<unique-key-list/>
+<foreign-key-list/>
+<index-list>
+<index alias="" name="SYS_PK_NEXD_SEQUENCE" remarks="" unique="true">
+<index-description></index-description>
+<index-column name="NAME" sort="ASC"/>
+</index>
+</index-list>
+</table>
+</table-list>
+</schema>
+</schema-list>
+</database-model>
+</clay-model>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfebc16c45-1bqyl8">
+		<property name="$metaclass" value="Class Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.ServicePool">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="386,358,171,159"/>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.http.soap.ServicePool:serviceObjPool">
+				<property name="sourceAnchor" value="485,358"/>
+				<property name="targetAnchor" value="485,271"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.http.soap.ServicePool:Dependency_Link">
+				<property name="sourceAnchor" value="557,453"/>
+				<property name="targetAnchor" value="585,117"/>
+				<property name="bendpoints" value="642,453,642,117"/>
+				<property name="smooth_bendpoints" value="642,453,642,117"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.http.soap.ServicePool:Dependency_Link1">
+				<property name="sourceAnchor" value="386,437"/>
+				<property name="targetAnchor" value="217,437"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.http.soap.ServicePool:instance">
+				<property name="sourceAnchor" value="557,513"/>
+				<property name="targetAnchor" value="553,517"/>
+				<property name="bendpoints" value="586,513,586,546,553,546"/>
+				<property name="smooth_bendpoints" value="586,513,586,546,553,546"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.http.soap.ServicePool.serviceObjPool">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::N1g64yebc1oiyibdywpb">
+			<property name="bounds" value="680,433,196,83"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:link:::L-9f06mwebc1uctk-jb0qdj:N1g64yebc1oiyibdywpb">
+				<property name="sourceAnchor" value="680,478"/>
+				<property name="targetAnchor" value="556,478"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::N1g64yebc1n3yq-fqecec">
+			<property name="bounds" value="681,345,196,51"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:link:::L-9f06mwebc1o3iq9m9746:N1g64yebc1n3yq-fqecec">
+				<property name="sourceAnchor" value="680,393"/>
+				<property name="targetAnchor" value="502,436"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.Service">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="-40,5,257,748"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.http.soap.Service.engine">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.http.soap.ServiceFactory">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="385,10,200,261"/>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.http.soap.ServiceFactory:lnkService">
+				<property name="sourceAnchor" value="385,140"/>
+				<property name="targetAnchor" value="217,140"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

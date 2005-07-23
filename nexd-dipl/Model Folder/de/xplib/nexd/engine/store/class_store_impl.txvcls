@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vd7rsvfebanmf80n2nmwp">
+		<property name="$metaclass" value="Class Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.StorageCollectionImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="20,223,153,142"/>
+			<reference referencedUin="property:e_property:jdt=e_class=src=de.xplib.nexd.engine.store.StorageCollectionImpl:internalId">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.store.StorageCollectionImpl:internalId">
+				<property name="sourceAnchor" value="96,223"/>
+				<property name="targetAnchor" value="96,94"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.store.StorageCollectionImpl.properties">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.DocumentObjectI">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="206,221,156,145"/>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.store.DocumentObjectI:lnkNestedSetIId">
+				<property name="sourceAnchor" value="283,221"/>
+				<property name="targetAnchor" value="283,128"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.StorageValidationObjectImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="1,423,192,176"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageValidationObjectImpl.StorageValidationObjectImpl:StorageValidationObjectImpl~B~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageValidationObjectImpl.StorageValidationObjectImpl:StorageValidationObjectImpl~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageValidationObjectImpl.getInternalId:getInternalId">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.StorageFactoryImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="317,423,304,159"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.store.StorageFactoryImpl:lnkDocumentObjectI">
+				<property name="sourceAnchor" value="317,468"/>
+				<property name="targetAnchor" value="265,366"/>
+				<property name="bendpoints" value="264,468"/>
+				<property name="smooth_bendpoints" value="264,468"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.store.StorageFactoryImpl:lnkStorageImpl">
+				<property name="sourceAnchor" value="621,522"/>
+				<property name="targetAnchor" value="818,409"/>
+				<property name="bendpoints" value="818,522"/>
+				<property name="smooth_bendpoints" value="818,522"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.store.StorageFactoryImpl:lnkStorageValidationObjectImpl">
+				<property name="sourceAnchor" value="317,502"/>
+				<property name="targetAnchor" value="193,502"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.XPathSQLBuilder">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="391,3,155,363"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.XPathSQLBuilder:XPathSQLBuilder~QString;~I~Z">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QTextEqualsExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QAndExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QAllElementTest;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QAttrNotEqualsExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.appendResourceId:appendResourceId~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QTextExistsExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QOrExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QAttrGreaterExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QAttrGreaterEqualsExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QTrueExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QAttrEqualsExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QAttrLessExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QTextTest;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.store.XPathSQLBuilder.LOG">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QNotExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QThisNodeTest;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QParentNodeTest;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QAttrTest;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QAttrExistsExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QPositionEqualsExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QAttrLessEqualsExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QTextNotEqualsExpr;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.XPathSQLBuilder.visit:visit~QElementTest;">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.CollectionIId">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="50,3,93,91"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.CollectionIId.getID:getID">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.CollectionIId.CollectionIId:CollectionIId~I">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.CollectionIId.export:export">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.NestedSetIId">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="236,3,95,125"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.NestedSetIId.export:export">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.NestedSetIId.NestedSetIId:NestedSetIId~I~I~I">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.store.StorageImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="580,3,330,406"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.queryObjects:queryObjects~QStorageCollectionI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.internalQuerySequenceNumber:internalQuerySequenceNumber~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.internalUpdateSequenceNumber:internalUpdateSequenceNumber~QString;~I">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.store.StorageImpl:factory">
+				<property name="sourceAnchor" value="718,409"/>
+				<property name="targetAnchor" value="621,488"/>
+				<property name="bendpoints" value="718,488"/>
+				<property name="smooth_bendpoints" value="718,488"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.storeCollectionReference:storeCollectionReference~QStorageCollectionI;~QStorageCollectionI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.StorageImpl:StorageImpl~QStorageFactoryImpl;~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.queryObjectsByXPath:queryObjectsByXPath~QStorageCollectionI;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.queryCollectionReferences:queryCollectionReferences~QStorageCollectionI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.queryObjectCount:queryObjectCount~QStorageCollectionI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.containsId:containsId~QStorageCollectionI;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.countChildNodes:countChildNodes~QNode;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.dropObject:dropObject~QStorageCollectionI;~QStorageObjectI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.createContainer:createContainer~QResultSet;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.store.StorageImpl.LOG">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.internalQueryCollection:internalQueryCollection~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.updateDocument:updateDocument~QStorageCollectionI;~QStorageDocumentObjectI;">
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.open:open~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.close:close~QStatement;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.store.StorageImpl.jdbcDriver">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.storeDocument:storeDocument~QStorageCollectionI;~QStorageDocumentObjectI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.dropCollection:dropCollection~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.close:close~QStatement;~QResultSet;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.queryCollectionCount:queryCollectionCount~QStorageCollectionI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.finalize:finalize">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.dropValidationObject:dropValidationObject~QStorageCollectionI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.queryValidationObject:queryValidationObject~QStorageCollectionI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.dropCollectionReference:dropCollectionReference~QStorageCollectionI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.queryObject:queryObject~QStorageCollectionI;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.store.StorageImpl.jdbcUrl">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.storeCollection:storeCollection~QString;~S">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.queryCollections:queryCollections~QStorageCollectionI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.prepareCollectionPath:prepareCollectionPath~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.store.StorageImpl.factory">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.storeValidationObject:storeValidationObject~QStorageCollectionI;~QStorageValidationObjectI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.internalUpdateSingleNode:internalUpdateSingleNode~QDOMNodeI;">
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.store.StorageImpl:Dependency_Link">
+				<property name="sourceAnchor" value="580,184"/>
+				<property name="targetAnchor" value="546,184"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.queryObjectByXPath:queryObjectByXPath~QStorageCollectionI;~QString;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.internalQueryObjectInfo:internalQueryObjectInfo~I~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.store.StorageImpl.conn">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.store.StorageImpl.queryCollection:queryCollection~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>
