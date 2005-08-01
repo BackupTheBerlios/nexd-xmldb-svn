@@ -24,6 +24,35 @@
 				<property name="$hidden" value="true"/>
 			</reference>
 		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.VirtualCollectionManager">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="627,236,171,176"/>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualCollectionManager.engine">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.VirtualCollectionManager.VirtualCollectionManager:VirtualCollectionManager~QNEXDEngineImpl;~QStorageI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.VirtualCollectionManager:resManager">
+				<property name="sourceAnchor" value="712,412"/>
+				<property name="targetAnchor" value="712,500"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualCollectionManager.LOG">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualCollectionManager.BASE_XPATH">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.VirtualCollectionManager:engine">
+				<property name="sourceAnchor" value="627,384"/>
+				<property name="targetAnchor" value="497,384"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualCollectionManager.resManager">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
 		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.NEXDEnginePool">
 			<property name="$imported" value="true"/>
 			<property name="$shortcutReference" value="true"/>
@@ -42,68 +71,6 @@
 				<property name="$hidden" value="true"/>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.VirtualCollectionManager">
-			<property name="$imported" value="true"/>
-			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="627,236,171,176"/>
-			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualCollectionManager.engine">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.VirtualCollectionManager:resManager">
-				<property name="sourceAnchor" value="712,412"/>
-				<property name="targetAnchor" value="712,500"/>
-			</reference>
-			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.VirtualCollectionManager.VirtualCollectionManager:VirtualCollectionManager~QNEXDEngineImpl;~QStorageI;">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualCollectionManager.LOG">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualCollectionManager.BASE_XPATH">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualCollectionManager.resManager">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.VirtualCollectionManager:engine">
-				<property name="sourceAnchor" value="627,384"/>
-				<property name="targetAnchor" value="497,384"/>
-				<property name="bounds_setted_by_user" value="true"/>
-			</reference>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.VirtualResourceManager">
-			<property name="$imported" value="true"/>
-			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="619,500,187,193"/>
-			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.LOG">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.VARIABLE_XPATH">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.VirtualResourceManager.VirtualResourceManager:VirtualResourceManager~QNEXDEngineImpl;~QStorageI;">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.VirtualResourceManager.getReferenceName:getReferenceName~QStorageDocumentObjectI;">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.engine">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.VirtualResourceManager:engine">
-				<property name="sourceAnchor" value="619,596"/>
-				<property name="targetAnchor" value="497,596"/>
-			</reference>
-			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.ROOT_RESOURCE_XPATH">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.PATTERN">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.VirtualResourceManager.create:create~QVirtualCollectionImpl;~QCollectionImpl;~QVCLSchema;">
-				<property name="$hidden" value="true"/>
-			</reference>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.NEXDEngineImpl">
 			<property name="$imported" value="true"/>
 			<property name="$shortcutReference" value="true"/>
@@ -116,10 +83,10 @@
 			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.NEXDEngineImpl.storeCollection:storeCollection~QSixdmlCollection;~QString;~QURL;~QURL;">
 				<property name="$hidden" value="true"/>
 			</reference>
-			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.NEXDEngineImpl.transactions">
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.NEXDEngineImpl.queryDocument:queryDocument~QString;~QString;">
 				<property name="$hidden" value="true"/>
 			</reference>
-			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.NEXDEngineImpl.queryDocument:queryDocument~QString;~QString;">
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.NEXDEngineImpl.transactions">
 				<property name="$hidden" value="true"/>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.NEXDEngineImpl:transactions">
@@ -153,6 +120,39 @@
 				<property name="sourceAnchor" value="497,316"/>
 				<property name="targetAnchor" value="627,316"/>
 				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.VirtualResourceManager">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="619,500,187,193"/>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.LOG">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.VirtualResourceManager.VirtualResourceManager:VirtualResourceManager~QNEXDEngineImpl;~QStorageI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.VARIABLE_XPATH">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.engine">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.VirtualResourceManager.getReferenceName:getReferenceName~QStorageDocumentObjectI;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.VirtualResourceManager:engine">
+				<property name="sourceAnchor" value="619,596"/>
+				<property name="targetAnchor" value="497,596"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.ROOT_RESOURCE_XPATH">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.VirtualResourceManager.create:create~QVirtualCollectionImpl;~QCollectionImpl;~QVCLSchema;">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.VirtualResourceManager.PATTERN">
+				<property name="$hidden" value="true"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.TransactionManager">

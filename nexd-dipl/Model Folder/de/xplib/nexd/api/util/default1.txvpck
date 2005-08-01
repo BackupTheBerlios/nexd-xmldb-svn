@@ -5,5 +5,8 @@
 	<view uin="V574ng9eb3hxdgt9i0gyc">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.api.util.Base64">
+			<property name="bounds" value="20,20,58,28"/>
+		</reference>
 	</view>
 </nodeSet>

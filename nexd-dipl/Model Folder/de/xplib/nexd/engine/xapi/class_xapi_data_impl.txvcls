@@ -16,6 +16,15 @@
 				<property name="targetAnchor" value="122,414"/>
 			</reference>
 		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xapi.DatabaseImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="-156,15,194,312"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xapi.DatabaseImpl:AbstractConfigurable">
+				<property name="sourceAnchor" value="38,78"/>
+				<property name="targetAnchor" value="138,78"/>
+			</reference>
+		</reference>
 		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xapi.XMLResourceImpl">
 			<property name="$imported" value="true"/>
 			<property name="$shortcutReference" value="true"/>
@@ -31,13 +40,19 @@
 				<property name="$hidden" value="true"/>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xapi.DatabaseImpl">
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xapi.VirtualCollectionImpl">
 			<property name="$imported" value="true"/>
 			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="-156,15,194,312"/>
-			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xapi.DatabaseImpl:AbstractConfigurable">
-				<property name="sourceAnchor" value="38,78"/>
-				<property name="targetAnchor" value="138,78"/>
+			<property name="bounds" value="403,524,199,295"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xapi.VirtualCollectionImpl:AbstractCollection">
+				<property name="sourceAnchor" value="502,524"/>
+				<property name="targetAnchor" value="502,446"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xapi.VirtualCollectionImpl.MESSAGE">
+				<property name="$hidden" value="true"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xapi.VirtualCollectionImpl.VirtualCollectionImpl:VirtualCollectionImpl~QNEXDEngineI;~QStorageCollectionI;">
+				<property name="$hidden" value="true"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xapi.CollectionImpl">
@@ -65,21 +80,6 @@
 				<property name="bounds_setted_by_user" value="true"/>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xapi.VirtualCollectionImpl">
-			<property name="$imported" value="true"/>
-			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="403,524,199,295"/>
-			<reference referencedUin="jdt:e_field:src:de.xplib.nexd.engine.xapi.VirtualCollectionImpl.MESSAGE">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xapi.VirtualCollectionImpl:AbstractCollection">
-				<property name="sourceAnchor" value="502,524"/>
-				<property name="targetAnchor" value="502,446"/>
-			</reference>
-			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xapi.VirtualCollectionImpl.VirtualCollectionImpl:VirtualCollectionImpl~QNEXDEngineI;~QStorageCollectionI;">
-				<property name="$hidden" value="true"/>
-			</reference>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xapi.AbstractXMLResource">
 			<property name="$imported" value="true"/>
 			<property name="$shortcutReference" value="true"/>
@@ -92,6 +92,18 @@
 				<property name="targetAnchor" value="222,429"/>
 			</reference>
 			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xapi.AbstractXMLResource.AbstractXMLResource:AbstractXMLResource~QAbstractCollection;~QString;">
+				<property name="$hidden" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xapi.VirtualResourceImpl">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="-159,677,200,142"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xapi.VirtualResourceImpl:AbstractXMLResource">
+				<property name="sourceAnchor" value="41,716"/>
+				<property name="targetAnchor" value="122,716"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xapi.VirtualResourceImpl.VirtualResourceImpl:VirtualResourceImpl~QVirtualCollectionImpl;~QDocument;~QString;">
 				<property name="$hidden" value="true"/>
 			</reference>
 		</reference>
@@ -120,18 +132,6 @@
 			</reference>
 			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xapi.AbstractCollection.AbstractCollection:AbstractCollection~QNEXDEngineI;~QStorageCollectionI;">
 				<property name="$hidden" value="true"/>
-			</reference>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xapi.VirtualResourceImpl">
-			<property name="$imported" value="true"/>
-			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="-159,677,200,142"/>
-			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.xapi.VirtualResourceImpl.VirtualResourceImpl:VirtualResourceImpl~QVirtualCollectionImpl;~QDocument;~QString;">
-				<property name="$hidden" value="true"/>
-			</reference>
-			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xapi.VirtualResourceImpl:AbstractXMLResource">
-				<property name="sourceAnchor" value="41,716"/>
-				<property name="targetAnchor" value="122,716"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xapi.AbstractConfigurable">

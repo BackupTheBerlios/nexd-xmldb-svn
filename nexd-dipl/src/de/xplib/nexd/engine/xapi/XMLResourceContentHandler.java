@@ -188,9 +188,9 @@ public class XMLResourceContentHandler extends DefaultHandler {
             }
         }
         
-        Enumeration enum = namespaces.keys();
-        while (enum.hasMoreElements()) {
-            String key = (String) enum.nextElement();
+        Enumeration enu = namespaces.keys();
+        while (enu.hasMoreElements()) {
+            String key = (String) enu.nextElement();
             newContent.append(" xmlns");
             if (key.length() > 0) {
                 newContent.append(":");

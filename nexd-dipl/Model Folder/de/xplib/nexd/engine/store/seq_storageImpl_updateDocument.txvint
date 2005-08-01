@@ -11,8 +11,8 @@
 			<reference referencedUin="design:link:::L-jj7sjxebawu6vgo4mbzi:N-w2q8ptebavq36tysnhav">
 				<property name="sendingInstant" value="410"/>
 				<property name="processingDuration" value="20"/>
-				<property name="sourceAnchor" value="0,0"/>
-				<property name="targetAnchor" value="0,0"/>
+				<property name="sourceAnchor" value="275,260"/>
+				<property name="targetAnchor" value="493,260"/>
 			</reference>
 			<reference referencedUin="design:link:::L-jj7sjxebaw3gor-ai18hi:N-w2q8ptebavq36tysnhav">
 				<property name="sendingInstant" value="323"/>
@@ -20,14 +20,14 @@
 				<property name="sourceAnchor" value="275,260"/>
 				<property name="targetAnchor" value="493,260"/>
 			</reference>
-			<reference referencedUin="design:node:::N-4aytaiebawrsi4o8wxg8:N-w2q8ptebavq36tysnhav">
-				<property name="seq_bounds" value="233,288,14,20"/>
-			</reference>
 			<reference referencedUin="design:link:::L-jj7sjxebaw2geg-a4p0er:N-w2q8ptebavq36tysnhav">
 				<property name="sendingInstant" value="263"/>
 				<property name="processingDuration" value="20"/>
 				<property name="sourceAnchor" value="275,260"/>
 				<property name="targetAnchor" value="493,260"/>
+			</reference>
+			<reference referencedUin="design:node:::N-4aytaiebawrsi4o8wxg8:N-w2q8ptebavq36tysnhav">
+				<property name="seq_bounds" value="233,288,14,20"/>
 			</reference>
 			<reference referencedUin="design:node:::N-4aytaiebaw4k26-algry5:N-w2q8ptebavq36tysnhav">
 				<property name="seq_bounds" value="233,366,14,20"/>
@@ -35,25 +35,26 @@
 			<reference referencedUin="design:node:::N-4aytaiebavrmrv-4x1d4f:N-w2q8ptebavq36tysnhav">
 				<property name="seq_bounds" value="224,129,14,311"/>
 			</reference>
-			<reference referencedUin="design:link:::L-jj7sjxebawrsg1-2342cl:N-w2q8ptebavq36tysnhav">
-				<property name="sendingInstant" value="288"/>
+			<reference referencedUin="design:link:::L-jj7sjxebaw1fd4gff3do:N-w2q8ptebavq36tysnhav">
+				<property name="sendingInstant" value="233"/>
 				<property name="processingDuration" value="20"/>
-				<property name="sourceAnchor" value="0,14"/>
-				<property name="targetAnchor" value="0,14"/>
+				<property name="sourceAnchor" value="275,513"/>
+				<property name="targetAnchor" value="271,520"/>
+				<property name="seq_bendpoints" value="307,513,307,552,271,552"/>
 			</reference>
 			<reference referencedUin="design:link:::L-jj7sjxebaw4k1k-wahxgr:N-w2q8ptebavq36tysnhav">
 				<property name="sendingInstant" value="366"/>
 				<property name="processingDuration" value="20"/>
-				<property name="sourceAnchor" value="275,460"/>
-				<property name="targetAnchor" value="267,472"/>
-				<property name="seq_bendpoints" value="312,460,312,509,267,509"/>
+				<property name="sourceAnchor" value="275,506"/>
+				<property name="targetAnchor" value="267,520"/>
+				<property name="seq_bendpoints" value="314,506,314,559,267,559"/>
 			</reference>
-			<reference referencedUin="design:link:::L-jj7sjxebaw1fd4gff3do:N-w2q8ptebavq36tysnhav">
-				<property name="sendingInstant" value="233"/>
+			<reference referencedUin="design:link:::L-jj7sjxebawrsg1-2342cl:N-w2q8ptebavq36tysnhav">
+				<property name="sendingInstant" value="288"/>
 				<property name="processingDuration" value="20"/>
-				<property name="sourceAnchor" value="275,466"/>
-				<property name="targetAnchor" value="271,472"/>
-				<property name="seq_bendpoints" value="306,466,306,503,271,503"/>
+				<property name="sourceAnchor" value="275,499"/>
+				<property name="targetAnchor" value="263,520"/>
+				<property name="seq_bendpoints" value="321,499,321,566,263,566"/>
 			</reference>
 			<reference referencedUin="design:link:::L-jj7sjxebaw0csa-53mgme:N-w2q8ptebavq36tysnhav">
 				<property name="sendingInstant" value="188"/>
@@ -72,31 +73,15 @@
 			</reference>
 		</reference>
 		<reference referencedUin="design:node:::N-w2q8ptebavte1cfksfnm">
-			<property name="seq_bounds" value="314,30,112,428"/>
+			<property name="seq_bounds" value="314,30,112,490"/>
 			<property name="$shortcutReference" value="true"/>
 			<property name="undoTag" value="1121701212139"/>
 			<reference referencedUin="design:node:::N-4aytaiebavuqna-ls7mz8:N-w2q8ptebavte1cfksfnm">
 				<property name="seq_bounds" value="363,148,14,20"/>
 			</reference>
 		</reference>
-		<reference referencedUin="design:node:::N-w2q8ptebavxuik2iwz3p">
-			<property name="seq_bounds" value="493,30,154,472"/>
-			<property name="$shortcutReference" value="true"/>
-			<reference referencedUin="design:node:::N-4aytaiebaw0csw-ntie14:N-w2q8ptebavxuik2iwz3p">
-				<property name="seq_bounds" value="563,188,14,20"/>
-			</reference>
-			<reference referencedUin="design:node:::N-4aytaiebawu6wtsmtitg:N-w2q8ptebavxuik2iwz3p">
-				<property name="seq_bounds" value="563,392,14,20"/>
-			</reference>
-			<reference referencedUin="design:node:::N-4aytaiebaw3gph-pby39y:N-w2q8ptebavxuik2iwz3p">
-				<property name="seq_bounds" value="563,323,14,20"/>
-			</reference>
-			<reference referencedUin="design:node:::N-4aytaiebaw2gf8-til0wy:N-w2q8ptebavxuik2iwz3p">
-				<property name="seq_bounds" value="563,263,14,20"/>
-			</reference>
-		</reference>
 		<reference referencedUin="design:node:::N-w2q8ptebavpczz-aq7rci">
-			<property name="seq_bounds" value="88,30,52,490"/>
+			<property name="seq_bounds" value="88,30,66,490"/>
 			<property name="$shortcutReference" value="true"/>
 			<property name="undoTag" value="1121701212139"/>
 			<reference referencedUin="design:link:::L-jj7sjxebavrmqfojqbsn:N-w2q8ptebavpczz-aq7rci">
@@ -104,6 +89,22 @@
 				<property name="processingDuration" value="311"/>
 				<property name="sourceAnchor" value="154,244"/>
 				<property name="targetAnchor" value="188,244"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::N-w2q8ptebavxuik2iwz3p">
+			<property name="seq_bounds" value="493,30,154,490"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="design:node:::N-4aytaiebaw0csw-ntie14:N-w2q8ptebavxuik2iwz3p">
+				<property name="seq_bounds" value="563,188,14,20"/>
+			</reference>
+			<reference referencedUin="design:node:::N-4aytaiebawu6wtsmtitg:N-w2q8ptebavxuik2iwz3p">
+				<property name="seq_bounds" value="563,410,14,20"/>
+			</reference>
+			<reference referencedUin="design:node:::N-4aytaiebaw3gph-pby39y:N-w2q8ptebavxuik2iwz3p">
+				<property name="seq_bounds" value="563,323,14,20"/>
+			</reference>
+			<reference referencedUin="design:node:::N-4aytaiebaw2gf8-til0wy:N-w2q8ptebavxuik2iwz3p">
+				<property name="seq_bounds" value="563,263,14,20"/>
 			</reference>
 		</reference>
 	</view>

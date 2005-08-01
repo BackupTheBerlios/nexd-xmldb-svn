@@ -5,5 +5,21 @@
 	<view uin="V574ng9eb3j8f6tvqu4x1">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.xpath.XPathAPI">
+			<property name="bounds" value="180,90,73,28"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.xpath.AbstractXPathVisitor">
+			<property name="bounds" value="10,10,143,45"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.xpath.XPathVisitor">
+			<property name="bounds" value="233,18,91,28"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.engine.xml.dom.xpath.XPathVisitor:AbstractXPathVisitor">
+				<property name="sourceAnchor" value="233,32"/>
+				<property name="targetAnchor" value="153,32"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.xml.dom.xpath.NodeListWithPosition">
+			<property name="bounds" value="10,90,150,28"/>
+		</reference>
 	</view>
 </nodeSet>

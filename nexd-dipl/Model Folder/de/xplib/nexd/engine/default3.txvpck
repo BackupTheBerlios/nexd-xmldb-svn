@@ -5,5 +5,119 @@
 	<view uin="V574ng9eay11okh-9cixkc">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="Package Diagram"/>
+		<reference referencedUin="design:view:::V574ng9eb3j6h8n-fyuglb">
+			<property name="bounds" value="583,110,52,45"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eb3j7p0v-wnlmdy">
+			<property name="bounds" value="602,250,37,45"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eb3j7syi-6qfzat">
+			<property name="bounds" value="82,410,44,45"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.VirtualCollectionManager">
+			<property name="bounds" value="165,276,171,28"/>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.VirtualCollectionManager:resManager">
+				<property name="sourceAnchor" value="336,290"/>
+				<property name="targetAnchor" value="416,290"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.VirtualCollectionManager:engine">
+				<property name="sourceAnchor" value="293,276"/>
+				<property name="targetAnchor" value="293,196"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eb3j65u0isao8j">
+			<property name="bounds" value="602,330,39,45"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.NEXDEnginePool">
+			<property name="bounds" value="506,18,124,28"/>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.NEXDEnginePool:instance">
+				<property name="sourceAnchor" value="630,42"/>
+				<property name="targetAnchor" value="626,46"/>
+				<property name="bendpoints" value="659,42,659,75,626,75"/>
+				<property name="smooth_bendpoints" value="659,42,659,75,626,75"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.NEXDEnginePool:enginePool">
+				<property name="sourceAnchor" value="563,46"/>
+				<property name="targetAnchor" value="382,151"/>
+				<property name="bendpoints" value="563,106,382,106"/>
+				<property name="smooth_bendpoints" value="563,106,382,106"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eb3j7m8546ym6p">
+			<property name="bounds" value="10,430,52,45"/>
+		</reference>
+		<reference referencedUin="design:view:::V574ng9eay11rln-c2sjj3">
+			<property name="bounds" value="10,350,36,45"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.SchemaValidator">
+			<property name="bounds" value="415,150,119,28"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.VirtualResourceManager">
+			<property name="bounds" value="416,276,166,28"/>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.VirtualResourceManager:engine">
+				<property name="sourceAnchor" value="499,276"/>
+				<property name="targetAnchor" value="354,196"/>
+				<property name="bendpoints" value="499,236,354,236"/>
+				<property name="smooth_bendpoints" value="499,236,354,236"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.TransactionManager">
+			<property name="bounds" value="144,18,139,28"/>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.TransactionManager:instance">
+				<property name="sourceAnchor" value="283,42"/>
+				<property name="targetAnchor" value="279,46"/>
+				<property name="bendpoints" value="312,42,312,75,279,75"/>
+				<property name="smooth_bendpoints" value="312,42,312,75,279,75"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.CollectionLockVisitor">
+			<property name="bounds" value="338,10,148,45"/>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.CollectionLockVisitor:engine">
+				<property name="sourceAnchor" value="357,55"/>
+				<property name="targetAnchor" value="357,151"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.SchemaChecker">
+			<property name="bounds" value="10,18,114,28"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.XPathQueryCache">
+			<property name="bounds" value="31,159,126,28"/>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.XPathQueryCache:instance">
+				<property name="sourceAnchor" value="157,183"/>
+				<property name="targetAnchor" value="153,187"/>
+				<property name="bendpoints" value="186,183,186,216,153,216"/>
+				<property name="smooth_bendpoints" value="186,183,186,216,153,216"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.VCLHelper">
+			<property name="bounds" value="554,190,81,28"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.engine.NEXDEngineImpl">
+			<property name="bounds" value="272,151,123,45"/>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.NEXDEngineImpl:transactions">
+				<property name="sourceAnchor" value="328,151"/>
+				<property name="targetAnchor" value="208,46"/>
+				<property name="bendpoints" value="328,101,208,101"/>
+				<property name="smooth_bendpoints" value="328,101,208,101"/>
+			</reference>
+			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.engine.NEXDEngineImpl:Dependency_Link">
+				<property name="sourceAnchor" value="369,151"/>
+				<property name="targetAnchor" value="369,55"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.NEXDEngineImpl:validator">
+				<property name="sourceAnchor" value="300,151"/>
+				<property name="targetAnchor" value="67,46"/>
+				<property name="bendpoints" value="300,121,67,121"/>
+				<property name="smooth_bendpoints" value="300,121,67,121"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.NEXDEngineImpl:cache">
+				<property name="sourceAnchor" value="272,169"/>
+				<property name="targetAnchor" value="157,169"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:de.xplib.nexd.engine.NEXDEngineImpl:vcollManager">
+				<property name="sourceAnchor" value="314,196"/>
+				<property name="targetAnchor" value="314,276"/>
+			</reference>
+		</reference>
 	</view>
 </nodeSet>

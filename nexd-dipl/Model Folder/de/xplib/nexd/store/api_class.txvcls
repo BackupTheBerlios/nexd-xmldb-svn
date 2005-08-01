@@ -4,6 +4,7 @@
 <nodeSet  version="1.1">
 	<view uin="Vd7rsvfeaxupuoga1ctcu">
 		<property name="$metaclass" value="Class Diagram"/>
+		<property name="bounds" value="-5,-5,861,426"/>
 		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.InternalIdI">
 			<property name="$imported" value="true"/>
 			<property name="$shortcutReference" value="true"/>
@@ -56,15 +57,6 @@
 				<property name="bounds_setted_by_user" value="true"/>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageDocumentObjectI">
-			<property name="$imported" value="true"/>
-			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="462,322,192,94"/>
-			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.store.StorageDocumentObjectI:StorageObjectI">
-				<property name="sourceAnchor" value="557,322"/>
-				<property name="targetAnchor" value="557,269"/>
-			</reference>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageCollectionI">
 			<property name="$imported" value="true"/>
 			<property name="$shortcutReference" value="true"/>
@@ -82,6 +74,15 @@
 				<property name="bounds_setted_by_user" value="true"/>
 			</reference>
 		</reference>
+		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageDocumentObjectI">
+			<property name="$imported" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="462,322,192,94"/>
+			<reference referencedUin="jdt:l_gnt:src:de.xplib.nexd.store.StorageDocumentObjectI:StorageObjectI">
+				<property name="sourceAnchor" value="557,322"/>
+				<property name="targetAnchor" value="557,269"/>
+			</reference>
+		</reference>
 		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.StorageEntityI">
 			<property name="$imported" value="true"/>
 			<property name="$shortcutReference" value="true"/>
@@ -94,10 +95,11 @@
 		<reference referencedUin="jdt:e_class:src:de.xplib.nexd.store.AbstractStorageFactory">
 			<property name="$imported" value="true"/>
 			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="10,10,200,159"/>
+			<property name="bounds" value="-71,10,308,159"/>
 			<property name="hideAttribute" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
 			<reference referencedUin="jdt:l_dpn:src:de.xplib.nexd.store.AbstractStorageFactory:storageI">
-				<property name="sourceAnchor" value="210,40"/>
+				<property name="sourceAnchor" value="237,40"/>
 				<property name="targetAnchor" value="319,40"/>
 			</reference>
 		</reference>
