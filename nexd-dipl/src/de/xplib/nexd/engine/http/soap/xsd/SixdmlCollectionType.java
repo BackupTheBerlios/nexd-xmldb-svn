@@ -102,13 +102,13 @@ public class SixdmlCollectionType extends AbstractEncoder {
                     Entry etype = new Entry(entry, "type");
                     etype.setValue(
                             (coll instanceof VirtualCollection) ? "1" : "0");
-                    
+                    /*
                     Entry eid = new Entry(entry, "internalId");
                     eid.setValue(
                             coll.getStorageCollection()
                                 .getInternalId()
                                 .export());
-                    
+                    */
                     Entry epath = new Entry(entry, "path");
                     epath.setAttribute(xsiNS + ":type", xsdNS + ":string");
                     epath.setValue(coll.getStorageCollection().getPath());
@@ -118,7 +118,7 @@ public class SixdmlCollectionType extends AbstractEncoder {
                     etrans.setValue(coll.getProperty(
                             NEXDEngineI.TRANSACTION_ID_KEY));
                     
-                    collections.put(etrans.getValue(), coll);
+                    collections.put(epath.getValue(), coll);
                     
                 } catch (Exception e) {
                     throw new SoapException(e.getMessage());
