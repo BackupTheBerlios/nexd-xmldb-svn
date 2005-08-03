@@ -400,6 +400,7 @@ public final class VirtualResourceManager {
                 this.storage.storeDocument(virColl, virObj);
             }
         } catch (Exception e) {
+            e.printStackTrace();
             throw new XMLDBException(ErrorCodes.VENDOR_ERROR, e.getMessage());
         }
     }
@@ -453,14 +454,39 @@ public final class VirtualResourceManager {
         
         Matcher matcher = PATTERN.matcher(selectIn);
         
+        StorageCollectionI sVirColl = virCollIn.getStorageCollection();
+        
+        StorageCollectionI pcvrColl = this.storage.queryCollection(pcvrPath);
+        
         // skip processing, this doesn't match
         if (!matcher.find()) {
+            LOG.info("\n####################\n"
+                    + selectIn + "\n"
+                    + "Implement sub select"
+                    + "\n####################");
+            /*
+            if (true) {
+                
+                LOG.info("virCollIn " + virCollIn + "  " + virCollIn.getName());
+                LOG.info("refCollIn " + refCollIn + "  " + refCollIn.getName());
+                LOG.info("pcvrColl " + pcvrColl + "  " + pcvrColl.getPath());
+                
+                return;
+            }*/
+                                    
+            String[] names = this.storage.queryObjects(refColl);
+            for (int i = 0; i < names.length; i++) {
+                this.storage.dropObject(refColl, this.storage.queryObject(refColl, names[i]));
+                
+                this.storage.dropObject(pcvrColl, this.storage.queryObject(pcvrColl, names[i]));
+            }
+            
+            this.create(new VirtualCollectionImpl(this.engine, refColl), new CollectionImpl(this.engine, pcvrColl), VCLHelper.getVCLSchema(vcsIn));
+            
             return;
         }
         
-        StorageCollectionI sVirColl = virCollIn.getStorageCollection();
-        
-        StorageCollectionI pcvrColl = this.storage.queryCollection(pcvrPath); 
+         
         
         Map map = this.getXPathMap(pcvrColl, matcher, selectIn);
         

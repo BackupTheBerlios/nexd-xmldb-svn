@@ -46,13 +46,13 @@
 			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.storeCollectionSchema:storeCollectionSchema~QSixdmlCollection;~QURL;">
 				<property name="$hidden" value="true"/>
 			</reference>
-			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.dropCollectionSchema:dropCollectionSchema~QSixdmlCollection;">
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.containsId:containsId~QSixdmlCollection;~QString;">
 				<property name="$hidden" value="true"/>
 			</reference>
 			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.dropCollection:dropCollection~QSixdmlCollection;~QString;">
 				<property name="$hidden" value="true"/>
 			</reference>
-			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.containsId:containsId~QSixdmlCollection;~QString;">
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.dropCollectionSchema:dropCollectionSchema~QSixdmlCollection;">
 				<property name="$hidden" value="true"/>
 			</reference>
 			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.storeCollection:storeCollection~QSixdmlCollection;~QString;~QURL;~QURL;">
@@ -103,10 +103,10 @@
 			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.storeCollection:storeCollection~QSixdmlCollection;~QString;~QURL;">
 				<property name="$hidden" value="true"/>
 			</reference>
-			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryResourceByXPath:queryResourceByXPath~QSixdmlCollection;~QString;~QString;">
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryResourcesByXPath:queryResourcesByXPath~QSixdmlCollection;~QString;">
 				<property name="$hidden" value="true"/>
 			</reference>
-			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryResourcesByXPath:queryResourcesByXPath~QSixdmlCollection;~QString;">
+			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryResourceByXPath:queryResourceByXPath~QSixdmlCollection;~QString;~QString;">
 				<property name="$hidden" value="true"/>
 			</reference>
 			<reference referencedUin="jdt:e_method:src:de.xplib.nexd.engine.comm.SOAPSession.queryResources:queryResources~QSixdmlCollection;">

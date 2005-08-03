@@ -28,12 +28,19 @@
  */
 package de.xplib.nexd.engine;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.net.URL;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.apache.xml.serialize.XMLSerializer;
 import org.sixdml.dbmanagement.SixdmlCollection;
 import org.sixdml.exceptions.InvalidQueryException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import org.xmldb.api.base.ErrorCodes;
@@ -236,10 +243,51 @@ public class VirtualCollectionManager {
             Object result = this.storage.queryObject(
                     ctxCollIn.getStorageCollection(), resIn.getId());
             
+
+            
+            LOG.info("Input Collection: " + ctxCollIn);
+            
             if (result == null) {
+                LOG.info("updateDelete()");
                 this.updateDelete(ctxCollIn, resIn);
             } else {
+                LOG.info("updateInsert()");
                 this.updateInsert(ctxCollIn, resIn);
+            }
+            
+            StorageCollectionI ctxColl = ctxCollIn.getStorageCollection();
+            
+            StorageCollectionI[] cref = this.storage.queryCollectionReferences(
+                    ctxColl);
+            
+            for (int i = 0; i < cref.length; i++) {
+                
+                VirtualCollectionImpl virColl = new VirtualCollectionImpl(
+                        this.engine, cref[i]);
+                
+            Node xsl = this.engine.queryCollectionStylesheet(virColl);
+            
+            LOG.info("Trying xsl update " + ctxCollIn.getName() + " : " + xsl);
+            
+            if (xsl != null && xsl instanceof Document) {
+                
+                LOG.info("Update xsl");
+                
+                this.engine.dropCollectionStylesheet(virColl);
+
+                File tmp = File.createTempFile("tmp_", ".xsl");
+                tmp.deleteOnExit();
+                
+                FileWriter fw = new FileWriter(tmp);
+                
+                XMLSerializer xser = new XMLSerializer();
+                xser.setOutputCharStream(fw);
+                xser.serialize((Document) xsl);
+                
+                URL url = tmp.toURL();
+                
+                this.engine.storeCollectionStylesheet(virColl, url);
+            }
             }
         } catch (InvalidCollectionReferenceException e) {
             LOG.error(e.getMessage(), e);
@@ -262,8 +310,10 @@ public class VirtualCollectionManager {
         } catch (VariableExistsException e) {
             LOG.error(e.getMessage(), e);
             throw new XMLDBException(ErrorCodes.VENDOR_ERROR, e.getMessage());
+        } catch (IOException e) {
+            LOG.error(e.getMessage(), e);
+            throw new XMLDBException(ErrorCodes.VENDOR_ERROR, e.getMessage());
         }
-        
     }
     
     /**
@@ -348,6 +398,7 @@ public class VirtualCollectionManager {
         
         StorageCollectionI[] cref = 
             this.storage.queryCollectionReferences(ctxColl);
+        LOG.info("cref is = " + cref);
         
         // nothing todo
         if (cref == null || cref.length == 0) {
@@ -355,7 +406,8 @@ public class VirtualCollectionManager {
         }
 
         String path = ctxColl.getPath();
-
+        LOG.info("path id = " + path);
+        
         for (int i = 0; i < cref.length; i++) {
             
             String vcsPath = cref[i].getPath() + "/" 
@@ -372,7 +424,10 @@ public class VirtualCollectionManager {
 
             for (int j = 0, l = crefList.getLength(); j < l; j++) {
                 Element crefElem = (Element) crefList.item(j);
-
+                
+                LOG.info("crefElem = path : " + crefElem.getAttribute(
+                        VCLCollectionReference.ATTR_MATCH) + " = " + path);
+                
                 if (!crefElem.getAttribute(
                         VCLCollectionReference.ATTR_MATCH).equals(
                                 path)) {
@@ -385,8 +440,12 @@ public class VirtualCollectionManager {
                 CollectionImpl coll = new CollectionImpl(this.engine, cref[i]);
                                         
                 if (select.equals("")) {
+                    
+                    LOG.info("resManager.create()");
                     this.resManager.create(cref[i], vclSchema, resIn.getId());
                 } else {
+                    
+                    LOG.info("resManager.rebuild()");
                     this.resManager.rebuildVirtualResource(
                             virColl, coll, vclSchema, select, resIn.getId());
                 }
@@ -431,13 +490,15 @@ public class VirtualCollectionManager {
         // query dependent root objects, for deleted resource
         StorageObjectI[] srObjs = this.storage.queryObjectsByXPath(
                 sPcvrColl, rootQuery);
-        
+System.out.println("handleRef");
         // no root objects belong to the deleted resource, so update
         if (srObjs.length == 0) {
+System.out.println("handleRef:update");
             this.resManager.update(
 				        vColl, pcvrColl, subQuery, resPath);
         // there is one or more object(s), delete it(them)
         } else {
+System.out.println("handleRef:delete");
             for (int j = 0; j < srObjs.length; j++) {
                 String docId = ((StorageDocumentObjectI) srObjs[j])
                         .getContent().getDocumentId();

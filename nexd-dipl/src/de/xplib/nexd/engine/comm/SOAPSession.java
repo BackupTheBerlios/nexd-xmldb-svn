@@ -948,7 +948,7 @@ public class SOAPSession implements SessionI, NEXDEngineI {
             coll.setAttribute("xmlns:ns6", "http://nexd.xplib.de");
             coll.setAttribute("xsi:type", "ns6:SixdmlCollection");
             
-            coll.setAttribute("iid", collIn.getProperty("iid"));
+            coll.setAttribute("path", collIn.getProperty("path"));
         } catch (SoapException e) {
             throw new XMLDBException(ErrorCodes.VENDOR_ERROR, e.getMessage());
         }
@@ -969,7 +969,7 @@ public class SOAPSession implements SessionI, NEXDEngineI {
             coll.setAttribute("xmlns:ns6", "http://nexd.xplib.de");
             coll.setAttribute("xsi:type", "ns6:VirtualCollection");
             
-            coll.setAttribute("iid", collIn.getProperty("iid"));
+            coll.setAttribute("path", collIn.getProperty("path"));
         } catch (SoapException e) {
             throw new XMLDBException(ErrorCodes.VENDOR_ERROR, e.getMessage());
         }
