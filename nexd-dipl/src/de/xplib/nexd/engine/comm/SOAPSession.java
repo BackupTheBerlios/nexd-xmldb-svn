@@ -1242,7 +1242,7 @@ public class SOAPSession implements SessionI, NEXDEngineI {
         
             String name  = e.getChild("name").getValue();
             short type   = Short.parseShort(e.getChild("type").getValue());
-            String iid   = e.getChild("internalId").getValue();
+            //String iid   = e.getChild("internalId").getValue();
             String path  = e.getChild("path").getValue();
             String trans = e.getChild("transaction").getValue();
         
@@ -1252,7 +1252,7 @@ public class SOAPSession implements SessionI, NEXDEngineI {
                 coll = new VirtualCollectionImpl(this, null);
             }
             coll.setProperty("name", name);
-            coll.setProperty("iid", iid);
+            //coll.setProperty("iid", iid);
             coll.setProperty("path", path);
             coll.setProperty("transid", trans);
         }
