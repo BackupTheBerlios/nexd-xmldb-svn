@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<messages>
+  <message id="setup.dialog.title">
+    <locale language="de">
+      <entry key="text">Erstes Datenbank Setup</entry>
+    </locale>
+    <locale language="de">
+      <entry key="text">First Database Setup</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.header">
+    <locale language="de">
+      <entry key="text">Treiber-Einstellungen</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Driver-Settings</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.jarfile.label">
+    <locale language="de">
+      <entry key="text">Jar-Datei:</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Jar-File:</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.jarfile.tooltip">
+    <locale language="de">
+      <entry key="text">Wählen Sie die *.jar Datei mit dem Datenbank Treiber.</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Select the *.jar file which contains the database driver.</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.class.label">
+    <locale language="de">
+      <entry key="text">Treiber:</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Driver:</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.class.tooltip">
+    <locale language="de">
+      <entry key="text">Geben Sie den vollständigen Java Klassennamen an.</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Type in the full Java classname.</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.dburi.label">
+    <locale language="de">
+      <entry key="text">Datenbank-URI:</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Database-URI:</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.dburi.tooltip">
+    <locale language="de">
+      <entry key="text">Die Datenbank-URI (xmldb:&lt;vendor&gt;://&lt;hostname&gt;/db)</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">The Database-URI (xmldb:&lt;vendor&gt;://&lt;hostname&gt;/db)</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.status.search">
+    <locale language="de">
+      <entry key="text">Suche Datenbank Treiber ...</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Searching for database driver ...</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.status.found">
+    <locale language="de">
+      <entry key="text">Gefunden: {0}</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Found: {0}</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.test.label">
+    <locale language="de">
+      <entry key="text">Testen</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Test</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.test.tooltip">
+    <locale language="de">
+      <entry key="text">Den Treiber und die Datenbankverbindung testen.</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Tests the driver and database connection.</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.cancel.label">
+    <locale language="de">
+      <entry key="text">Abbrechen</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Cancel</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.cancel.tooltip">
+    <locale language="de">
+      <entry key="text">Assistenten und Anwendung beenden.</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Exit wizard and application.</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.ok.label">
+    <locale language="de">
+      <entry key="text">Ok</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Ok</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.ok.tooltip">
+    <locale language="de">
+      <entry key="text">Eingaben prüfen und übernehmen.</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Check input and apply data.</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.test.error.title">
+    <locale language="de">
+      <entry key="text">Fehler</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Error</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.test.error.label">
+    <locale language="de">
+      <entry key="text">Der folgende Fehler is aufgetreten: </entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">The following error occures: </entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.test.error.uri">
+    <locale language="de">
+      <entry key="text">Ungültige Datenbank-URI: {0}.</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Invalid Database-URI: {0}.</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.test.success.title">
+    <locale language="de">
+      <entry key="text">Test Ok</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">Test Ok</entry>
+    </locale>
+  </message>
+  <message id="setup.dialog.test.success.message">
+    <locale language="de">
+      <entry key="text">Der Treibertest verlief erfolgreich.</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">The driver test run successfull.</entry>
+    </locale>
+  </message>
+  
+  <!--
+    ACTIONS
+  -->
+  <message id="action.app.exit.name">
+    <locale language="de">
+      <entry key="text">Der Treibertest verlief erfolgreich.</entry>
+    </locale>
+    <locale language="en">
+      <entry key="text">The driver test run successfull.</entry>
+    </locale>
+  </message>
+</messages>

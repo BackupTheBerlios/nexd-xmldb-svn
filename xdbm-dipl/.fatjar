@@ -1,0 +1,13 @@
+#Fat Jar Configuration File
+#Tue Aug 02 17:31:03 CEST 2005
+onejar.license.required=true
+manifest.classpath=
+onejar.checkbox=false
+jarname=/home/devel/Documents/cd2/bin/xdbm.jar
+manifest.mergeall=false
+manifest.mainclass=de.xplib.xdbm.Client
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=<po|nexd>~tests/
+includes=

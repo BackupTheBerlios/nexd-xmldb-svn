@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<entries xmlns="http://xdbm.xplib.de/i18n/version/1.0">
+  
+  <entry key="menu.file" title="Datei" mnemonic="D" />
+  <entry key="menu.file.new" title="Neu" mnemonic="N" />
+  <entry key="menu.edit" title="Bearbeiten" mnemonic="B" />
+  <entry key="menu.view" title="Ansicht" mnemonic="A" />
+  <entry key="menu.view.plugins" title="Plugins" mnemonic="P" />
+  <entry key="menu.query" title="Abfragen" mnemonic="F" />
+
+  <entry key="tree.title" title="Kollektionen" />  
+  <entry key="tree.db.connected" title="Verbunden mit {0}." />
+  <entry key="tree.db.disconnected" title="Verbindung getrennt." />
+  
+  <entry key="resource.title" title="Ressourcen" />
+  <entry key="resource.column.id" title="ID" />
+  <entry key="resource.column.type" title="Typ" />
+  <entry key="resource.column.content" title="Inhalt" />
+  
+  <entry key="editor.title" title="Editor" />
+  
+  <entry key="action.app.cancel"
+         title="Abbrechen" 
+         tooltip="Die Aktion abbrechen." />
+  <entry key="action.app.exit"
+         title="Beenden"
+         tooltip="Beendet die Anwendung"
+         mnemonic="B"
+         accelerator="Q,C" />
+  <entry key="action.app.select.conn"
+         title="Verbinden"
+         tooltip="Eine Datenbankverbindung wählen." />
+  <entry key="action.app.connect"
+         title="Verbinden"
+         tooltip="Mit der Datenbankverbinden." />
+  <entry key="action.app.reconnect"
+         tooltip="Erneut mit {0} verbinden." />
+  <entry key="action.app.disconnect"
+         title="Trennen"
+         tooltip="Die Datenbankverbinden trennen." />
+         
+  <entry key="action.object.new.collection"
+         title="Kollektion"
+         tooltip="Eine neue Kollektion anlegen." />
+  <entry key="action.object.new.collection.exec"
+         title="Anlegen"
+         tooltip="Neue Kollektion anlegen" />
+  <entry key="action.object.new.vcollection"
+         title="VirtuelleKollektion"
+         tooltip="Eine neue VirtuelleKollektion anlegen." />
+  <entry key="action.object.new.vcollection.exec"
+         title="Anlegen"
+         tooltip="Neue VirtuelleKollektion anlegen" />
+  <entry key="action.object.delete.collection"
+         title="Löschen"
+         tooltip="Die gewählte Kollektion löschen" />
+  <entry key="action.object.collection.query"
+         title="Kollektion abfragen"
+         tooltip="Eine Abfrage auf eine Kollektion ausführen." />
+  <entry key="action.object.collection.query.exec"
+         title="Ausführen"
+         tooltip="Die Abfrage ausführen." />
+  <entry key="action.object.new.xml.resource"
+         title="XML-Ressource"
+         tooltip="Eine neue XML-Ressource anlegen." />
+  <entry key="action.object.new.xml.resource.exec"
+         title="Erstellen"
+         tooltip="Eine neue XML-Ressource erstellen." />
+  <entry key="action.object.resource.save"
+         title="Speichern unter"
+         tooltip="Die gewählte Resource auf der Festplatte speichern."
+         mnemonic="S"
+         accelerator="S,C" />
+  <entry key="action.object.resource.show"
+         title="Anzeigen"
+         tooltip="Die XML-Ressource anzeigen." />
+  <entry key="action.object.resource.query"
+         title="XML-Ressource abfragen"
+         tooltip="Eine XPath-Abfrage auf die XML-Ressource ausführen." />
+  <entry key="action.object.resource.query.exec"
+         title="Ausführen"
+         tooltip="Die XPath-Anfrage auf die XML-Ressource ausführen." />
+  <entry key="action.object.resource.cut"
+         title="Ausschneiden"
+         tooltip="Die ausgewählte Ressource ausschneiden."
+         mnemonic="A"
+         accelerator="X,C" />
+  <entry key="action.object.resource.copy"
+         title="Kopieren"
+         tooltip="Die ausgewählte Ressource kopieren." 
+         mnemonic="K"
+         accelerator="C,C"/>
+  <entry key="action.object.resource.paste"
+         title="Einfügen"
+         tooltip="Ressource aus Clipboard einfügen." 
+         mnemonic="E"
+         accelerator="V,C"/>
+  <entry key="action.object.delete.resource"
+         title="Löschen"
+         tooltip="Die Ressource löschen." 
+         mnemonic="L" />
+  <entry key="action.vresource.show.pcvr"
+         title="Meta-Dokument anzeigen"
+         tooltip="Das Meta-Dokument der VirtuellenRessource anzeigen." />
+         
+  <entry key="app.err.title" title="Fehler" />
+  <entry key="app.err.msg.unknown" text="Ein unbekannter Fehler ist aufgetreten." />
+  <entry key="app.err.msg.closed" text="Die Verbindung ist geschlossen, die Aktion kann nicht ausgeführt werden." />
+  <entry key="app.err.msg.dump" text="&lt;html&gt;Der folgende Fehler ist aufgetreten&lt;br/&gt;{0}&lt;/html&gt;" />
+         
+  <entry key="app.output.title" title="Ausgabe" />
+  <entry key="app.output.msg.connect" text="Verbunden mit {0}['{1}', '{2}']" />
+  <entry key="app.output.msg.disconnect" text="Verbindung getrennt." />
+         
+  <entry key="dialog.select.conn.title" title="Verbindung wählen" />
+  <entry key="dialog.select.conn.jarfile" 
+         title="Jar-Datei: "
+         tooltip="Wählen Sie eine Jar Datei mit dem passenden Treiber." />
+  <entry key="dialog.select.conn.class" 
+         title="Klasse: "
+         tooltip="Die Datenbankimplementierung in der Jar-Datei." />
+  <entry key="dialog.select.conn.uri" 
+         title="Klasse: "
+         tooltip="Wählen Sie eine URL als Verbindung aus." />
+         
+  <entry key="plugin.query.editor.title" title="Query Editor" />
+         
+  <entry key="dialog.collection.new.title.sixdml" title="Neue SiXDML-Kollection" />
+  <entry key="dialog.collection.new.title.xapi" title="Neue Kollektion" />
+  <entry key="dialog.collection.new.parent" title="Kollektion:" tooltip="Der Kollektionspfad." />
+  <entry key="dialog.collection.new.name" title="Name:" tooltip="Der Name der neuen Kollektion." />
+  <entry key="dialog.collection.new.schema" title="XML-Schema/DTD:" tooltip="Ein XML-Schema oder eine DTD für die neue Kollektion." />
+  <entry key="dialog.collection.new.err.exit" text="Die Kollektion existiert bereits." />
+  <entry key="dialog.collection.new.err.noservice" text="Die Datenbank stellt keinen Service für die Verwaltung von Kollektionen bereit." />
+  <entry key="dialog.collection.new.err.noparent" text="Es ist keine Eltern Kollektion ausgewählt." />
+  <entry key="dialog.collection.new.err.wrongparent" text="Die Eltern Kollektion ist ungültig." />
+  
+  <entry key="dialog.collection.delete.title" text="Kollektion löschen?" />
+  <entry key="dialog.collection.delete.msg" text="Wollen Sie die Kollektion {0} wirklich löschen?" />
+  <entry key="dialog.collection.delete.err.nocoll" text="Es ist keine Kollektion zum löschen ausgewählt." />
+  <entry key="dialog.collection.delete.err.noservice" text="Die Datenbank stellt keinen Service für die Verwaltung von Kollektionen bereit." />
+  
+  <entry key="dialog.vcollection.new.title" title="Neue VirtuelleKollektion" />
+  <entry key="dialog.vcollection.new.parent" title="Kollektion:" tooltip="Der Kollektionspfad." />
+  <entry key="dialog.vcollection.new.name" title="Name:" tooltip="Der Name der neuen VirtuellenKollektion." />
+  <entry key="dialog.vcollection.new.vcl" title="VCLSchema:" tooltip="Das Virtual-Collection-Language Schema, das die VirtuelleKollektion beschreibt." />
+  <entry key="dialog.vcollection.new.xsl" title="XSL-Stylesheet:" tooltip="Ein optionales XSL-Stylesheet, mit dem die VirtuellenRessourcen transformiert werden." />
+  
+  <entry key="dialog.vcollection.new.exec.title" title="Erzeuge VirtuelleKollektion" />
+  <entry key="dialog.vcollection.new.exec.message" text="&lt;html&gt;Bitte warten Sie während die VirtuelleKollektion erstellt wird.&lt;/html&gt;" />
+  
+  <entry key="dialog.collection.query.title" title="XPath-Query auf Kollektion" />
+  <entry key="dialog.collection.query.target" title="Kollektion:" tooltip="Kollektion auf die die XPath-Query ausgeführt wird." />
+  <entry key="dialog.collection.query.xpath" title="XPath-Query:" tooltip="Der XPath-Ausdruck der auf die Kollektion ausgeführt wird." />
+  
+  <entry key="dialog.resource.xml.new.title" title="Neue XML-Ressource" />
+  <entry key="dialog.resource.xml.new.err.nocoll" text="Es ist keine Eltern-Kollektion für die neue XML-Ressource ausgewählt." />
+  <entry key="dialog.resource.xml.new.err.nofile" text="Die Datei {0} existiert nicht oder kann nocht gelesen werden." />
+  <entry key="dialog.resource.xml.new.err.noxml" text="Die Datei {0} ist kein gültiges XML-Dokument." />
+  
+  <entry key="dialog.resource.xml.new.exec.title" title="Erstelle XML-Ressource" />
+  <entry key="dialog.resource.xml.new.exec.message" text="&lt;html&gt;Bitte warten Sie bis die neue XML-Ressource erstellt ist.&lt;/html&gt;" />
+  
+  <entry key="dialog.resource.delete.title" title="Ressource löschen" />
+  <entry key="dialog.resource.delete.msg" text="Wollen Sie die Ressource {0} wirklich löschen?" />
+  
+  <entry key="dialog.resource.delete.exec.title" title="Lösche Ressource" />
+  <entry key="dialog.resource.delete.exec.message" text="&lt;html&gt;Bitte warten Sie während die Ressource gelöscht wird.&lt;/html&gt;" />
+  
+  <entry key="dialog.resource.query.title" title="XPath-Query auf Kollektion" />
+  <entry key="dialog.resource.query.target" title="Kollektion:" tooltip="Kollektion auf die die XPath-Query ausgeführt wird." />
+  <entry key="dialog.resource.query.xpath" title="XPath-Query:" tooltip="Der XPath-Ausdruck der auf die Kollektion ausgeführt wird." />
+  
+  <entry key="dialog.error.title" title="Fehler" />
+  <entry key="dialog.error.null" title="Das Object {0} hat den Wert null." />
+  <entry key="dialog.error.nores" text="Es ist keine Ressource ausgewählt." />
+  <entry key="dialog.error.nocoll" text="Es ist keine Kollektion ausgewählt." />
+  <entry key="dialog.error.nofile" title="Die Datei {0} konnte nicht geladen werden." />
+  <entry key="dialog.error.noclass" title="Die Klasse {0} konnte nicht geladen werden." />
+  <entry key="dialog.error.nodriver" title="Der Treiber {0} konnte nicht erzeugt werden." />
+  <entry key="dialog.error.noxapidb" title="Die Klasse {0} ist kein gültiger XML:DB API Treiber." />  
+  <entry key="dialog.error.nodbconn" title="Es konnte keine Verbindung zu {0} hergestellt werden." />  
+  <entry key="dialog.error.noxpath" text="Sie haben keinen XPath-Ausdruck eingegeben der ausgeführt werden kann." />
+  <entry key="dialog.error.noservice" text="Die verwendete XML-Datenbank stellt den Service '{0}' nicht bereit." />
+  <entry key="dialog.error.noname" text="Sie haben keinen Namen angegeben." />
+  <entry key="dialog.error.noread" text="Die Datei '{0}' kann nicht gelesen werden." />
+  <entry key="dialog.error.novcs" text="Sie haben kein VCLSchema angegeben." />
+  <entry key="dialog.error.noxsl" text="Sie haben kein XSL-Stylesheet angegeben." />
+  <entry key="dialog.error.samename" text="Der Name '{0}' existiert bereits." />
+  <entry key="dialog.error.message" text="&lt;html&gt;Der folgende Fehler ist aufgetreten&lt;br/&gt;{0}&lt;/html&gt;" />
+  
+  <entry key="dialog.message.time" title="Prozess beendet" text="Der Prozess hat {0} Sekunden benötigt." />
+  
+</entries>
